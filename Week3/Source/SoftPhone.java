@@ -19,14 +19,14 @@ public class SoftPhone extends Phone
     }
     
 
-    public void makeCall()
+    protected void makeCall()
     {
         // put your code here
        System.out.println(this.getClass().getName()+" Make Call");
     }
    
 
-    public void connectNetwork()
+    protected void connectNetwork()
     {
         // put your code here
        System.out.println(this.getClass().getName()+" Connect Network");

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>architect</OriginalElement>
+  <nodes>
+    <node x="28.5" y="124.0">architect.Student</node>
+    <node x="68.75" y="395.0">architect.Course</node>
+    <node x="-1.0" y="240.0">architect.Enrollment</node>
+    <node x="447.0" y="47.0">architect.App</node>
+    <node x="115.02083333333336" y="0.0">architect.Person</node>
+    <node x="444.5" y="0.0">architect.AppTest</node>
+    <node x="224.5" y="124.0">architect.Lecturer</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="architect.Student" target="architect.Person">
+      <point x="0.0" y="-26.0" />
+      <point x="116.5" y="99.0" />
+      <point x="163.77083333333337" y="99.0" />
+      <point x="-48.75" y="37.0" />
+    </edge>
+    <edge source="architect.Enrollment" target="architect.Course">
+      <point x="58.25" y="48.0" />
+      <point x="0.0" y="-48.0" />
+    </edge>
+    <edge source="architect.Enrollment" target="architect.Student">
+      <point x="0.0" y="-48.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="architect.Course" target="architect.Enrollment">
+      <point x="-70.0" y="-48.0" />
+      <point x="104.75" y="347.0" />
+      <point x="58.25" y="347.0" />
+      <point x="-58.25" y="48.0" />
+    </edge>
+    <edge source="architect.Course" target="architect.Lecturer">
+      <point x="70.0" y="-48.0" />
+      <point x="244.75" y="347.0" />
+      <point x="312.0" y="347.0" />
+      <point x="0.0" y="26.0" />
+    </edge>
+    <edge source="architect.Lecturer" target="architect.Person">
+      <point x="0.0" y="-26.0" />
+      <point x="312.0" y="99.0" />
+      <point x="261.27083333333337" y="99.0" />
+      <point x="48.75" y="37.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="274.0" y="271.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

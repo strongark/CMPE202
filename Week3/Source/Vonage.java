@@ -12,7 +12,7 @@ public class Vonage extends SoftPhone
      */
     public Vonage()
     {
-        // Constructor       
-    }
+         System.out.println("This is Vonage");
+    }    
  
 }

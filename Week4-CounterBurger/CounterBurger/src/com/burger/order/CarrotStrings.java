@@ -11,13 +11,16 @@ public class CarrotStrings extends ToppingDecorator {
         this.burger = burger;
     }
 
-    @Override
     public String getDescription() {
         return burger.getDescription() + ", Carrot Strings ";
     }
 
-    @Override
     public double cost() {
-        return burger.cost() + 0;
+        burger.toppingCount = burger.toppingCount - 1;
+        if(burger.toppingCount < 0 ){
+            return .75  + burger.cost();
+        }else{
+            return 0  + burger.cost();
+        }
     }
 }

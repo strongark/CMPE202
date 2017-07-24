@@ -11,13 +11,16 @@ public class ApricotSauce extends SauceDecorator {
         this.burger = burger;
     }
 
-    @Override
     public String getDescription() {
         return burger.getDescription() + ", Apricot Sauce";
     }
 
-    @Override
     public double cost() {
-        return burger.cost() + 0;
+        burger.sauceCount = burger.sauceCount - 1;
+        if(burger.sauceCount < 0 ){
+            return 0.75 + burger.cost();
+        }else{
+            return 0 + burger.cost();
+        }
     }
 }

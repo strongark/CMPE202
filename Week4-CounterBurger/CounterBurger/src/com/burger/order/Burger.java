@@ -5,7 +5,13 @@ package com.burger.order;
  */
 public abstract class Burger {
 
-    String description = "Unknown Burger";
+    protected int toppingCount = 4;
+
+    protected int cheeseCount = 1;
+
+    protected int sauceCount = 1;
+
+    protected String description = "Unknown Burger";
 
     public String getDescription() {
         return description;

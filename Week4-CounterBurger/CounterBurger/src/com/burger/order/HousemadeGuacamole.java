@@ -18,6 +18,6 @@ public class HousemadeGuacamole extends ToppingDecorator {
 
     @Override
     public double cost() {
-        return burger.cost() + 0;
+        return 1.5  + burger.cost();
     }
 }

@@ -11,13 +11,16 @@ public class BermudaRedOnion extends ToppingDecorator {
         this.burger = burger;
     }
 
-    @Override
     public String getDescription() {
         return burger.getDescription() + ",Bermuda Red Onion ";
     }
 
-    @Override
     public double cost() {
-        return burger.cost() + 9.50;
+        burger.toppingCount = burger.toppingCount - 1;
+        if(burger.toppingCount < 0 ){
+            return .75  + burger.cost();
+        }else{
+            return 0  + burger.cost();
+        }
     }
 }

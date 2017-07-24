@@ -11,6 +11,6 @@ public class Turkey extends Burger {
 
     @Override
     public double cost() {
-        return 3;
+        return 0;
     }
 }

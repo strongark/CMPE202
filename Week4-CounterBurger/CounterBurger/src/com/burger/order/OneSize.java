@@ -15,6 +15,6 @@ public class OneSize extends SizeDecorator {
 
     @Override
     public double cost() {
-        return burger.cost() + 0;
+        return 15.50 + burger.cost();
     }
 }

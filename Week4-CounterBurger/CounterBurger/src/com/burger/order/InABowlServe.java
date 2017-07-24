@@ -17,6 +17,6 @@ public class InABowlServe extends ServeDecorator {
 
     @Override
     public double cost() {
-        return burger.cost() + 1;
+        return 1 + burger.cost();
     }
 }

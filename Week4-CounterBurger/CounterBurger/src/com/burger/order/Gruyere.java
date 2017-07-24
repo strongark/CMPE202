@@ -18,6 +18,11 @@ public class Gruyere extends CheeseDecorator {
 
     @Override
     public double cost() {
-        return burger.cost() + 0;
+        burger.cheeseCount = burger.cheeseCount - 1;
+        if(burger.cheeseCount < 0 ){
+            return 1  + burger.cost();
+        }else{
+            return 0  + burger.cost();
+        }
     }
 }

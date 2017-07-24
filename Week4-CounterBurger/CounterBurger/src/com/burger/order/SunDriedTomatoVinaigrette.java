@@ -18,6 +18,11 @@ public class SunDriedTomatoVinaigrette extends SauceDecorator {
 
     @Override
     public double cost() {
-        return burger.cost() + 0;
+        burger.sauceCount = burger.sauceCount - 1;
+        if(burger.sauceCount < 0 ){
+            return .75 + burger.cost();
+        }else{
+            return 0 + burger.cost();
+        }
     }
 }

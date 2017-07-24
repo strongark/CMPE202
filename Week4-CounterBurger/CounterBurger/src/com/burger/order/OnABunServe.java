@@ -11,12 +11,10 @@ public class OnABunServe extends ServeDecorator {
         this.burger = burger;
     }
 
-    @Override
     public String getDescription() {
         return burger.getDescription() + ", On A Bun";
     }
 
-    @Override
     public double cost() {
         return burger.cost() + 0;
     }

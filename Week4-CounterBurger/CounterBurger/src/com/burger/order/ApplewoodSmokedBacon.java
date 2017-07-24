@@ -11,13 +11,12 @@ public class ApplewoodSmokedBacon extends ToppingDecorator {
         this.burger = burger;
     }
 
-    @Override
+
     public String getDescription() {
         return burger.getDescription() + ", Apple wood smoked Bacon";
     }
 
-    @Override
     public double cost() {
-        return burger.cost() + 0;
+        return 1.5 + burger.cost();
     }
 }

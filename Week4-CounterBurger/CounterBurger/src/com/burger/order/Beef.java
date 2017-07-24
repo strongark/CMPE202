@@ -9,8 +9,7 @@ public class Beef extends Burger{
         description = "Beef Burger";
     }
 
-    @Override
     public double cost() {
-        return 3;
+        return 0;
     }
 }

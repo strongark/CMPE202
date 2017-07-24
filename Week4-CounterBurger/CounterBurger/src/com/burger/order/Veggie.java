@@ -10,6 +10,6 @@ public class Veggie extends Burger {
     }
     @Override
     public double cost() {
-        return 3;
+        return 0;
     }
 }

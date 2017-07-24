@@ -16,8 +16,6 @@ public class Main {
 
         burger1 = new GreekFeta(burger1);
 
-        System.out.println(burger1.getDescription() +" $ " + burger1.cost());
-
         burger1 = new BermudaRedOnion(burger1);
 
         burger1 = new BlackOlives(burger1);

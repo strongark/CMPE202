@@ -9,6 +9,7 @@ public class BermudaRedOnion extends ToppingDecorator {
     Burger burger;
     public BermudaRedOnion(Burger burger){
         this.burger = burger;
+        super.toppingCount = burger.toppingCount + 1;
     }
 
     public String getDescription() {
@@ -16,8 +17,8 @@ public class BermudaRedOnion extends ToppingDecorator {
     }
 
     public double cost() {
-        burger.toppingCount = burger.toppingCount - 1;
-        if(burger.toppingCount < 0 ){
+
+        if(burger.toppingCount > 4 ){
             return .75  + burger.cost();
         }else{
             return 0  + burger.cost();

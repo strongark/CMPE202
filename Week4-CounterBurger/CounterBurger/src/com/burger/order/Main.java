@@ -5,30 +5,33 @@ public class Main {
     public static void main(String[] args) {
 
         Burger burger1 = new Beef();
-        System.out.println(burger1.getDescription() +" $ " + burger1.cost());
+
         burger1 = new OneThirdSize(burger1);
-        System.out.println(burger1.getDescription() +" $ " + burger1.cost());
+
         burger1 = new OnABunServe(burger1);
-        System.out.println(burger1.getDescription() +" $ " + burger1.cost());
+
         burger1 = new DanishBlueCheese(burger1);
-        System.out.println(burger1.getDescription() +" $ " + burger1.cost());
+
         burger1 = new HoreseRadishCheddar(burger1);
-        System.out.println(burger1.getDescription() +" $ " + burger1.cost());
+
         burger1 = new GreekFeta(burger1);
+
         System.out.println(burger1.getDescription() +" $ " + burger1.cost());
+
         burger1 = new BermudaRedOnion(burger1);
-        System.out.println(burger1.getDescription() +" $ " + burger1.cost());
+
         burger1 = new BlackOlives(burger1);
-        System.out.println(burger1.getDescription() +" $ " + burger1.cost());
+
         burger1 = new CarrotStrings(burger1);
-        System.out.println(burger1.getDescription() +" $ " + burger1.cost());
+
         burger1 = new ColeSlaw(burger1);
-        System.out.println(burger1.getDescription() +" $ " + burger1.cost());
+
         burger1 = new DilliPickleChips(burger1);
-        System.out.println(burger1.getDescription() +" $ " + burger1.cost());
+
         burger1 = new ApplewoodSmokedBacon(burger1);
-        System.out.println(burger1.getDescription() +" $ " + burger1.cost());
+
         burger1 = new ApricotSauce(burger1);
+
         System.out.println(burger1.getDescription() +" $ " + burger1.cost());
 /*
         Burger burger2 = new Turkey();

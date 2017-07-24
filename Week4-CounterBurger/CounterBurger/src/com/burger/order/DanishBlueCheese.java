@@ -6,22 +6,11 @@ package com.burger.order;
 public class DanishBlueCheese extends CheeseDecorator {
 
 
-    Burger burger;
     public DanishBlueCheese(Burger burger){
-        this.burger = burger;
+        super(burger);
     }
 
     public String getDescription() {
         return burger.getDescription() + ", Danish Blue Cheese";
-    }
-
-    public double cost() {
-        burger.cheeseCount = burger.cheeseCount - 1;
-        if(burger.cheeseCount < 0 ){
-            return 1 + burger.cost();
-        }else{
-            return 0  + burger.cost();
-        }
-
     }
 }

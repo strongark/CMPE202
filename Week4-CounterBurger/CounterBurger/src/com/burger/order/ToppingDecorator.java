@@ -6,4 +6,9 @@ package com.burger.order;
 public abstract class ToppingDecorator extends Burger {
 
     public abstract String getDescription();
+
+    @Override
+    public double cost() {
+        return 0;
+    }
 }

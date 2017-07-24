@@ -5,11 +5,11 @@ package com.burger.order;
  */
 public abstract class Burger {
 
-    protected int toppingCount = 4;
+    protected int toppingCount = 0;
 
-    protected int cheeseCount = 1;
+    protected int cheeseCount = 0;
 
-    protected int sauceCount = 1;
+    protected int sauceCount = 0;
 
     protected String description = "Unknown Burger";
 
@@ -18,5 +18,13 @@ public abstract class Burger {
     }
 
     public abstract double cost();
+
+//    public abstract int getCheeseCount();
+//
+//    public abstract int getSauceCount();
+//
+//    public abstract int getToppingCount();
+
+
 
 }

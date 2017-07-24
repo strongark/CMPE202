@@ -6,9 +6,8 @@ package com.burger.order;
 public class YellowAmerican extends CheeseDecorator {
 
 
-    Burger burger;
     public YellowAmerican(Burger burger){
-        this.burger = burger;
+        super(burger);
     }
 
     @Override
@@ -16,13 +15,4 @@ public class YellowAmerican extends CheeseDecorator {
         return burger.getDescription() + ",Yellow American ";
     }
 
-    @Override
-    public double cost() {
-        burger.cheeseCount = burger.cheeseCount - 1;
-        if(burger.cheeseCount < 0 ){
-            return 1 + burger.cost();
-        }else{
-            return 0 + burger.cost();
-        }
-    }
 }

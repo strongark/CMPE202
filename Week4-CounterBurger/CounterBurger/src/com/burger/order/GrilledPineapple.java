@@ -5,10 +5,8 @@ package com.burger.order;
  */
 public class GrilledPineapple extends ToppingDecorator {
 
-
-    Burger burger;
     public GrilledPineapple(Burger burger){
-        this.burger = burger;
+        super(burger);
     }
 
     @Override
@@ -16,13 +14,5 @@ public class GrilledPineapple extends ToppingDecorator {
         return burger.getDescription() + ", Grilled Pineapple";
     }
 
-    @Override
-    public double cost() {
-        burger.toppingCount = burger.toppingCount - 1;
-        if(burger.toppingCount < 0 ){
-            return .75  + burger.cost();
-        }else{
-            return 0  + burger.cost();
-        }
-    }
+
 }

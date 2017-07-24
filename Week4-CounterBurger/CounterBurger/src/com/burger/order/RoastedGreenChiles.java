@@ -6,9 +6,9 @@ package com.burger.order;
 public class RoastedGreenChiles extends ToppingDecorator {
 
 
-    Burger burger;
+
     public RoastedGreenChiles(Burger burger){
-        this.burger = burger;
+        super(burger);
     }
 
     @Override
@@ -16,13 +16,4 @@ public class RoastedGreenChiles extends ToppingDecorator {
         return burger.getDescription() + ",Roasted Green Chiles ";
     }
 
-    @Override
-    public double cost() {
-        burger.toppingCount = burger.toppingCount - 1;
-        if(burger.toppingCount < 0 ){
-            return .75 + burger.cost();
-        }else{
-            return 0 + burger.cost();
-        }
-    }
 }

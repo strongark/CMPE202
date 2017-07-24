@@ -5,10 +5,23 @@ package com.burger.order;
  */
 public abstract class ToppingDecorator extends Burger {
 
+    Burger burger;
+
     public abstract String getDescription();
 
+    public ToppingDecorator(Burger burger)
+    {
+        this.burger=burger;
+        super.toppingCount++;
+    }
     @Override
     public double cost() {
-        return 0;
+
+        if(burger.toppingCount > 4 ){
+            return .75  + burger.cost();
+        }else{
+            return 0  + burger.cost();
+        }
     }
+
 }

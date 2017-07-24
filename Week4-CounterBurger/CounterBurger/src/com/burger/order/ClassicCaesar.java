@@ -5,10 +5,8 @@ package com.burger.order;
  */
 public class ClassicCaesar extends SauceDecorator {
 
-
-    Burger burger;
     public ClassicCaesar(Burger burger){
-        this.burger = burger;
+        super(burger);
     }
 
     @Override
@@ -16,13 +14,4 @@ public class ClassicCaesar extends SauceDecorator {
         return burger.getDescription() + ",Classic Caesar ";
     }
 
-    @Override
-    public double cost() {
-        burger.sauceCount = burger.sauceCount - 1;
-        if(burger.sauceCount < 0 ){
-            return .75  + burger.cost();
-        }else{
-            return 0  + burger.cost();
-        }
-    }
 }

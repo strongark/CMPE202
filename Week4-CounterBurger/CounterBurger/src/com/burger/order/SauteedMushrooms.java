@@ -6,9 +6,9 @@ package com.burger.order;
 public class SauteedMushrooms extends ToppingDecorator {
 
 
-    Burger burger;
+
     public SauteedMushrooms(Burger burger){
-        this.burger = burger;
+        super(burger);
     }
 
     @Override

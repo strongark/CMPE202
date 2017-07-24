@@ -5,10 +5,8 @@ package com.burger.order;
  */
 public class Chili extends ToppingDecorator {
 
-
-    Burger burger;
     public Chili(Burger burger){
-        this.burger = burger;
+        super(burger);
     }
 
     @Override

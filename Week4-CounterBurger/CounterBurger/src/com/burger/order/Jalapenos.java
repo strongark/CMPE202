@@ -6,9 +6,8 @@ package com.burger.order;
 public class Jalapenos extends ToppingDecorator {
 
 
-    Burger burger;
     public Jalapenos(Burger burger){
-        this.burger = burger;
+        super(burger);
     }
 
     @Override
@@ -16,13 +15,4 @@ public class Jalapenos extends ToppingDecorator {
         return burger.getDescription() + ",Jalapenos ";
     }
 
-    @Override
-    public double cost() {
-        burger.toppingCount = burger.toppingCount - 1;
-        if(burger.toppingCount < 0 ){
-            return .75 + burger.cost();
-        }else{
-            return 0  + burger.cost();
-        }
-    }
 }

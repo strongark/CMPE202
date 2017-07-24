@@ -5,10 +5,8 @@ package com.burger.order;
  */
 public class HousemadeGuacamole extends ToppingDecorator {
 
-
-    Burger burger;
     public HousemadeGuacamole(Burger burger){
-        this.burger = burger;
+        super(burger);
     }
 
     @Override

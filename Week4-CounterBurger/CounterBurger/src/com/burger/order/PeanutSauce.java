@@ -6,9 +6,8 @@ package com.burger.order;
 public class PeanutSauce extends SauceDecorator {
 
 
-    Burger burger;
     public PeanutSauce(Burger burger){
-        this.burger = burger;
+        super(burger);
     }
 
     @Override
@@ -16,13 +15,4 @@ public class PeanutSauce extends SauceDecorator {
         return burger.getDescription() + ",Peanut Sauce ";
     }
 
-    @Override
-    public double cost() {
-        burger.sauceCount = burger.sauceCount - 1;
-        if(burger.sauceCount < 0 ){
-            return .75 + burger.cost();
-        }else{
-            return 0 + burger.cost();
-        }
-    }
 }

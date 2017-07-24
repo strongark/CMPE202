@@ -6,9 +6,8 @@ package com.burger.order;
 public class FriedOnionStrings extends ToppingDecorator {
 
 
-    Burger burger;
     public FriedOnionStrings(Burger burger){
-        this.burger = burger;
+        super(burger);
     }
 
     @Override

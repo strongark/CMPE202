@@ -6,9 +6,8 @@ package com.burger.order;
 public class CountryButterMilkRanch extends SauceDecorator {
 
 
-    Burger burger;
     public CountryButterMilkRanch(Burger burger){
-        this.burger = burger;
+        super(burger);
     }
 
     @Override
@@ -16,13 +15,4 @@ public class CountryButterMilkRanch extends SauceDecorator {
         return burger.getDescription() + ", Country Butter Milk Ranch";
     }
 
-    @Override
-    public double cost() {
-        burger.sauceCount = burger.sauceCount - 1;
-        if(burger.sauceCount < 0 ){
-            return .75  + burger.cost();
-        }else{
-            return 0  + burger.cost();
-        }
-    }
 }

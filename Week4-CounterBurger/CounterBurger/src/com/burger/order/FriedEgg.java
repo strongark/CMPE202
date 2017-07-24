@@ -5,10 +5,8 @@ package com.burger.order;
  */
 public class FriedEgg extends ToppingDecorator {
 
-
-    Burger burger;
     public FriedEgg(Burger burger){
-        this.burger = burger;
+        super(burger);
     }
 
     @Override

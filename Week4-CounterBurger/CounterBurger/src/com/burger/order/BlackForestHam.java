@@ -6,9 +6,9 @@ package com.burger.order;
 public class BlackForestHam extends ToppingDecorator {
 
 
-    Burger burger;
+
     public BlackForestHam(Burger burger){
-        this.burger = burger;
+        super(burger);
     }
 
     @Override

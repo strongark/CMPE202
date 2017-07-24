@@ -5,10 +5,8 @@ package com.burger.order;
  */
 public class HoneyMustard extends SauceDecorator {
 
-
-    Burger burger;
     public HoneyMustard(Burger burger){
-        this.burger = burger;
+        super(burger);
     }
 
     @Override
@@ -16,13 +14,4 @@ public class HoneyMustard extends SauceDecorator {
         return burger.getDescription() + ", Honey Mustard";
     }
 
-    @Override
-    public double cost() {
-        burger.sauceCount = burger.sauceCount - 1;
-        if(burger.sauceCount < 0 ){
-            return .75  + burger.cost();
-        }else{
-            return 0  + burger.cost();
-        }
-    }
 }

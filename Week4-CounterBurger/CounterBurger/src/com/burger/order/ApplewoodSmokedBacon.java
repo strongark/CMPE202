@@ -6,9 +6,9 @@ package com.burger.order;
 public class ApplewoodSmokedBacon extends ToppingDecorator {
 
 
-    Burger burger;
+
     public ApplewoodSmokedBacon(Burger burger){
-        this.burger = burger;
+        super(burger);
     }
 
 

@@ -16,8 +16,7 @@ public abstract class ToppingDecorator extends Burger {
     }
     @Override
     public double cost() {
-
-        if(burger.toppingCount > 4 ){
+        if(super.toppingCount > 4 ){
             return .75  + burger.cost();
         }else{
             return 0  + burger.cost();

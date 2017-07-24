@@ -19,12 +19,4 @@ public abstract class Burger {
 
     public abstract double cost();
 
-//    public abstract int getCheeseCount();
-//
-//    public abstract int getSauceCount();
-//
-//    public abstract int getToppingCount();
-
-
-
 }

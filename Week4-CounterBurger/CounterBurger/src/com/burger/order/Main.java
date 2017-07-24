@@ -14,7 +14,7 @@ public class Main {
 
         burger1 = new HoreseRadishCheddar(burger1);
 
-        burger1 = new GreekFeta(burger1);
+//        burger1 = new GreekFeta(burger1);
 
         burger1 = new BermudaRedOnion(burger1);
 
@@ -25,6 +25,10 @@ public class Main {
         burger1 = new ColeSlaw(burger1);
 
         burger1 = new DilliPickleChips(burger1);
+
+        burger1 = new Jalapenos(burger1);
+
+        System.out.println(burger1.getDescription() +" $ " + burger1.cost());
 
         burger1 = new ApplewoodSmokedBacon(burger1);
 

@@ -12,7 +12,7 @@ public abstract class ToppingDecorator extends Burger {
     public ToppingDecorator(Burger burger)
     {
         this.burger=burger;
-        super.toppingCount++;
+        super.toppingCount=burger.toppingCount+1;
     }
     @Override
     public double cost() {

@@ -8,7 +8,7 @@ public abstract class SauceDecorator extends Burger {
     Burger burger;
     public SauceDecorator(Burger burger){
         this.burger=burger;
-        super.sauceCount++;
+        super.sauceCount=burger.sauceCount+1;
     }
 
     public abstract String getDescription();

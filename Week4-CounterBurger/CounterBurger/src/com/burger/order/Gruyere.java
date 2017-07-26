@@ -6,7 +6,6 @@ package com.burger.order;
 public class Gruyere extends CheeseDecorator {
 
 
-    Burger burger;
     public Gruyere(Burger burger){
         super(burger);
     }

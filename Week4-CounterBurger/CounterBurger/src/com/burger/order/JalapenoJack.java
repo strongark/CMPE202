@@ -6,7 +6,6 @@ package com.burger.order;
 public class JalapenoJack extends CheeseDecorator {
 
 
-    Burger burger;
     public JalapenoJack(Burger burger){
         super(burger);
     }

@@ -5,7 +5,6 @@ package com.burger.order;
  */
 public class HoreseRadishCheddar extends CheeseDecorator {
 
-//    Burger burger;
     public HoreseRadishCheddar(Burger burger){
         super(burger);
     }

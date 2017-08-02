@@ -155,6 +155,7 @@ public class MemberController {
      * For Staff View
      */
     public void viewBookings(int bookingID){
+
         viewRoomBookings(bookingID);
 
         HashMap<Integer, SpaBooking> spaBooking = SpaBooking.getSpaService();
@@ -164,7 +165,6 @@ public class MemberController {
                 System.out.println(spa.getServiceName() + " " + spa.getPrice());
             }
         }
-
 
         HashMap<Integer, FoodBooking> foodBooking = FoodBooking.getFoodOrders();
         FoodBooking foodList = foodBooking.get(bookingID);

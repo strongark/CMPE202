@@ -24,4 +24,27 @@ public class SpaBooking extends Booking {
     public static void setSpaService(HashMap<Integer, SpaBooking> spaService) {
         SpaBooking.spaService = spaService;
     }
+
+    public static ArrayList<SpaBooking> getUnpaidBookingOfMember(int memberId){
+        ArrayList<SpaBooking> memberBookingList= new ArrayList<SpaBooking>();
+        for (SpaBooking booking:spaService.values()){
+            if(booking.getMember().getId()==memberId && !booking.isPaid())
+                memberBookingList.add(booking);
+        }
+        return memberBookingList;
+    }
+
+    @Override
+    public double cost() {
+        double totalCost=0;
+        for(SpaService service:spaServices)
+            totalCost+=service.getPrice();
+        return totalCost;
+    }
+
+    @Override
+    public void paid() {
+        spaService.get(getBookingID()).paid();
+    }
+
 }

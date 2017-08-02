@@ -13,6 +13,7 @@ public class Hotel {
     private ArrayList<SpaService> serviceList = new ArrayList<>();
     private ArrayList<Food> foodItems = new ArrayList<>();
 
+
     public ArrayList<SpaService> getServiceList() {
         return serviceList;
     }

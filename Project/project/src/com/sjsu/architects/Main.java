@@ -196,7 +196,6 @@ public class Main {
                 System.out.println("Enter Booking ID ");
                 scan = new Scanner(System.in);
                 int bookingid = scan.nextInt();
-
                 memberOperations.viewBookings(bookingid);
             }else if (iOperation == 7){
                 System.out.println("Enter Booking ID ");

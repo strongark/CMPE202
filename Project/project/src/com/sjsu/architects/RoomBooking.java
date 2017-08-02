@@ -34,4 +34,30 @@ public class RoomBooking extends Booking  {
         RoomBooking.memberRoomBookings = memberRoomBookings;
     }
 
+    public static ArrayList<RoomBooking> getUnpaidBookingOfMember(int memberId){
+        ArrayList<RoomBooking> memberRoomBookingList= new ArrayList<RoomBooking>();
+        for (MemberBookingProxy booking:memberRoomBookings.values()){
+            RoomBooking roomBooking = (RoomBooking)booking.bookings();
+            if(roomBooking.getMember().getId()==memberId && !roomBooking.isPaid())
+                memberRoomBookingList.add(roomBooking);
+        }
+        return memberRoomBookingList;
+    }
+
+    public static RoomBooking getUnpaidRoomBooking(int roomNumber){
+
+        for (MemberBookingProxy booking:memberRoomBookings.values()){
+            RoomBooking roomBooking = (RoomBooking)booking.bookings();
+            for(Room room:roomBooking.getBookedRooms())
+                if (room.getRoomNumber()==roomNumber)
+                    return roomBooking;
+        }
+        return null;
+    }
+
+    @Override
+    public void paid() {
+        memberRoomBookings.get(getBookingID()).bookings().paid();
+    }
+
 }

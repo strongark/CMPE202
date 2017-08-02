@@ -25,10 +25,6 @@ public class IdentityController {
         return accountList;
     }
 
-    public void setAccountList(ArrayList<Person> accountList) {
-        this.accountList = accountList;
-    }
-
     public static int identity = 0;
 
 

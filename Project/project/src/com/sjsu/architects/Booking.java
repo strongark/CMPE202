@@ -14,6 +14,8 @@ public class Booking {
     private Member member  = null;
     private Date dateOfBooking;
     private Date endDateOfBooking;
+    private boolean isPaid=false;
+    private String description;
 
     public int getBookingID() {
         return bookingID;
@@ -51,6 +53,20 @@ public class Booking {
     public void setEndDateOfBooking(Date endDateOfBooking) {
         this.endDateOfBooking = endDateOfBooking;
     }
+
+    public double cost(){
+        return 0;
+    };
+
+    public String getDescription(){
+        return description;
+    }
+
+    public boolean isPaid(){
+        return isPaid;
+    }
+
+    public void paid(){
+        isPaid=true;
+    }
 }
-
-

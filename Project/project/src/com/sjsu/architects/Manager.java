@@ -7,19 +7,19 @@ import java.util.ArrayList;
 public class Manager extends Person {
 
     //should we have this as we already have person ID
-    private int managerId;
+    //private int managerId;
     private double salary;
 
     private ArrayList<Person> staffList = new ArrayList<>();
 
-    public int getManagerId() {
+   /* public int getManagerId() {
         return managerId;
     }
 
     public void setManagerId(int managerId) {
         this.managerId = managerId;
     }
-
+*/
     public double getSalary() {
         return salary;
     }

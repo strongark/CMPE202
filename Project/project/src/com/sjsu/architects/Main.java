@@ -9,6 +9,7 @@ public class Main {
 
     public static int iUserType = 0;
     private static Scanner scan;
+    RoomBooking roomBookings = new RoomBooking();
 
     public static void main(String[] args) {
 
@@ -39,7 +40,6 @@ public class Main {
         RoomController intializiningRooms = new RoomController();
         intializiningRooms.initializeRoom(hotel);
 
-
         do {
 
             System.out.println("Welcome to Carton Hotel ");
@@ -57,28 +57,20 @@ public class Main {
                     scan = new Scanner(System.in);
                     int UserType = scan.nextInt();
                     IdentityController login = IdentityController.getInstance();
-                    if (UserType == 1) {
-                        if (login.signIn()) {
+                    int userId = login.signIn();
+
+                    if(userId != -1) {
+                        if (UserType == 1) {
                             ManagerMenu(manager, hotel);
-                        }
-                    } else if (UserType == 2) {
-                        if(login.signIn()) {
+                        } else if (UserType == 2) {
                             StaffMenu();
+                        } else if (UserType == 3) {
+                            CustomerMenu(userId);
+                        } else if (UserType == 0) {
+                            break;
+                        } else {
+                            break;
                         }
-
-                    } else if (UserType == 3) {
-
-                        if(login.signIn()){
-                        CustomerMenu();
-                        }
-
-                    }
-                    else if (UserType == 0){
-                        break;
-                    }
-                    else
-                    {
-                        break;
                     }
                 }
                 while (1 != 0);
@@ -94,14 +86,14 @@ public class Main {
                     int UserType = scan.nextInt();
                     IdentityController signup = IdentityController.getInstance();
                     if (UserType == 1) {
-                        signup.signUp(1);
+                        int userId = signup.signUp(1);
                         ManagerMenu(manager,hotel);
                     } else if (UserType == 2) {
-                        signup.signUp(2);
+                        int userId =  signup.signUp(2);
                         StaffMenu();
                     } else if (UserType == 3) {
-                        signup.signUp(3);
-                        CustomerMenu();
+                        int userId = signup.signUp(3);
+                        CustomerMenu(userId);
                     }
                     else if (UserType == 0){
                         break;
@@ -167,18 +159,33 @@ public class Main {
         } while (1 != 0);
 
     }
+
+    /**
+     *
+     */
     public static void StaffMenu()
     {
-        do {
 
+        do {
+            MemberController memberOperations = new MemberController();
             System.out.println("Welcome Staff Member ");
-            System.out.println("1. Check For Room Availability | 2. Book Room  | 3. Member Sign Up  | 4. Check In Customer | 5. Check Out Customer | 6. Generate Bill | 7. Book Spa | 8. Order Food | 0. Exit ");
+            System.out.println("1. Check For Room Availability | 2. Book Room  | " +
+                    "3. Member Sign Up  | 4. Check In Customer | 5. Check Out Customer | " +
+                    "6. Generate Bill | 7. Book Spa | 8. Order Food | 0. Exit ");
             scan = new Scanner(System.in);
             int iOperation = scan.nextInt();
+
             if (iOperation == 1) {
-
+                memberOperations.checkRoomAvailablility();
             } else if (iOperation == 2) {
+                System.out.println("Enter Member ID ");
+                scan = new Scanner(System.in);
+                int userID = scan.nextInt();
 
+                IdentityController accountList = IdentityController.getInstance();
+                Member member = (Member) accountList.getAccountById(userID);
+
+                memberOperations.bookRoom(member);
             } else if (iOperation == 3) {
 
             } else if (iOperation == 4){
@@ -186,11 +193,26 @@ public class Main {
             }else if (iOperation == 5){
 
             }else if (iOperation == 6){
+                System.out.println("Enter Booking ID ");
+                scan = new Scanner(System.in);
+                int bookingid = scan.nextInt();
 
+                memberOperations.viewBookings(bookingid);
             }else if (iOperation == 7){
+                System.out.println("Enter Booking ID ");
+                scan = new Scanner(System.in);
+                int bookingid = scan.nextInt();
+
+                SpaServiceController spa = new SpaServiceController();
+                spa.bookSpaServices(bookingid);
 
             }else if (iOperation == 8){
+                System.out.println("Enter Booking ID ");
+                scan = new Scanner(System.in);
+                int bookingid = scan.nextInt();
 
+                FoodController food = new FoodController();
+                food.orderFood(bookingid);
             }else if (iOperation == 0){
                 break;
             }
@@ -203,29 +225,37 @@ public class Main {
 
     }
 
-    public static void CustomerMenu()
+    /**
+     *
+     * @param userId
+     */
+    public static void CustomerMenu(int userId)
     {
-        do {
 
+        IdentityController accountList = IdentityController.getInstance();
+        Member member = (Member) accountList.getAccountById(userId);
+
+        do {
             System.out.println("Welcome Carton Hotel Member ");
             System.out.println("1. Check For Room Availability | 2. Book Room  | 3. Delete Room  | 4. View Booking  | 0. Exit ");
             scan = new Scanner(System.in);
             int iOperation = scan.nextInt();
-            if (iOperation == 1) {
 
+            MemberController memberOperations = new MemberController();
+            if (iOperation == 1) {
+                memberOperations.checkRoomAvailablility();
             } else if (iOperation == 2) {
+                memberOperations.bookRoom(member);
 
             } else if (iOperation == 3) {
 
             } else if (iOperation == 4){
+                System.out.println("Enter Booking ID: ");
+                scan = new Scanner(System.in);
+                int id = scan.nextInt();
 
-            }else if (iOperation == 5){
-
-            }else if (iOperation == 6){
-
-            }else if (iOperation == 7){
-
-            }else if (iOperation == 0){
+                memberOperations.viewRoomBookings(id);
+            } else if (iOperation == 0){
                 break;
             }
             else {

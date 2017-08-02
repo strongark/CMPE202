@@ -9,7 +9,7 @@ public class Hotel {
 
     private String hotelName = null;
     private String location = null;
-    private ArrayList<Room> roomList = new ArrayList<>();
+    private static ArrayList<Room> roomList = new ArrayList<>();
     private ArrayList<SpaService> serviceList = new ArrayList<>();
     private ArrayList<Food> foodItems = new ArrayList<>();
 
@@ -45,12 +45,12 @@ public class Hotel {
         this.location = location;
     }
 
-    public ArrayList<Room> getRoomList() {
+    public static ArrayList<Room> getRoomList() {
         return roomList;
     }
 
-    public void setRoomList(ArrayList<Room> roomList) {
-        this.roomList = roomList;
+    public static void setRoomList(ArrayList<Room> roomList) {
+        Hotel.roomList = roomList;
     }
 
 

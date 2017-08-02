@@ -1,18 +1,26 @@
 package com.sjsu.architects;
 
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Scanner;
 
 public class Member extends Person {
 
     //should this be there since we have person ID
-    private int memberId;
+   // private int memberId;
 
-    public int getMemberId() {
+    /*public int getMemberId() {
         return memberId;
     }
 
     public void setMemberId(int memberId) {
         this.memberId = memberId;
+    }
+*/
+
+
+    public Member(){
+
     }
 
     //*start observer pattern

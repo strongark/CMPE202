@@ -15,7 +15,7 @@ public class IdentityController {
     }
 
     public static IdentityController getInstance(){
-        if(instance==null)
+        if(instance == null)
             instance = new IdentityController();
         return instance;
     }
@@ -32,7 +32,8 @@ public class IdentityController {
     public static int identity = 0;
 
 
-    public void signUp(int accountType) {
+    public int signUp(int accountType) {
+        int returnID = -1;
         //console for input
         System.out.println(" Please Enter User Name ");
         Scanner scan = new Scanner(System.in);
@@ -47,26 +48,31 @@ public class IdentityController {
         switch (accountType) {
             case 1:
                 Manager manager = new Manager();
-                manager.setId(identity++);
+                manager.setId(++identity);
                 manager.username = userName;
                 manager.password = passWord;
                 manager.name = fullname;
                 accountList.add(manager);
+                returnID = manager.getId();
             case 2:
                 Staff staff = new Staff();
-                staff.setId(identity++);
+                staff.setId(++identity);
                 staff.username = userName;
                 staff.password = passWord;
                 staff.name = fullname;
                 accountList.add(staff);
+                returnID = staff.getId();
             case 3:
-                Member member = new Member(null);
-                member.setId(identity++);
+                Member member = new Member(); //TODO promotion null fails
+                member.setId(++identity);
                 member.username = userName;
                 member.password = passWord;
                 member.name = fullname;
                 accountList.add(member);
+                returnID = member.getId();
         }
+
+        return returnID;
     }
 
     public void signUpStaff() {
@@ -81,7 +87,7 @@ public class IdentityController {
         signUp(1);
     }
 
-    public boolean signIn(){
+    public int signIn(){
         System.out.println(" Please Enter User Name ");
         Scanner scan = new Scanner(System.in);
         String userName = scan.nextLine();
@@ -92,16 +98,16 @@ public class IdentityController {
         {
             if((person.getUsername().equals(userName)) && (person.getPassword().equals(passWord)))
             {
-                return true;
+                return person.getId();
             }
             else{
 
                 System.out.println(" User Name and Password does not match  ");
-                return false;
+                return -1;
             }
 
         }
-        return false;
+        return -1;
     }
 
     public Person getAccountById(int id) {
@@ -111,6 +117,7 @@ public class IdentityController {
         }
         return null;
     }
+
 
     public void createSampleData(){
         Manager manager = new Manager();

@@ -8,8 +8,20 @@ import java.text.*;
 
 public class PromotionController {
 
+    private static PromotionController instance = null;
+
     ArrayList<Member> observers = new ArrayList<Member>();
     int internalState;
+
+    protected PromotionController (){
+
+    }
+
+    public static PromotionController getInstance(){
+        if(instance==null)
+            instance= new PromotionController();
+        return instance;
+    }
 
     public void createPromotion(){
 

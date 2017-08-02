@@ -18,9 +18,10 @@ public class StaffController {
         Scanner scan = new Scanner(System.in);
         staff.setName(scan.nextLine());
 
-        System.out.println("Enter staff id");
-        scan = new Scanner(System.in);
-        staff.setId(scan.nextInt());
+//        System.out.println("Enter staff id");
+//        scan = new Scanner(System.in);
+//        staff.setId(scan.nextInt());
+        staff.setId(++IdentityController.identity);
 
         System.out.println("Enter staff salary");
         scan = new Scanner(System.in);
@@ -65,7 +66,7 @@ public class StaffController {
         scan = new Scanner(System.in);
         String staffName = scan.nextLine();
 
-        System.out.println("Enter Updates staff salary");
+        System.out.println("Enter Updated staff salary");
         scan = new Scanner(System.in);
         Double salary = scan.nextDouble();
 
@@ -77,7 +78,7 @@ public class StaffController {
                 staffList.remove(person);
                 Staff staff = new Staff();
                 staff.setId(id);
-                staff.setUsername(staffName);
+                staff.setName(staffName);
                 staff.setSalary(salary);
                 staffList.add(staff);
                 break;

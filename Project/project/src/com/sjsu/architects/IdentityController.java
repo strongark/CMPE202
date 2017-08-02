@@ -31,15 +31,6 @@ public class IdentityController {
 
     public static int identity = 0;
 
-    public static int getIdentity() {
-        return identity;
-    }
-
-    public static void setIdentity(int identity) {
-        IdentityController.identity = identity;
-    }
-
-
 
     public void signUp(int accountType) {
         //console for input
@@ -99,7 +90,7 @@ public class IdentityController {
         String passWord = scan.nextLine();
         for(Person person: accountList)
         {
-            if((person.getUsername() == userName) && (person.getPassword() == passWord))
+            if((person.getUsername().equals(userName)) && (person.getPassword().equals(passWord)))
             {
                 return true;
             }

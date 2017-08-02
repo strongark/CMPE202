@@ -47,16 +47,21 @@ public class Main {
             scan = new Scanner(System.in);
             int iOperation = scan.nextInt();
             if (iOperation == 1) {
+                MemberController memberOperations = new MemberController();
+                memberOperations.checkRoomAvailablility();
 
             }
             else if (iOperation == 2) {
 
                 do {
                     System.out.println(" Please Select the Account Type you want to Sign In as ");
-                    System.out.println("   1. Manager   | 2. Staff   | 3. Carton Hotel Member  ");
+                    System.out.println("   1. Manager   | 2. Staff   | 3. Carton Hotel Member | 0. Exit   ");
                     scan = new Scanner(System.in);
                     int UserType = scan.nextInt();
                     IdentityController login = IdentityController.getInstance();
+                    if(UserType == 0){
+                        break;
+                    }
                     int userId = login.signIn();
 
                     if(userId != -1) {
@@ -126,7 +131,7 @@ public class Main {
             int iOperation = scan.nextInt();
             StaffController staffcontroller = new StaffController();
             RoomController roomcontroller = new RoomController();
-            PromotionController promotionController = new PromotionController();
+            PromotionController promotionController = PromotionController.getInstance();
             if (iOperation == 1) {
                 staffcontroller.createStaff(manager);
 
@@ -146,7 +151,7 @@ public class Main {
                 roomcontroller.updateRoom(manager,hotel);
 
             }else if (iOperation == 7){
-                Member memberPromotion = new Member(promotionController);
+              //  Member memberPromotion = new Member(promotionController);
                 promotionController.createPromotion();
 
             }else if (iOperation == 0){

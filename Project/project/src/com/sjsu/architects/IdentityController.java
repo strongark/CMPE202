@@ -26,6 +26,7 @@ public class IdentityController {
     }
 
     public static int identity = 0;
+    PromotionController promotionController = PromotionController.getInstance();
 
 
     public int signUp(int accountType) {
@@ -59,7 +60,7 @@ public class IdentityController {
                 accountList.add(staff);
                 returnID = staff.getId();
             case 3:
-                Member member = new Member(); //TODO promotion null fails
+                Member member = new Member(promotionController); //TODO promotion null fails
                 member.setId(++identity);
                 member.username = userName;
                 member.password = passWord;

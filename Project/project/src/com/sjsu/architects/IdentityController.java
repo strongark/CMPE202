@@ -60,7 +60,7 @@ public class IdentityController {
                 staff.name = fullname;
                 accountList.add(staff);
             case 3:
-                Member member = new Member();
+                Member member = new Member(null);
                 member.setId(identity++);
                 member.username = userName;
                 member.password = passWord;

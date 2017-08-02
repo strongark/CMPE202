@@ -7,7 +7,9 @@ public class Promotion {
 
     private String promotionID = null;
     private Date promotionStartDate = new Date();
-    private Date promotionValidity = new Date();
+
+    private Date promotionEndDate = new Date();
+    private boolean promotionValidity;
     private double discountRatio;
 
     public String getPromotionID() {
@@ -26,11 +28,19 @@ public class Promotion {
         this.promotionStartDate = promotionStartDate;
     }
 
-    public Date getPromotionValidity() {
+    public Date getPromotionEndDate() {
+        return promotionEndDate;
+    }
+
+    public void setPromotionEndDate(Date promotionEndDate) {
+        this.promotionEndDate = promotionEndDate;
+    }
+
+    public boolean getPromotionValidity() {
         return promotionValidity;
     }
 
-    public void setPromotionValidity(Date promotionValidity) {
+    public void setPromotionValidity(boolean promotionValidity) {
         this.promotionValidity = promotionValidity;
     }
 

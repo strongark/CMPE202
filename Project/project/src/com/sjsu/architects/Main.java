@@ -134,6 +134,7 @@ public class Main {
             int iOperation = scan.nextInt();
             StaffController staffcontroller = new StaffController();
             RoomController roomcontroller = new RoomController();
+            PromotionController promotionController = new PromotionController();
             if (iOperation == 1) {
                 staffcontroller.createStaff(manager);
 
@@ -153,6 +154,8 @@ public class Main {
                 roomcontroller.updateRoom(manager,hotel);
 
             }else if (iOperation == 7){
+                Member memberPromotion = new Member(promotionController);
+                promotionController.createPromotion();
 
             }else if (iOperation == 0){
                 break;

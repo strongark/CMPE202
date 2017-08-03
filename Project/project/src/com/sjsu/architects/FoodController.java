@@ -21,6 +21,8 @@ public class FoodController {
     }
 
     public void orderFood(int bookingID){
+        HashMap<Integer, MemberBookingProxy> memberBooking = RoomBooking.getMemberRoomBookings();
+        MemberBookingProxy member = memberBooking.get(bookingID);
 
         Food food = new Food();
         food.setItemName("Egg");
@@ -33,7 +35,12 @@ public class FoodController {
 
         FoodBooking booking = new FoodBooking();
         booking.foodList(FooServices);
-        //booking.setDateOfBooking("");//TODO need to set date
+        booking.setMember(member.bookings().getMember());
+
+
+        for (Food foodsrv:FooServices)
+            booking.appendDescription(foodsrv.getItemName());
+
 
         HashMap<Integer, FoodBooking> foodBookingHashMap = new HashMap<>();
         foodBookingHashMap.put(bookingID, booking);

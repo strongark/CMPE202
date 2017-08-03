@@ -69,4 +69,8 @@ public class Booking {
     public void paid(){
         isPaid=true;
     }
+
+    public void appendDescription(String content){
+        description+=" | "+content;
+    }
 }

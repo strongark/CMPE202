@@ -198,10 +198,12 @@ public class Main {
             }else if (iOperation == 5){
 
             }else if (iOperation == 6){
-                System.out.println("Enter Booking ID ");
-                scan = new Scanner(System.in);
-                int bookingid = scan.nextInt();
-                memberOperations.viewBookings(bookingid);
+//                System.out.println("Enter Booking ID ");
+//                scan = new Scanner(System.in);
+//                int bookingid = scan.nextInt();
+//                memberOperations.viewBookings(bookingid);
+                BillController controller = new BillController();
+                controller.run();
             }else if (iOperation == 7){
                 System.out.println("Enter Booking ID ");
                 scan = new Scanner(System.in);

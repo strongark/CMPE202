@@ -22,6 +22,9 @@ public class SpaServiceController {
 
     public void bookSpaServices(int bookingID){
 
+        HashMap<Integer, MemberBookingProxy> memberBooking = RoomBooking.getMemberRoomBookings();
+        MemberBookingProxy member = memberBooking.get(bookingID);
+
         SpaService massage = new SpaService();
         massage.setServiceName("Massage Service");
         massage.setPrice(100);
@@ -33,6 +36,10 @@ public class SpaServiceController {
 
         SpaBooking booking = new SpaBooking();
         booking.setSpaServices(spaServices);
+        booking.setMember(member.bookings().getMember());
+        for (SpaService spaService:spaServices)
+            booking.appendDescription(spaService.getServiceName());
+
         //booking.setDateOfBooking("");//TODO need to set date
 
         HashMap<Integer, SpaBooking> spaBookingHashMap = new HashMap<>();

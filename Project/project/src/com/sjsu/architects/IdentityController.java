@@ -97,13 +97,8 @@ public class IdentityController {
             {
                 return person.getId();
             }
-            else{
-
-                System.out.println(" User Name and Password does not match  ");
-                return -1;
-            }
-
         }
+        System.out.println(" User Name and Password does not match  ");
         return -1;
     }
 
@@ -125,12 +120,18 @@ public class IdentityController {
         accountList.add(manager);
 
         Staff staff = new Staff();
-        manager.setId(++identity);
-        manager.username = "staff";
-        manager.password = "staff";
-        manager.name = "The Staff";
-        accountList.add(manager);
+        staff.setId(++identity);
+        staff.username = "staff";
+        staff.password = "staff";
+        staff.name = "The Staff";
+        accountList.add(staff);
 
+        Member member = new Member();
+        member.setId(++identity);
+        member.username = "member";
+        member.password = "member";
+        member.name = "The Member";
+        accountList.add(member);
     }
 
     public void setAccountList(ArrayList<Person> staffList){

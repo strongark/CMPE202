@@ -44,7 +44,7 @@ public class SpaBooking extends Booking {
 
     @Override
     public void paid() {
-        spaService.get(getBookingID()).paid();
+        spaService.get(getBookingID()).isPaid=true;
     }
 
 }

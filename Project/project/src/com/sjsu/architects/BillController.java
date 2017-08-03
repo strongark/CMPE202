@@ -32,25 +32,31 @@ public class BillController {
     }
 
     public void viewUnpaidBookingOfMember(Member member){
+
         double totalCost=0;
+        System.out.println("Unpaid Booking for Member : "+member.name);
+        System.out.println("====================================================");
+
         for(Booking booking:RoomBooking.getUnpaidBookingOfMember(member.getId())){
             double bookingCost=booking.cost();
-            System.out.printf("%30s%5f%n",booking.getDescription(),bookingCost);
+            System.out.printf("%-40s%2f%n",booking.getDescription(),bookingCost);
             totalCost+=bookingCost;
         }
 
         for(FoodBooking booking:FoodBooking.getUnpaidBookingOfMember(member.getId())){
             double bookingCost=booking.cost();
-            System.out.printf("%30s%5f%n",booking.getDescription(),bookingCost);
+            System.out.printf("%-40s%2f%n",booking.getDescription(),bookingCost);
             totalCost+=bookingCost;
         }
 
         for(SpaBooking booking:SpaBooking.getUnpaidBookingOfMember(member.getId())){
             double bookingCost=booking.cost();
-            System.out.printf("%30s%5f%n",booking.getDescription(),bookingCost);
+            System.out.printf("%-40s%2f%n",booking.getDescription(),bookingCost);
             totalCost+=bookingCost;
         }
-        System.out.printf("%30s%5f%n","Total",totalCost);
+
+        System.out.println("====================================================");
+        System.out.printf("%-40s%2f%n","Total",totalCost);
     }
 
     public void payBill(int billId){

@@ -36,11 +36,11 @@ public class Bill {
         System.out.println("====================================================");
         for (Booking booking:bookingArrayList){
             double bookingCost=booking.cost();
-            System.out.printf("%30s%5f%n",booking.getDescription(),bookingCost);
+            System.out.printf("%-40s%2f%n",booking.getDescription(),bookingCost);
             result+=bookingCost;
         }
         System.out.println("====================================================");
-        System.out.printf("%30s%5f%n","Total",result);
+        System.out.printf("%-40s%2f%n","Total",result);
     }
 
     public void pay(PaymentStrategy paymentStrategy){

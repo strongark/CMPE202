@@ -112,6 +112,10 @@ public class MemberController {
                     if(ifRoomAvailable.isRoomAvailable() && ifRoomAvailable.getRoomType().equals(room.getRoomType())) {
                         ifRoomAvailable.setRoomAvailable(false);
                         roomBookings.add(ifRoomAvailable);
+
+                        booking.appendDescription("\nRoom "+ifRoomAvailable.getRoomNumber());
+                        booking.appendDescription(ifRoomAvailable.getRoomType());
+                        booking.appendDescription(ifRoomAvailable.getBedType());
                         break;
                     }
                 }
@@ -121,6 +125,7 @@ public class MemberController {
             booking.setBookingID();
             booking.setMember(member);
             booking.setBookRoom(roomBookings);
+
             bookingProxy.book(booking);
 
             HashMap<Integer, MemberBookingProxy> list = new HashMap<>();

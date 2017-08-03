@@ -14,8 +14,8 @@ public class Booking {
     private Member member  = null;
     private Date dateOfBooking;
     private Date endDateOfBooking;
-    private boolean isPaid=false;
-    private String description;
+    protected boolean isPaid=false;
+    private String description="";
 
     public int getBookingID() {
         return bookingID;
@@ -71,6 +71,8 @@ public class Booking {
     }
 
     public void appendDescription(String content){
-        description+=" | "+content;
+        if (!description.isEmpty())
+            description+="|";
+        description+=" "+content;
     }
 }

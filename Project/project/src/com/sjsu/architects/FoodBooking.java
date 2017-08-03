@@ -43,7 +43,7 @@ public class FoodBooking extends Booking{
 
     @Override
     public void paid() {
-        foodOrders.get(getBookingID()).paid();
+        foodOrders.get(getBookingID()).isPaid=true;
     }
 
 }

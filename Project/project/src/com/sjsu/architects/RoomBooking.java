@@ -57,7 +57,16 @@ public class RoomBooking extends Booking  {
 
     @Override
     public void paid() {
-        memberRoomBookings.get(getBookingID()).bookings().paid();
+        Booking booking= memberRoomBookings.get(getBookingID()).bookings();
+        booking.isPaid=true;
     }
 
+    @Override
+    public double cost() {
+        double totalCost=0;
+        for (Room room:getBookedRooms()){
+            totalCost+=room.getRoomPrice();
+        }
+        return totalCost;
+    }
 }

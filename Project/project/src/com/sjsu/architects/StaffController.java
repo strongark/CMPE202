@@ -29,14 +29,11 @@ public class StaffController {
 
         ArrayList<Person> staffList = manager.getStaffList();
 
-
         staffList.add(staff);
-
-
         idController.setAccountList(staffList);
-
-
     }
+
+
 
     public void deleteStaff(Manager manager){
 
@@ -84,7 +81,6 @@ public class StaffController {
                 break;
             }
         }
-
         identityController.setAccountList(staffList);
 
     }

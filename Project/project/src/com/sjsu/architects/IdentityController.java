@@ -121,7 +121,19 @@ public class IdentityController {
         manager.setId(++identity);
         manager.username = "admin";
         manager.password = "admin";
-        manager.name = "The Architect";
+        manager.name = "The Manager";
         accountList.add(manager);
+
+        Staff staff = new Staff();
+        manager.setId(++identity);
+        manager.username = "staff";
+        manager.password = "staff";
+        manager.name = "The Staff";
+        accountList.add(manager);
+
+    }
+
+    public void setAccountList(ArrayList<Person> staffList){
+        this.accountList=staffList;
     }
 }

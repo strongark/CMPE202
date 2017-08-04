@@ -18,7 +18,7 @@ public class StandardBookingController {
         booking.setBookingID();
         booking.setDateOfBooking(new Date("9999/07/31"));
         booking.setMember(member);
-        this.booking = booking;
+        this.booking = booking; 
     }
 
     public void bookRoom(Booking booking){
@@ -44,7 +44,6 @@ public class StandardBookingController {
 
     public Booking getRoomBookings(){
         return booking;
-
     }
 
 }

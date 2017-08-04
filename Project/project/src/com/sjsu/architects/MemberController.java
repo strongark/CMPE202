@@ -45,7 +45,7 @@ public class MemberController {
         System.out.println(" -------------------------------------------------- ");
         System.out.println(" |   Room Type | " + "Bed Type | " + "Price | " + " Availability |");
         System.out.println(" --------------------------------------------------");
-        System.out.println(" |   Single    | " + "Twin     | " + "$100  |     " + singleRoom + "        | ");
+        System.out.println(" |   Single    | " + "Single   | " + "$100  |     " + singleRoom + "        | ");
         System.out.println(" |   Double    | " + "Double   | " + "$150  |     " + doubleRoom + "        | ");
         System.out.println(" |   Deluxe    | " + "Queen    | " + "$200  |     " + deluxeRoom + "        | ");
         System.out.println(" |   Suite     | " + "King     | " + "$250  |     " + suite + "        | ");
@@ -53,6 +53,74 @@ public class MemberController {
         System.out.println(" Total Rooms Available: " + totalAvailable);
 
     }
+
+    /**
+     * Manager View  Room's
+     */
+
+    public void managerViewRoom(){
+        int totalAvailable = 0;
+        int singleRoom = 0;
+        int totalSingleRooms = 0;
+        int doubleRoom = 0;
+        int totalDoubleRooms = 0;
+        int deluxeRoom = 0;
+        int totaldeluxeRoom = 0;
+        int suite = 0;
+        int totalSuite = 0;
+
+        //Actual list of rooms
+        ArrayList<Room> roomAvailability = Hotel.getRoomList();
+        int size = roomAvailability.size();
+
+        if(size > 0) {
+            for (Room ifRoomAvailable : roomAvailability) {
+                //if (ifRoomAvailable.isRoomAvailable()) {
+                    if(ifRoomAvailable.getRoomType().equals("Single Room")){
+                        if(ifRoomAvailable.isRoomAvailable()) {
+                            singleRoom++;
+                            totalAvailable++;
+                        }
+                        totalSingleRooms++;
+                    } else if(ifRoomAvailable.getRoomType().equals("Double Room")){
+                        if(ifRoomAvailable.isRoomAvailable()) {
+                            doubleRoom++;
+                            totalAvailable++;
+                        }
+                        totalDoubleRooms++;
+                    } else if(ifRoomAvailable.getRoomType().equals("Deluxe Room")){
+                        if(ifRoomAvailable.isRoomAvailable()){
+                            deluxeRoom++;
+                            totalAvailable++;
+                        }
+                        totaldeluxeRoom++;
+                    } else if(ifRoomAvailable.getRoomType().equals("Suite")){
+                        if(ifRoomAvailable.isRoomAvailable()){
+                            suite++;
+                            totalAvailable++;
+                        }
+                       totalSuite++;
+                    }
+
+                //}
+            }
+        }
+
+        System.out.println(" ------------------------------------------------------------------------ ");
+        System.out.println(" |   Room Type | " + "Bed Type | " + "Price | " + " Availability |"        +" Total Rooms  |"  );
+        System.out.println(" ------------------------------------------------------------------------");
+        System.out.println(" |   Single    | " + "Single   | " + "$100  |     " + singleRoom + "        |      "  +totalSingleRooms+ "      |" );
+        System.out.println(" |   Double    | " + "Double   | " + "$150  |     " + doubleRoom + "        |      "  +totalDoubleRooms+ "      |" );
+        System.out.println(" |   Deluxe    | " + "Queen    | " + "$200  |     " + deluxeRoom + "        |      "  + totaldeluxeRoom+ "      |" );
+        System.out.println(" |   Suite     | " + "King     | " + "$250  |     " + suite + "        |      " + totalSuite+"      |");
+        System.out.println(" -------------------------------------------------------------------------");
+        System.out.println(" Total Rooms  " + size);
+        System.out.println(" Total Available Rooms " + totalAvailable);
+
+    }
+
+
+
 
 
     /**

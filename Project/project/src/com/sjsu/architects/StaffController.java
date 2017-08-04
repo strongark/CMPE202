@@ -28,6 +28,15 @@ public class StaffController {
         scan = new Scanner(System.in);
         staff.setSalary(scan.nextDouble());
 
+        System.out.println("Enter user name");
+        scan = new Scanner(System.in);
+        staff.setUsername(scan.nextLine());
+
+        System.out.println("Enter password");
+        scan = new Scanner(System.in);
+        staff.setPassword(scan.nextLine());
+
+
         ArrayList<Person> staffList = manager.getStaffList();
 
         staffList.add(staff);
@@ -54,6 +63,25 @@ public class StaffController {
                 break;
             }
         }
+
+    }
+
+    /**
+     * View staff member
+     * @param manager
+     */
+    public void viewAllStaff(Manager manager){
+        IdentityController identityController = IdentityController.getInstance();
+        ArrayList<Person> staffList = identityController.getAccountList();
+        System.out.println(" --------------------------------------------- ");
+        System.out.println("|   Id  |  First Name        |    Salary     | ");
+        System.out.println(" ---------------------------------------------- ");
+        for(Person person : staffList){
+           if(person instanceof Staff){
+               System.out.println("|   "+person.getId()+"   |      "+person.getName()+"         |     "+((Staff) person).getSalary()+"     | ");
+           }
+        }
+       // System.out.println(" ---------------------------------------------");
 
     }
 

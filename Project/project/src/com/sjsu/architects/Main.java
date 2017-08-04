@@ -123,15 +123,15 @@ public class Main {
         do {
             System.out.println("\n Welcome " + manager.getName() + " (loggedin as : Manager)");
             System.out.println(" -----------------------------------------------------------------------");
-            System.out.println(" 1. Add Staff Member | 2. Delete Staff Member  | 3. Update Staff Member  |  " +
-                    " 4. Add Room | 5. Delete Room | 6. Update Room | 7. Generate Promotion | 0. Exit ");
+            System.out.println(" 1. Add Staff Member | 2. Delete Staff Member  | 3. Update Staff Member  | 4. View Staff  |" +
+                    " 5. Add Room | 6. Delete Room | 7. Update Room | 8. View Room | 9. Generate Promotion | 0. Exit ");
 
             int iOperation = Bootstrap.handleUserInput();
             StaffController staffcontroller = new StaffController();
             RoomController roomcontroller = new RoomController();
             PromotionController promotionController = PromotionController.getInstance();
             if (iOperation == 1) {
-                //staffcontroller.createStaff(manager);
+              //  staffcontroller.createStaff(manager);
                 IdentityController signup = IdentityController.getInstance();
                 int userId = signup.signUp(2);
 
@@ -142,15 +142,22 @@ public class Main {
                 staffcontroller.updateStaff(manager);
 
             } else if (iOperation == 4){
-                roomcontroller.createRoom(manager);
+                staffcontroller.viewAllStaff(manager);
 
             }else if (iOperation == 5){
-                roomcontroller.deleteRoom(manager);
+                roomcontroller.createRoom(manager);
 
             }else if (iOperation == 6){
-                roomcontroller.updateRoom(manager);
+                roomcontroller.deleteRoom(manager);
 
             }else if (iOperation == 7){
+                roomcontroller.updateRoom(manager);
+
+            }else if (iOperation == 8) {
+                MemberController memberOperations = new MemberController();
+                memberOperations.managerViewRoom();
+
+            }else if (iOperation == 9){
               //  Member memberPromotion = new Member(promotionController);
                 promotionController.createPromotion();
 

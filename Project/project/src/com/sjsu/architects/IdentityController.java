@@ -61,11 +61,15 @@ public class IdentityController {
                 accountList.add(manager);
                 returnID = manager.getId();
             case 2:
+                System.out.println(" Please Enter the salary");
+                scan = new Scanner(System.in);
+                Double salary = scan.nextDouble();
                 Staff staff = new Staff();
                 staff.setId(++identity);
                 staff.username = userName;
                 staff.password = passWord;
                 staff.name = fullname;
+                staff.setSalary(salary);
                 accountList.add(staff);
                 returnID = staff.getId();
             case 3:
@@ -144,7 +148,8 @@ public class IdentityController {
         staff.setId(++identity);
         staff.username = "staff";
         staff.password = "staff";
-        staff.name = "John";
+        staff.name = "Johny";
+        staff.setSalary(450);
         accountList.add(staff);
 
         Member member = new Member();

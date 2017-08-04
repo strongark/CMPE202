@@ -8,15 +8,19 @@ import java.util.Scanner;
  */
 public class RoomController {
 
-    public void createRoom(Manager manager, Hotel hotel){
+    /**
+     * Add a Room
+     * @param manager
+     */
+    public void createRoom(Manager manager){
 
-        ArrayList<Room> roomlist = hotel.getRoomList();
+        ArrayList<Room> roomlist = Hotel.getRoomList();
         Room room = new Room();
 
         System.out.println("Enter Room No.");
-        Scanner scan = new Scanner(System.in);
-        int roomNo = scan.nextInt();
-        for (Room roomsearch : hotel.getRoomList())
+
+        int roomNo = Bootstrap.handleUserInput();
+        for (Room roomsearch : roomlist)
         {
             if (roomsearch.getRoomNumber() == roomNo)
             {
@@ -28,7 +32,7 @@ public class RoomController {
         room.setRoomNumber(roomNo);
 
         System.out.println("Enter Room Type ");
-        scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         room.setRoomType(scan.nextLine());
 
         System.out.println("Enter Bed Type");
@@ -42,17 +46,20 @@ public class RoomController {
         room.setRoomAvailable(true);
 
         roomlist.add(room);
-        hotel.setRoomList(roomlist);
+        Hotel.setRoomList(roomlist);
 
     }
 
-    public void deleteRoom(Manager manager, Hotel hotel){
+    /**
+     * Delete a room
+     * @param manager
+     */
+    public void deleteRoom(Manager manager){
 
-        System.out.println("Enter Room Number to delete");
-        Scanner scan = new Scanner(System.in);
-        int id  = scan.nextInt();
+        System.out.println("\n Enter Room Number to delete");
 
-        ArrayList<Room> roomList = hotel.getRoomList();
+        int id  = Bootstrap.handleUserInput();
+        ArrayList<Room> roomList = Hotel.getRoomList();
 
         for(Room room : roomList){
             if(room.getRoomNumber() == id){
@@ -61,18 +68,21 @@ public class RoomController {
             }
         }
 
-        hotel.setRoomList(roomList);
-
+        Hotel.setRoomList(roomList);
     }
 
-    public void updateRoom(Manager manager, Hotel hotel){
+    /**
+     * Update a room
+     * @param manager
+     */
+    public void updateRoom(Manager manager){
 
         System.out.println("Enter Room Number to update");
-        Scanner scan = new Scanner(System.in);
-        int roomNo  = scan.nextInt();
+
+        int roomNo  = Bootstrap.handleUserInput();
 
         System.out.println("Enter Updated Room Type ");
-        scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         String roomType = scan.nextLine();
 
         System.out.println("Enter Updated Bed Type ");
@@ -81,9 +91,9 @@ public class RoomController {
 
         System.out.println("Enter Updates Room price");
         scan = new Scanner(System.in);
-        Double salary = scan.nextDouble();
+        Double price = scan.nextDouble();
 
-        ArrayList<Room> roomlist = hotel.getRoomList();
+        ArrayList<Room> roomlist = Hotel.getRoomList();
 
         for(Room room : roomlist){
             if(room.getRoomNumber() == roomNo){
@@ -92,55 +102,16 @@ public class RoomController {
                 roomupdate.setRoomNumber(roomNo);
                 roomupdate.setRoomType(roomType);
                 roomupdate.setBedType(bedType);
+                roomupdate.setRoomPrice(price);
                 break;
             }
         }
 
-        hotel.setRoomList(roomlist);
+        Hotel.setRoomList(roomlist);
 
     }
 
-     public void initializeRoom(Hotel hotel){
 
-         ArrayList<Room> roomlist = new ArrayList<>();
-         int singleroomNo = 100; int doubleroomNo = 200; int deluxeroomNo = 300; int suiteroomNo =400;
-         for (int i=0; i<=20; i++)
-         {
-             Room room = new Room();
-             room.setRoomNumber(singleroomNo++);
-             room.setRoomType("Single Room");
-             room.setBedType("Single Bed");
-             room.setRoomPrice(100);
-             room.setRoomAvailable(true);
-             roomlist.add(room);
-             hotel.setRoomList(roomlist);
-             Room room1 = new Room();
-             room1.setRoomNumber(doubleroomNo++);
-             room1.setRoomType("Double Room");
-             room1.setBedType("Double Bed");
-             room1.setRoomPrice(150);
-             room1.setRoomAvailable(true);
-             roomlist.add(room1);
-             hotel.setRoomList(roomlist);
-             Room room2 = new Room();
-             room2.setRoomNumber(deluxeroomNo++);
-             room2.setRoomType("Deluxe Room");
-             room2.setBedType("Queen Bed");
-             room2.setRoomPrice(200);
-             room2.setRoomAvailable(true);
-             roomlist.add(room2);
-             hotel.setRoomList(roomlist);
-             Room room3 = new Room();
-             room3.setRoomNumber(suiteroomNo++);
-             room3.setRoomType("Suite");
-             room3.setBedType("King Bed");
-             room3.setRoomPrice(250);
-             room3.setRoomAvailable(true);
-             roomlist.add(room3);
-             hotel.setRoomList(roomlist);
-
-         }
-     }
 
 
     // Testing For Room Add, Delete Update
@@ -150,28 +121,25 @@ public class RoomController {
         Hotel hotel = new Hotel();
         RoomController controller = new RoomController();
 
-        controller.createRoom(manager, hotel);
-        controller.createRoom(manager, hotel);
-        controller.createRoom(manager, hotel);
+        controller.createRoom(manager);
+        controller.createRoom(manager);
+        controller.createRoom(manager);
         for (Room room : hotel.getRoomList()) {
             System.out.println(room.getRoomNumber() + ":" + room.getRoomType() + ":" + room.getBedType() +":"+ room.getRoomPrice());
         }
 
-        controller.deleteRoom(manager,hotel);
+        controller.deleteRoom(manager);
         for (Room room : hotel.getRoomList()) {
             System.out.println(room.getRoomNumber() + ":" + room.getRoomType()+ ":" + room.getBedType() +":"+ room.getRoomPrice());
 
         }
 
-        controller.updateRoom(manager,hotel);
+        controller.updateRoom(manager);
         for (Room room : hotel.getRoomList()) {
             System.out.println(room.getRoomNumber() + ":" + room.getRoomType()+ ":" + room.getBedType() +":"+ room.getRoomPrice());
 
         }
 
-        controller.initializeRoom(hotel);
-        for (Room room : hotel.getRoomList()) {
-            System.out.println(room.getRoomNumber() + ":" + room.getRoomType() + ":" + room.getBedType() + ":" + room.getRoomPrice());
-        }
+
     }
 }

@@ -4,10 +4,8 @@ import java.util.Date;
 
 public class Promotion {
 
-
     private String promotionID = null;
     private Date promotionStartDate = new Date();
-
     private Date promotionEndDate = new Date();
     private boolean promotionValidity;
     private double discountRatio;

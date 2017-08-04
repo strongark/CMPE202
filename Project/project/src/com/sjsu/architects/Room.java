@@ -5,6 +5,7 @@ public class Room {
     private int roomNumber;
     private double roomPrice = 0.0;
     private boolean roomAvailable = true;
+    private boolean checkedinRoom = true;
     private String roomType = null;
     private String bedType = null;
 
@@ -48,8 +49,11 @@ public class Room {
         this.bedType = bedType;
     }
 
+    public boolean isCheckedinRoom() {
+        return checkedinRoom;
+    }
 
-
-
-
+    public void setCheckedinRoom(boolean checkedinRoom) {
+        this.checkedinRoom = checkedinRoom;
+    }
 }

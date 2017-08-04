@@ -10,6 +10,9 @@ public class StandardBookingController {
 
     Booking booking = new Booking();
 
+    /**
+     * Constructor
+     */
     public StandardBookingController( ){
         Member member = new Member();
         member.setEmail_address("");
@@ -47,3 +50,4 @@ public class StandardBookingController {
     }
 
 }
+

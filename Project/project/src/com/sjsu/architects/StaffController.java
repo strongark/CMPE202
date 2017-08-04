@@ -8,6 +8,10 @@ import java.util.Scanner;
  */
 public class StaffController {
 
+    /**
+     * Add a staff
+     * @param manager
+     */
     public void createStaff(Manager manager){
 
         IdentityController idController = IdentityController.getInstance();
@@ -18,14 +22,20 @@ public class StaffController {
         Scanner scan = new Scanner(System.in);
         staff.setName(scan.nextLine());
 
-//        System.out.println("Enter staff id");
-//        scan = new Scanner(System.in);
-//        staff.setId(scan.nextInt());
         staff.setId(++IdentityController.identity);
 
         System.out.println("Enter staff salary");
         scan = new Scanner(System.in);
         staff.setSalary(scan.nextDouble());
+
+        System.out.println("Enter user name");
+        scan = new Scanner(System.in);
+        staff.setUsername(scan.nextLine());
+
+        System.out.println("Enter password");
+        scan = new Scanner(System.in);
+        staff.setPassword(scan.nextLine());
+
 
         ArrayList<Person> staffList = manager.getStaffList();
 
@@ -34,12 +44,15 @@ public class StaffController {
     }
 
 
-
+    /**
+     * Delete a staff
+     * @param manager
+     */
     public void deleteStaff(Manager manager){
 
         System.out.println("Enter staff id to delete");
-        Scanner scan = new Scanner(System.in);
-        int id  = scan.nextInt();
+
+        int id  = Bootstrap.handleUserInput();
 
         IdentityController identityController = IdentityController.getInstance();
         ArrayList<Person> staffList = identityController.getAccountList();
@@ -53,14 +66,37 @@ public class StaffController {
 
     }
 
+    /**
+     * View staff member
+     * @param manager
+     */
+    public void viewAllStaff(Manager manager){
+        IdentityController identityController = IdentityController.getInstance();
+        ArrayList<Person> staffList = identityController.getAccountList();
+        System.out.println(" --------------------------------------------- ");
+        System.out.println("|   Id  |  First Name        |    Salary     | ");
+        System.out.println(" ---------------------------------------------- ");
+        for(Person person : staffList){
+           if(person instanceof Staff){
+               System.out.println("|   "+person.getId()+"   |      "+person.getName()+"         |     "+((Staff) person).getSalary()+"     | ");
+           }
+        }
+       // System.out.println(" ---------------------------------------------");
+
+    }
+
+    /**
+     * Update staff member
+     * @param manager
+     */
     public void updateStaff(Manager manager){
 
         System.out.println("Enter staff id to update");
-        Scanner scan = new Scanner(System.in);
-        int id  = scan.nextInt();
+
+        int id  = Bootstrap.handleUserInput();
 
         System.out.println("Enter Updated staff name ");
-        scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         String staffName = scan.nextLine();
 
         System.out.println("Enter Updated staff salary");

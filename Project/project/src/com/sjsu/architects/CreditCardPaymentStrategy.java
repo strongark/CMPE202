@@ -10,6 +10,13 @@ public class CreditCardPaymentStrategy implements PaymentStrategy {
     private String cvv;
     private String dateOfExpiry;
 
+    /**
+     * Constructor
+     * @param name
+     * @param cardNumber
+     * @param cvv
+     * @param dateOfExpiry
+     */
     public CreditCardPaymentStrategy(String name, String cardNumber, String cvv, String dateOfExpiry){
         this.name=name;
         this.cardNumber=cardNumber;

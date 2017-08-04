@@ -23,6 +23,9 @@ public class PromotionController {
         return instance;
     }
 
+    /**
+     * Generate Promotion
+     */
     public void createPromotion(){
 
         Promotion promotion = new Promotion();
@@ -59,7 +62,7 @@ public class PromotionController {
 
         promotion.setPromotionEndDate(endPromotion);
 
-        System.out.println("Is Promotion Valid ");
+        System.out.println("Is Promotion Valid (true/false)");
         promotion.setPromotionValidity(scan.nextBoolean());
 
         System.out.println("Set Discount Amount for promotion code ");
@@ -68,12 +71,19 @@ public class PromotionController {
         notifyAllObservers();
     }
 
+    /**
+     * Subscribe a member using observer design
+     * @param observer
+     */
     public void subscribe(Member observer)
     {
         observers.add(observer);
     }
 
 
+    /**
+     * Notify a member using observer design
+     */
     public void notifyAllObservers(){
 
         for(Member observer: observers)

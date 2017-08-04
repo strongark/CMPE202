@@ -104,6 +104,8 @@ public class BillController {
                     Member member = (Member) accountList.getAccountById(userID);
                     if(member!=null){
                         viewUnpaidBookingOfMember(member);
+                    } else {
+                        System.out.println("Memeber not found");
                     }
                     break;
                 case 2:
@@ -114,6 +116,8 @@ public class BillController {
                     if(member!=null){
                         Bill bill=createBill(member);
                         bill.printBillDetail();
+                    } else {
+                        System.out.println("Memeber not found");
                     }
                     break;
 
@@ -165,5 +169,9 @@ public class BillController {
                 return bill;
         }
         return null;
+    }
+
+    public static void main(String[] args){
+
     }
 }

@@ -91,7 +91,7 @@ public class RoomController {
 
         System.out.println("Enter Updates Room price");
         scan = new Scanner(System.in);
-        Double salary = scan.nextDouble();
+        Double price = scan.nextDouble();
 
         ArrayList<Room> roomlist = Hotel.getRoomList();
 
@@ -102,6 +102,7 @@ public class RoomController {
                 roomupdate.setRoomNumber(roomNo);
                 roomupdate.setRoomType(roomType);
                 roomupdate.setBedType(bedType);
+                roomupdate.setRoomPrice(price);
                 break;
             }
         }

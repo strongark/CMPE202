@@ -267,9 +267,31 @@ public class MemberController {
      */
     public void cancelBooking(int bookingID) {
         HashMap<Integer, MemberBookingProxy> bookings = RoomBooking.getMemberRoomBookings();
+        ArrayList<Room> roomlist = Hotel.getRoomList();
+
         if(bookings.size() > 0) {
-            bookings.remove(bookingID);
-            System.out.println("\n Your booking with id " + bookingID + " is cancelled");
+
+            MemberBookingProxy membeBooking = bookings.get(bookingID);
+            if(membeBooking != null ){
+                bookings.remove(bookingID);
+                RoomBooking booking = (RoomBooking) membeBooking.bookings();
+
+                System.out.println("\n Your booking with id " + bookingID + " is cancelled");
+                ArrayList<Room> bookedRooms = booking.getBookedRooms();
+
+                for(Room bookedrooms : bookedRooms) {
+                    for (Room rooms : roomlist) {
+                        if (bookedrooms.getRoomNumber() == rooms.getRoomNumber()) {
+                            //rooms.setCheckedinRoom(false);
+                            rooms.setRoomAvailable(true);
+                        }
+                    }
+                }
+
+                Hotel.setRoomList(roomlist);
+            }
+
+
         }
         else
             System.out.println("\n Your booking with id " + bookingID + " is not FOUND");

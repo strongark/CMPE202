@@ -72,8 +72,8 @@ public class Main {
 
 
                 IdentityController signup = IdentityController.getInstance();
-                int userId = signup.signUp(2);
-                System.out.println("Pleae note down Customer ID " + userId);
+                int userId = signup.signUp(3);
+                System.out.println("Please note down Customer ID " + userId);
                 CustomerMenu(userId);
 
                 /*do {
@@ -182,7 +182,7 @@ public class Main {
             MemberController memberOperations = new MemberController();
             System.out.println("\n Welcome (loggedin as : Staff) ");
             System.out.println(" -----------------------------------------------------------------------");
-            System.out.println(" 1. Check For Room Availability | 2. Book Room  | 3. Member Sign Up " +
+            System.out.println(" 1. StaffMenuCheck For Room Availability | 2. Book Room  | 3. Member Sign Up " +
                     "|  4. Check In Customer | 5. Check Out Customer | 6. Generate Bill " +
                     "|  7. Book Spa | 8. Order Food | 0. Exit ");
 
@@ -197,8 +197,10 @@ public class Main {
 
                 IdentityController accountList = IdentityController.getInstance();
                 Member member = (Member) accountList.getAccountById(userID);
-                memberOperations.bookRoom(member);
-
+                if(member != null)
+                    memberOperations.bookRoom(member);
+                else
+                    System.err.println("Member not found");
             } else if (iOperation == 3) {
                 IdentityController signup = IdentityController.getInstance();
                 int userId = signup.signUp(3);
@@ -214,8 +216,9 @@ public class Main {
 
             } else if (iOperation == 5){
                 System.out.println("Enter Booking ID ");
-
                 int bookingid = Bootstrap.handleUserInput();
+                RoomBooking checkin = new RoomBooking();
+                checkin.checkout(bookingid);
 
             } else if (iOperation == 6){
                 BillController controller = new BillController();

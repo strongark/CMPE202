@@ -17,40 +17,47 @@ public class FoodController {
         HashMap<Integer, MemberBookingProxy> memberBooking = RoomBooking.getMemberRoomBookings();
         MemberBookingProxy member = memberBooking.get(bookingID);
 
-        ArrayList<Food> foodItems = Hotel.getFoodItems();
-        ArrayList<Food> selectedFood = new ArrayList<>();
-        int UserType = -1;
-        do {
+        if(member !=null) {
+            ArrayList<Food> foodItems = Hotel.getFoodItems();
+            ArrayList<Food> selectedFood = new ArrayList<>();
+            int UserType = -1;
+            do {
 
-            for (int i =0; i< foodItems.size(); i++) {
-                System.out.println(foodItems.get(i).getItemNumber() + ". " + foodItems.get(i).getItemName() + " " + foodItems.get(i).getPrice());
+                for (int i = 0; i < foodItems.size(); i++) {
+                    System.out.println(foodItems.get(i).getItemNumber() + ". " + foodItems.get(i).getItemName() + " " + foodItems.get(i).getPrice());
+                }
+                System.out.println("0. Exit");
+                UserType = Bootstrap.handleUserInput();
+
+                if (UserType != 0) {
+                    Food service = foodItems.get((UserType - 1));
+                    selectedFood.add(foodItems.get(UserType));
+                    selectedFood.add(service);
+                    System.out.println("Customer " + member.bookings().getMember().getName() + " requested " + service.getItemName());
+
+                } else if (UserType == 0) {
+                    break;
+                } else {
+                    break;
+                }
             }
-            System.out.println("0. Exit");
-            UserType = Bootstrap.handleUserInput();
-            if (UserType != 0){
-                selectedFood.add(foodItems.get(UserType));
-            }
-            else if(UserType==0)
-            {
-                break;
-            } else {
-                break;
-            }
+            while (1 != 0);
+
+            FoodBooking booking = new FoodBooking();
+            booking.foodList(selectedFood);
+            booking.setMember(member.bookings().getMember());
+
+
+            for (Food foodsrv : selectedFood)
+                booking.appendDescription(foodsrv.getItemName());
+
+            HashMap<Integer, FoodBooking> foodBookingHashMap = new HashMap<>();
+            foodBookingHashMap.put(bookingID, booking);
+            FoodBooking.setFoodOrders(foodBookingHashMap);
+        } else {
+            System.out.println("No booking found");
         }
-        while (1 != 0);
 
-        FoodBooking booking = new FoodBooking();
-        booking.foodList(selectedFood);
-        booking.setMember(member.bookings().getMember());
-
-
-        for (Food foodsrv:selectedFood)
-            booking.appendDescription(foodsrv.getItemName());
-
-        HashMap<Integer, FoodBooking> foodBookingHashMap = new HashMap<>();
-        foodBookingHashMap.put(bookingID, booking);
-        FoodBooking.setFoodOrders(foodBookingHashMap);
-        System.out.println("Customer " + member.bookings().getMember() + " requested Food!");
     }
 
     public static void main(String[] args){

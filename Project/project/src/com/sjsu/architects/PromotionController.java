@@ -62,7 +62,7 @@ public class PromotionController {
 
         promotion.setPromotionEndDate(endPromotion);
 
-        System.out.println("Is Promotion Valid ");
+        System.out.println("Is Promotion Valid (true/false)");
         promotion.setPromotionValidity(scan.nextBoolean());
 
         System.out.println("Set Discount Amount for promotion code ");

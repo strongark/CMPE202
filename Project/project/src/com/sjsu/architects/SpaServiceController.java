@@ -19,43 +19,47 @@ public class SpaServiceController {
         HashMap<Integer, MemberBookingProxy> spaBooking = RoomBooking.getMemberRoomBookings();
         MemberBookingProxy member = spaBooking.get(bookingID);
 
-        ArrayList<SpaService> spaItems = Hotel.getServiceList();
-        ArrayList<SpaService> selectedSpaService = new ArrayList<>();
-        int UserType = -1;
+        if(member !=null) {
+            ArrayList<SpaService> spaItems = Hotel.getServiceList();
+            ArrayList<SpaService> selectedSpaService = new ArrayList<>();
+            int UserType = -1;
 
-        do {
+            do {
 
-            for (int i =0; i< spaItems.size(); i++) {
-                System.out.println(spaItems.get(i).getServiceNumber() + ". " + spaItems.get(i).getServiceName() + " " + spaItems.get(i).getPrice());
-            }
-            System.out.println("0. Exit");
+                for (int i = 0; i < spaItems.size(); i++) {
+                    System.out.println(spaItems.get(i).getServiceNumber() + ". " + spaItems.get(i).getServiceName() + " " + spaItems.get(i).getPrice());
+                }
+                System.out.println("0. Exit");
 
-            UserType = Bootstrap.handleUserInput();
-            if (UserType != 0){
-                selectedSpaService.add(spaItems.get(UserType));
+                UserType = Bootstrap.handleUserInput();
+                if (UserType != 0) {
+                    SpaService service = spaItems.get((UserType - 1));
+                    selectedSpaService.add(service);
+                    System.out.println("Customer " + member.bookings().getMember().getName() + " requested " + service.getServiceName());
+
+                } else if (UserType == 0) {
+                    break;
+                } else {
+                    break;
+                }
             }
-            else if(UserType==0)
-            {
-                break;
-            } else {
-                break;
-            }
+            while (1 != 0);
+
+
+            SpaBooking booking = new SpaBooking();
+            booking.setSpaServices(selectedSpaService);
+            booking.setMember(member.bookings().getMember());
+
+            for (SpaService spaService : selectedSpaService)
+                booking.appendDescription(spaService.getServiceName());
+
+            HashMap<Integer, SpaBooking> spaBookingHashMap = new HashMap<>();
+            spaBookingHashMap.put(bookingID, booking);
+            SpaBooking.setSpaService(spaBookingHashMap);
+        } else {
+            System.out.println("No Booking found");
         }
-        while (1 != 0);
 
-
-        SpaBooking booking = new SpaBooking();
-        booking.setSpaServices(selectedSpaService);
-        booking.setMember(member.bookings().getMember());
-
-        for (SpaService spaService:selectedSpaService)
-            booking.appendDescription(spaService.getServiceName());
-
-        HashMap<Integer, SpaBooking> spaBookingHashMap = new HashMap<>();
-        spaBookingHashMap.put(bookingID, booking);
-        SpaBooking.setSpaService(spaBookingHashMap);
-
-        System.out.println("Customer " + member.bookings().getMember() + " requested spa service!");
     }
 
 

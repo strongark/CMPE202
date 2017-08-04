@@ -143,7 +143,7 @@ public class Bootstrap {
         FooServices.add(food3);
 
         Food food4 = new Food();
-        food4.setItemName("");
+        food4.setItemName("Sandwich");
         food4.setPrice(12);
         food4.setItemNumber(5);
         FooServices.add(food4);

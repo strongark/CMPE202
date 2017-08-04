@@ -23,20 +23,25 @@ public class RoomBooking extends Booking  {
     public void checkin(int bookingID){
         MemberBookingProxy booking= memberRoomBookings.get(bookingID);
 
-        RoomBooking roomBooking = (RoomBooking) booking.bookings();
-        ArrayList<Room> rooms=  roomBooking.getBookedRooms();
+        if(booking != null) {
+            RoomBooking roomBooking = (RoomBooking) booking.bookings();
+            ArrayList<Room> rooms = roomBooking.getBookedRooms();
 
-        //Actual list of rooms
-        int size = rooms.size();
+            //Actual list of rooms
+            int size = rooms.size();
 
-        if(size > 0) {
-            System.out.println("Customer is checked in to : ");
-            for (Room room : rooms) {
-                if (room.isRoomAvailable()) {
-                    room.setRoomAvailable(false);
+            if (size > 0) {
+                System.out.println("Customer is checked in to : ");
+                for (Room room : rooms) {
+                    if (!room.isRoomAvailable()) {
+                        //Room is already reserved for user
+                        room.setCheckedinRoom(true);
+                    }
+                    System.out.println(room.getRoomNumber());
                 }
-                System.out.println(room.getRoomNumber());
             }
+        } else {
+            System.out.println("No Booking found");
         }
 
     }
@@ -45,21 +50,26 @@ public class RoomBooking extends Booking  {
     public void checkout(int bookingID){
         MemberBookingProxy booking= memberRoomBookings.get(bookingID);
 
-        RoomBooking roomBooking = (RoomBooking) booking.bookings();
-        ArrayList<Room> rooms=  roomBooking.getBookedRooms();
+        if(booking != null) {
+            RoomBooking roomBooking = (RoomBooking) booking.bookings();
+            ArrayList<Room> rooms = roomBooking.getBookedRooms();
 
-        //Actual list of rooms
-        int size = rooms.size();
+            //Actual list of rooms
+            int size = rooms.size();
 
-        if(size > 0) {
-            if (roomBooking.isPaid) {
-                for (Room room : rooms) {
-                    room.setRoomAvailable(true);
-                    System.out.println("Customer is checked out successfully ");
+            if (size > 0) {
+                if (roomBooking.isPaid) {
+                    for (Room room : rooms) {
+                        room.setRoomAvailable(true);
+                        room.setCheckedinRoom(false);
+                        System.out.println("Customer is checked out successfully ");
+                    }
+                } else {
+                    System.out.println("Customer has not paid the amount");
                 }
-            } else{
-               System.out.println("Customer has not paid the amount");
             }
+        } else {
+            System.out.println("No Booking found");
         }
     }
 

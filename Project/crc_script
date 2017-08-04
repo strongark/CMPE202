@@ -1,0 +1,188 @@
+[
+  {
+    "name": "Hotel",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Hold list of room",
+      "Hold hotel name",
+      "Hold detail of hotel's food services",
+      "Hold detail of hotel's spa services"
+    ],
+    "collaborators": [
+      "Room",
+      "Spa Service",
+      "Food Service"
+    ]
+  },
+  {
+    "name": "Room",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "show room detail",
+      "show room availability status",
+      "allow member customer to book",
+      ""
+    ],
+    "collaborators": [
+      "Room Booking",
+      "Hotel"
+    ]
+  },
+  {
+    "name": "Manager",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Add Room",
+      "Remove Room",
+      "Add Staff",
+      "Remove Staff"
+    ],
+    "collaborators": [
+      "Hotel",
+      "Room",
+      "Staff"
+    ]
+  },
+  {
+    "name": "Staff",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "View room list and room's availability",
+      "Book Room (on customer behalf)",
+      "Book Food (on customer behalf)",
+      "Book Spa  (on customer behalf)",
+      "Calculate Bill for Booking"
+    ],
+    "collaborators": [
+      "Room",
+      "Room Booking",
+      "Food Booking",
+      "Spa Booking",
+      "Bill",
+      "Member"
+    ]
+  },
+  {
+    "name": "Member (customer)",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "View room list, detail of each room and its availability",
+      "Book room",
+      "Pay for room booking"
+    ],
+    "collaborators": [
+      "Room",
+      "Room Booking"
+    ]
+  },
+  {
+    "name": "Food",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Hold Detail of food ",
+      "Hold Food Price"
+    ],
+    "collaborators": [
+      "Food Booking"
+    ]
+  },
+  {
+    "name": "Spa",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Hold detail of spa service",
+      "Hold spa service price"
+    ],
+    "collaborators": [
+      "Spa Booking",
+      ""
+    ]
+  },
+  {
+    "name": "Room Booking",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Hold detail of room booking (from date, to date, room) for a member customer",
+      "Record Check In/Check out status",
+      "Provide enough info to calculate cost to generate bill"
+    ],
+    "collaborators": [
+      "Room",
+      "Bill"
+    ]
+  },
+  {
+    "name": "Food Booking",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "- Hold the information of a food order from member customer (list of food)",
+      "- Provide enough information to calculate the bill"
+    ],
+    "collaborators": [
+      "Food",
+      "Bill"
+    ]
+  },
+  {
+    "name": "Spa Service Booking",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Hold information of spa service booking from member customer",
+      "Provide enough information to calculate the bill"
+    ],
+    "collaborators": [
+      "Spa Service",
+      "Bill"
+    ]
+  },
+  {
+    "name": "Bill",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Gather all unpaid booking of customer and display in preview mode",
+      "Calculate cost for room booking, food booking, spa booking",
+      "Provide different payment method (Cash, Check, Credit Card)"
+    ],
+    "collaborators": [
+      "Room Booking",
+      "Food Booking",
+      "Spa Service Booking",
+      "Member"
+    ]
+  },
+  {
+    "name": "Promotion",
+    "superclasses": "",
+    "subclasses": "",
+    "type": 1,
+    "responsibilities": [
+      "Hold the promotion code and discount rate",
+      "Apply when paying for the bill to have a discount on total amount"
+    ],
+    "collaborators": [
+      "Bill"
+    ]
+  }
+]

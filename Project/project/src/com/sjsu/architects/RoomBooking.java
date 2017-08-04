@@ -16,13 +16,51 @@ public class RoomBooking extends Booking  {
         this.bookRoom = bookRoom;
     }
 
-    public boolean checkin(){
-        return true;
+    /**
+     * Checkin
+     * @param bookingID
+     */
+    public void checkin(int bookingID){
+        MemberBookingProxy booking= memberRoomBookings.get(bookingID);
+
+        RoomBooking roomBooking = (RoomBooking) booking.bookings();
+        ArrayList<Room> rooms=  roomBooking.getBookedRooms();
+
+        //Actual list of rooms
+        int size = rooms.size();
+
+        if(size > 0) {
+            System.out.println("Customer is checked in to : ");
+            for (Room room : rooms) {
+                if (room.isRoomAvailable()) {
+                    room.setRoomAvailable(false);
+                }
+                System.out.println(room.getRoomNumber());
+            }
+        }
+
     }
 
 
-    public boolean checkout(){
-        return true;
+    public void checkout(int bookingID){
+        MemberBookingProxy booking= memberRoomBookings.get(bookingID);
+
+        RoomBooking roomBooking = (RoomBooking) booking.bookings();
+        ArrayList<Room> rooms=  roomBooking.getBookedRooms();
+
+        //Actual list of rooms
+        int size = rooms.size();
+
+        if(size > 0) {
+            if (roomBooking.isPaid) {
+                for (Room room : rooms) {
+                    room.setRoomAvailable(true);
+                    System.out.println("Customer is checked out successfully ");
+                }
+            } else{
+               System.out.println("Customer has not paid the amount");
+            }
+        }
     }
 
 
@@ -34,6 +72,11 @@ public class RoomBooking extends Booking  {
         RoomBooking.memberRoomBookings = memberRoomBookings;
     }
 
+    /**
+     * Get Unpaid booking of member
+     * @param memberId
+     * @return
+     */
     public static ArrayList<RoomBooking> getUnpaidBookingOfMember(int memberId){
         ArrayList<RoomBooking> memberRoomBookingList= new ArrayList<RoomBooking>();
         for (MemberBookingProxy booking:memberRoomBookings.values()){
@@ -44,6 +87,11 @@ public class RoomBooking extends Booking  {
         return memberRoomBookingList;
     }
 
+    /**
+     * Get unpaid romm booking details
+     * @param roomNumber
+     * @return
+     */
     public static RoomBooking getUnpaidRoomBooking(int roomNumber){
 
         for (MemberBookingProxy booking:memberRoomBookings.values()){

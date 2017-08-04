@@ -10,7 +10,11 @@ public class BillController {
 
     static ArrayList<Bill> billArrayList = new ArrayList<Bill>();
 
-
+    /**
+     * Create Bill
+     * @param member
+     * @return Bill
+     */
     public Bill createBill(Member member){
         Bill bill = new Bill();
 
@@ -31,6 +35,10 @@ public class BillController {
         return bill;
     }
 
+    /**
+     * View unpaid booking of member
+     * @param member
+     */
     public void viewUnpaidBookingOfMember(Member member){
 
         double totalCost=0;
@@ -59,6 +67,10 @@ public class BillController {
         System.out.printf("%-40s%2f%n","Total",totalCost);
     }
 
+    /**
+     * Pay Bill
+     * @param billId
+     */
     public void payBill(int billId){
 
         Bill bill = getBillById(billId);
@@ -70,21 +82,24 @@ public class BillController {
             System.out.println("Bill not found!");
     }
 
+    /**
+     * Generate Bill
+     */
     public void run(){
         boolean exit=false;
         do {
 
-            Scanner scan = new Scanner(System.in);
+
             System.out.println("Bill & Payment ");
             System.out.println("1. View unpaid booking | 2. Generate Bill | 3. Pay Bill | 0. Exit");
-            scan = new Scanner(System.in);
-            int iOperation = scan.nextInt();
+
+            int iOperation = Bootstrap.handleUserInput();
 
             switch (iOperation){
                 case 1:
                     System.out.println("Enter Member ID: ");
-                    scan = new Scanner(System.in);
-                    int userID = scan.nextInt();
+
+                    int userID = Bootstrap.handleUserInput();
                     IdentityController accountList = IdentityController.getInstance();
                     Member member = (Member) accountList.getAccountById(userID);
                     if(member!=null){
@@ -93,8 +108,8 @@ public class BillController {
                     break;
                 case 2:
                     System.out.println("Enter Member ID: ");
-                    scan = new Scanner(System.in);
-                    userID = scan.nextInt();
+
+                    userID = Bootstrap.handleUserInput();
                     member = (Member) IdentityController.getInstance().getAccountById(userID);
                     if(member!=null){
                         Bill bill=createBill(member);
@@ -104,15 +119,15 @@ public class BillController {
 
                 case 3:
                     System.out.println("Enter Bill No: ");
-                    scan = new Scanner(System.in);
-                    int billId = scan.nextInt();
+
+                    int billId = Bootstrap.handleUserInput();
                     Bill bill = getBillById(billId);
                     if(bill!=null){
                         bill.printBillDetail();
                         System.out.println("Enter Payment Option: ");
                         System.out.println("1. Cash | 2. Check | 3. Credit Card | 0. Exit");
-                        scan = new Scanner(System.in);
-                        int iPaymentOption = scan.nextInt();
+
+                        int iPaymentOption = Bootstrap.handleUserInput();
                         switch (iPaymentOption){
                             case 1:
                                 bill.pay(new CashPaymentStrategy());
@@ -130,13 +145,20 @@ public class BillController {
                         }
                     }
                     break;
-
+                case 0:
+                    break;
                 default:
                     break;
             }
 
         }while (!exit);
     }
+
+    /**
+     * Get Bill by bill id
+     * @param billId
+     * @return
+     */
     public Bill getBillById(int billId){
         for(Bill bill:billArrayList){
             if(bill.getBillID()==billId)

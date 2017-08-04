@@ -14,6 +14,10 @@ public class IdentityController {
 
     }
 
+    /**
+     * Constructor
+     * @return
+     */
     public static IdentityController getInstance(){
         if(instance == null)
             instance = new IdentityController();
@@ -29,13 +33,18 @@ public class IdentityController {
     PromotionController promotionController = PromotionController.getInstance();
 
 
+    /**
+     * Sign up a member
+     * @param accountType
+     * @return
+     */
     public int signUp(int accountType) {
         int returnID = -1;
         //console for input
-        System.out.println(" Please Enter User Name ");
+        System.out.println("\n Please Enter User Name ");
         Scanner scan = new Scanner(System.in);
         String userName = scan.nextLine();
-        System.out.println(" Please Enter PassWord ");
+        System.out.println(" Please Enter Password ");
         scan = new Scanner(System.in);
         String passWord = scan.nextLine();
         System.out.println(" Please Enter Full Name ");
@@ -84,11 +93,15 @@ public class IdentityController {
         signUp(1);
     }
 
+    /**
+     * Sign in a member
+     * @return
+     */
     public int signIn(){
         System.out.println(" Please Enter User Name ");
         Scanner scan = new Scanner(System.in);
         String userName = scan.nextLine();
-        System.out.println(" Please Enter PassWord ");
+        System.out.println(" Please Enter Password ");
         scan = new Scanner(System.in);
         String passWord = scan.nextLine();
         for(Person person: accountList)
@@ -102,6 +115,11 @@ public class IdentityController {
         return -1;
     }
 
+    /**
+     * Get Account by id
+     * @param id
+     * @return
+     */
     public Person getAccountById(int id) {
         for (Person person : accountList) {
             if (person.getId() == id)
@@ -111,19 +129,22 @@ public class IdentityController {
     }
 
 
+    /**
+     * Create Sample Data
+     */
     public void createSampleData(){
         Manager manager = new Manager();
         manager.setId(++identity);
         manager.username = "admin";
         manager.password = "admin";
-        manager.name = "The Manager";
+        manager.name = "Mr. Carton";
         accountList.add(manager);
 
         Staff staff = new Staff();
         staff.setId(++identity);
         staff.username = "staff";
         staff.password = "staff";
-        staff.name = "The Staff";
+        staff.name = "John";
         accountList.add(staff);
 
         Member member = new Member();

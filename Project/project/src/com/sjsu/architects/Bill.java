@@ -8,7 +8,6 @@ import java.util.*;
 public class Bill {
 
     private int billID;
-
     private static int identity=1;
     ArrayList<Booking> bookingArrayList = new ArrayList<Booking>();
     PaymentStrategy payment;
@@ -22,6 +21,10 @@ public class Bill {
         return billID;
     }
 
+    /**
+     * Get Total Cost of Booking
+     * @return
+     */
     public double getTotalCost(){
         double result=0;
         for (Booking booking:bookingArrayList){
@@ -30,6 +33,9 @@ public class Bill {
         return result;
     }
 
+    /**
+     * Print Bill
+     */
     public void printBillDetail(){
         double result=0;
         System.out.println("Bill No: "+billID);
@@ -43,6 +49,10 @@ public class Bill {
         System.out.printf("%-40s%2f%n","Total",result);
     }
 
+    /**
+     * Pay Bill
+     * @param paymentStrategy
+     */
     public void pay(PaymentStrategy paymentStrategy){
         this.payment=paymentStrategy;
         isPaid=true;

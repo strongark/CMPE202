@@ -10,24 +10,24 @@ public class Hotel {
     private String hotelName = null;
     private String location = null;
     private static ArrayList<Room> roomList = new ArrayList<>();
-    private ArrayList<SpaService> serviceList = new ArrayList<>();
-    private ArrayList<Food> foodItems = new ArrayList<>();
+    private static ArrayList<SpaService> serviceList = new ArrayList<>();
+    private static ArrayList<Food> foodItems = new ArrayList<>();
 
 
-    public ArrayList<SpaService> getServiceList() {
+    public static ArrayList<SpaService> getServiceList() {
         return serviceList;
     }
 
-    public void setServiceList(ArrayList<SpaService> serviceList) {
-        this.serviceList = serviceList;
+    public static void setServiceList(ArrayList<SpaService> serviceList) {
+        Hotel.serviceList = serviceList;
     }
 
-    public ArrayList<Food> getFoodItems() {
+    public static ArrayList<Food> getFoodItems() {
         return foodItems;
     }
 
-    public void setFoodItems(ArrayList<Food> foodItems) {
-        this.foodItems = foodItems;
+    public static void setFoodItems(ArrayList<Food> foodItems) {
+        Hotel.foodItems = foodItems;
     }
 
     public String getHotelName() {
@@ -53,6 +53,7 @@ public class Hotel {
     public static void setRoomList(ArrayList<Room> roomList) {
         Hotel.roomList = roomList;
     }
+
 
 
 }

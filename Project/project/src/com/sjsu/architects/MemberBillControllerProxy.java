@@ -10,6 +10,7 @@ public class MemberBillControllerProxy {
     public MemberBillControllerProxy(Member member){
         this.member=member;
     }
+
     public void viewUnpaidBooking(){
         billController.viewUnpaidBookingOfMember(member);
     }

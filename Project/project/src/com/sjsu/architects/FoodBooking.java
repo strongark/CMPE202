@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class FoodBooking extends Booking{
+
     private static HashMap<Integer , FoodBooking> foodOrders = new HashMap<Integer, FoodBooking>();
 
     ArrayList<Food> foodArrayList = new ArrayList<>();
@@ -24,6 +25,11 @@ public class FoodBooking extends Booking{
         FoodBooking.foodOrders = foodOrders;
     }
 
+    /**
+     * Get Unpaid booking of member
+     * @param memberId
+     * @return
+     */
     public static ArrayList<FoodBooking> getUnpaidBookingOfMember(int memberId){
         ArrayList<FoodBooking> memberBookingList= new ArrayList<FoodBooking>();
         for (FoodBooking booking:foodOrders.values()){

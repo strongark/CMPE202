@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Hotel {
 
     private String hotelName = null;
-    private String location = null;
+
     private static ArrayList<Room> roomList = new ArrayList<>();
     private static ArrayList<SpaService> serviceList = new ArrayList<>();
     private static ArrayList<Food> foodItems = new ArrayList<>();
@@ -38,13 +38,7 @@ public class Hotel {
         this.hotelName = hotelName;
     }
 
-    public String getLocation() {
-        return location;
-    }
 
-    public void setLocation(String location) {
-        this.location = location;
-    }
 
     public static ArrayList<Room> getRoomList() {
         return roomList;

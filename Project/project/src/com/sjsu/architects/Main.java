@@ -16,7 +16,7 @@ public class Main {
 
         Hotel hotel = new Hotel();
         hotel.setHotelName("Carton Hotel");
-        hotel.setLocation("California");
+
 
         //Creating manager
 
@@ -182,7 +182,7 @@ public class Main {
             MemberController memberOperations = new MemberController();
             System.out.println("\n Welcome (loggedin as : Staff) ");
             System.out.println(" -----------------------------------------------------------------------");
-            System.out.println(" 1. StaffMenuCheck For Room Availability | 2. Book Room  | 3. Member Sign Up " +
+            System.out.println(" 1. Check For Room Availability | 2. Book Room  | 3. Member Sign Up " +
                     "|  4. Check In Customer | 5. Check Out Customer | 6. Generate Bill " +
                     "|  7. Book Spa | 8. Order Food | 0. Exit ");
 
@@ -229,7 +229,7 @@ public class Main {
 
                 int bookingid = Bootstrap.handleUserInput();
 
-                SpaServiceController spa = new SpaServiceController();
+                StandardBookingController spa = new StandardBookingController();
                 spa.bookSpaServices(bookingid);
 
             } else if (iOperation == 8){
@@ -237,7 +237,7 @@ public class Main {
 
                 int bookingid = Bootstrap.handleUserInput();
 
-                FoodController food = new FoodController();
+                StandardBookingController food = new StandardBookingController();
                 food.orderFood(bookingid);
 
             } else if (iOperation == 0){

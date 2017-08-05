@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ecb706b-3292-4bc2-bf5e-ea17da70679f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/project/com/sjsu/architects/FoodController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/project/com/sjsu/architects/SpaServiceController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/sjsu/architects/FoodController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/sjsu/architects/SpaServiceController.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/project/com/sjsu/architects/Hotel.class" afterPath="$PROJECT_DIR$/out/production/project/com/sjsu/architects/Hotel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/project/com/sjsu/architects/Main.class" afterPath="$PROJECT_DIR$/out/production/project/com/sjsu/architects/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/project/com/sjsu/architects/RoomBooking.class" afterPath="$PROJECT_DIR$/out/production/project/com/sjsu/architects/RoomBooking.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/project/com/sjsu/architects/StandardBookingController.class" afterPath="$PROJECT_DIR$/out/production/project/com/sjsu/architects/StandardBookingController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sjsu/architects/Hotel.java" afterPath="$PROJECT_DIR$/src/com/sjsu/architects/Hotel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sjsu/architects/Main.java" afterPath="$PROJECT_DIR$/src/com/sjsu/architects/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sjsu/architects/RoomBooking.java" afterPath="$PROJECT_DIR$/src/com/sjsu/architects/RoomBooking.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sjsu/architects/StandardBookingController.java" afterPath="$PROJECT_DIR$/src/com/sjsu/architects/StandardBookingController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,27 +29,805 @@
       <FILTER>com.sjsu.architects.*</FILTER>
     </SUITE>
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Booking.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Booking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
               <folding>
-                <element signature="e#438#439#0" expanded="true" />
-                <element signature="e#470#471#0" expanded="true" />
+                <element signature="e#1411#1412#0" expanded="true" />
+                <element signature="e#1438#1439#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Main.java">
+      <file leaf-file-name="Member.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Member.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="99" column="21" lean-forward="true" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
+            <state relative-caret-position="60">
+              <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaScript-modules-diagram//Users/nisha/Desktop/202 updated/CMPE202/Project/project/src/com/sjsu/architects" pinned="false" current-in-tab="false">
+        <entry file="uml://JavaScript-modules-diagram//Users/nisha/Desktop/202 updated/CMPE202/Project/project/src/com/sjsu/architects">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JavaScript-modules-diagram</ID>
+              <OriginalElement>$PROJECT_DIR$/src/com/sjsu/architects</OriginalElement>
+              <nodes />
+              <notes />
+              <edges />
+              <settings layout="Hierarchic Group" zoom="1.0" x="240.0" y="240.0" />
+              <SelectedNodes />
+              <Categories>
+                <Category>All</Category>
+              </Categories>
+              <VISIBILITY>Details</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JAVA/com.sjsu.architects" pinned="false" current-in-tab="true">
+        <entry file="uml://JAVA/com.sjsu.architects">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>com.sjsu.architects</OriginalElement>
+              <nodes>
+                <node x="532.9285714285716" y="2158.0">com.sjsu.architects.Staff</node>
+                <node x="3167.6510548566034" y="0.0">com.sjsu.architects.Promotion</node>
+                <node x="4396.458546883729" y="2845.5">com.sjsu.architects.CashPaymentStrategy</node>
+                <node x="1562.7347314966776" y="2779.5">com.sjsu.architects.Bootstrap</node>
+                <node x="3623.4585468837286" y="2757.0">com.sjsu.architects.Bill</node>
+                <node x="2600.2348116276526" y="2366.5">com.sjsu.architects.RoomBooking</node>
+                <node x="2066.428607315346" y="1550.0">com.sjsu.architects.FoodBooking</node>
+                <node x="2425.66147152327" y="2158.0">com.sjsu.architects.MemberBookingProxy</node>
+                <node x="2132.428607315346" y="3491.0">com.sjsu.architects.Main</node>
+                <node x="2463.91147152327" y="1935.0">com.sjsu.architects.StandardBookingController</node>
+                <node x="1187.7827739820125" y="1539.0">com.sjsu.architects.Hotel</node>
+                <node x="3102.885630217062" y="991.0">com.sjsu.architects.Booking</node>
+                <node x="197.92857142857156" y="2136.0">com.sjsu.architects.Manager</node>
+                <node x="10.5" y="3209.5">com.sjsu.architects.RoomController</node>
+                <node x="3099.81772152327" y="407.5">com.sjsu.architects.PromotionController</node>
+                <node x="275.92857142857156" y="3198.5">com.sjsu.architects.StaffController</node>
+                <node x="761.9285714285713" y="2344.0">com.sjsu.architects.IdentityController</node>
+                <node x="4276.464121240601" y="3501.5">com.sjsu.architects.MemberBillControllerProxy</node>
+                <node x="2093.56772152327" y="1079.0">com.sjsu.architects.SpaService</node>
+                <node x="3578.349738267727" y="3187.5">com.sjsu.architects.BillController</node>
+                <node x="391.8730943302878" y="320.0">com.sjsu.architects.Person</node>
+                <node x="2818.31772152327" y="1550.0">com.sjsu.architects.SpaBooking</node>
+                <node x="1099.9285714285713" y="1013.0">com.sjsu.architects.Room</node>
+                <node x="1541.7827739820125" y="1079.0">com.sjsu.architects.Food</node>
+                <node x="3054.81772152327" y="782.0">com.sjsu.architects.Member</node>
+                <node x="3949.4585468837286" y="2834.0">com.sjsu.architects.CreditCardPaymentStrategy</node>
+                <node x="4694.458546883729" y="2845.5">com.sjsu.architects.CheckPaymentStrategy</node>
+                <node x="2132.928607315346" y="3176.0">com.sjsu.architects.MemberController</node>
+                <node x="4049.2139782943195" y="2454.5">com.sjsu.architects.PaymentStrategy</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.FoodBooking">
+                  <point x="-19.15384615384619" y="-92.5" />
+                  <point x="2238.2747611614996" y="3156.0" />
+                  <point x="2246.428607315346" y="3156.0" />
+                  <point x="-36.0" y="92.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Member" target="com.sjsu.architects.PromotionController">
+                  <point x="-81.39999999999986" y="-59.5" />
+                  <point x="3176.9177215232703" y="762.0" />
+                  <point x="3223.0954993010478" y="762.0" />
+                  <point x="-35.22222222222217" y="103.5" />
+                </edge>
+                <edge source="com.sjsu.architects.StaffController" target="com.sjsu.architects.IdentityController">
+                  <point x="67.42857142857156" y="-70.0" />
+                  <point x="461.3571428571431" y="3136.0" />
+                  <point x="466.2398066846479" y="3136.0" />
+                  <point x="466.2398066846479" y="2737.0" />
+                  <point x="801.5535714285713" y="2737.0" />
+                  <point x="-118.875" y="136.5" />
+                </edge>
+                <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.CheckPaymentStrategy">
+                  <point x="118.59375" y="-81.0" />
+                  <point x="3869.443488267727" y="3136.0" />
+                  <point x="4833.458546883729" y="3136.0" />
+                  <point x="0.0" y="26.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.BillController">
+                  <point x="106.25" y="-59.0" />
+                  <point x="2363.678607315346" y="3461.0" />
+                  <point x="3621.474738267727" y="3461.0" />
+                  <point x="-129.375" y="81.0" />
+                </edge>
+                <edge source="com.sjsu.architects.SpaBooking" target="com.sjsu.architects.SpaService">
+                  <point x="-141.33333333333348" y="-92.0" />
+                  <point x="2888.9843881899365" y="1359.0" />
+                  <point x="2292.63022152327" y="1359.0" />
+                  <point x="76.5625" y="81.0" />
+                </edge>
+                <edge source="com.sjsu.architects.StaffController" target="com.sjsu.architects.Manager">
+                  <point x="-67.42857142857156" y="-70.0" />
+                  <point x="326.5" y="3136.0" />
+                  <point x="348.0255209703621" y="3136.0" />
+                  <point x="348.0255209703621" y="2324.0" />
+                  <point x="345.42857142857156" y="2324.0" />
+                  <point x="0.0" y="59.0" />
+                </edge>
+                <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.FoodBooking">
+                  <point x="-94.5" y="-70.5" />
+                  <point x="2495.41147152327" y="1795.0" />
+                  <point x="2318.428607315346" y="1795.0" />
+                  <point x="36.0" y="92.0" />
+                </edge>
+                <edge source="com.sjsu.architects.PromotionController" target="com.sjsu.architects.Promotion">
+                  <point x="0.0" y="-103.5" />
+                  <point x="3258.31772152327" y="300.0" />
+                  <point x="3293.2135548566034" y="300.0" />
+                  <point x="-17.9375" y="125.0" />
+                </edge>
+                <edge source="com.sjsu.architects.IdentityController" target="com.sjsu.architects.PromotionController">
+                  <point x="47.549999999999955" y="-136.5" />
+                  <point x="967.9785714285713" y="2304.0" />
+                  <point x="1017.6005209703619" y="2304.0" />
+                  <point x="1017.6005209703619" y="732.0" />
+                  <point x="3117.4288326343813" y="732.0" />
+                  <point x="-140.8888888888889" y="103.5" />
+                </edge>
+                <edge source="com.sjsu.architects.FoodBooking" target="com.sjsu.architects.Food">
+                  <point x="0.0" y="-92.0" />
+                  <point x="2282.428607315346" y="1419.0" />
+                  <point x="1726.2202739820125" y="1419.0" />
+                  <point x="70.9375" y="81.0" />
+                </edge>
+                <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.Hotel">
+                  <point x="-95.76923076923072" y="-92.5" />
+                  <point x="2161.6593765461153" y="3146.0" />
+                  <point x="2022.928607315346" y="3146.0" />
+                  <point x="2022.928607315346" y="1895.0" />
+                  <point x="1449.4256311248696" y="1895.0" />
+                  <point x="95.14285714285711" y="103.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.FoodBooking">
+                  <point x="56.84210526315792" y="-92.0" />
+                  <point x="1799.5768367598355" y="2677.0" />
+                  <point x="1954.7098573153457" y="2677.0" />
+                  <point x="1954.7098573153457" y="1905.0" />
+                  <point x="2102.428607315346" y="1905.0" />
+                  <point x="-180.0" y="92.0" />
+                </edge>
+                <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.Hotel">
+                  <point x="-115.5" y="-70.5" />
+                  <point x="2474.41147152327" y="1805.0" />
+                  <point x="1496.9970596962983" y="1805.0" />
+                  <point x="142.71428571428578" y="103.0" />
+                </edge>
+                <edge source="com.sjsu.architects.RoomController" target="com.sjsu.architects.Bootstrap">
+                  <point x="103.28571428571428" y="-59.0" />
+                  <point x="234.28571428571422" y="3146.0" />
+                  <point x="1598.7347314966776" y="3146.0" />
+                  <point x="-144.0" y="92.0" />
+                </edge>
+                <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.Member">
+                  <point x="114.9230769230769" y="-92.5" />
+                  <point x="2372.351684238423" y="3156.0" />
+                  <point x="3422.175093318142" y="3156.0" />
+                  <point x="3422.175093318142" y="961.0" />
+                  <point x="3309.19272152327" y="961.0" />
+                  <point x="50.875" y="59.5" />
+                </edge>
+                <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.Food">
+                  <point x="-38.30769230769238" y="-92.5" />
+                  <point x="2219.120915007654" y="3116.0" />
+                  <point x="2055.928607315346" y="3116.0" />
+                  <point x="2055.928607315346" y="1439.0" />
+                  <point x="1669.4702739820125" y="1439.0" />
+                  <point x="14.1875" y="81.0" />
+                </edge>
+                <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.Member">
+                  <point x="-32.34375" y="-81.0" />
+                  <point x="3718.505988267727" y="3026.0" />
+                  <point x="3603.9796032943195" y="3026.0" />
+                  <point x="3603.9796032943195" y="941.0" />
+                  <point x="3377.026054856603" y="941.0" />
+                  <point x="118.70833333333326" y="59.5" />
+                </edge>
+                <edge source="com.sjsu.architects.StaffController" target="com.sjsu.architects.Staff">
+                  <point x="33.71428571428578" y="-70.0" />
+                  <point x="427.64285714285734" y="3136.0" />
+                  <point x="455.2398066846479" y="3136.0" />
+                  <point x="455.2398066846479" y="2324.0" />
+                  <point x="610.9285714285716" y="2324.0" />
+                  <point x="-26.0" y="37.0" />
+                </edge>
+                <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.SpaBooking">
+                  <point x="95.76923076923072" y="-92.5" />
+                  <point x="2353.1978380845767" y="3146.0" />
+                  <point x="3397.6441866248824" y="3146.0" />
+                  <point x="3397.6441866248824" y="1905.0" />
+                  <point x="3083.31772152327" y="1905.0" />
+                  <point x="53.0" y="92.0" />
+                </edge>
+                <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.IdentityController">
+                  <point x="-161.71875" y="-81.0" />
+                  <point x="3589.130988267727" y="3086.0" />
+                  <point x="939.9005209703619" y="3086.0" />
+                  <point x="939.9005209703619" y="2737.0" />
+                  <point x="960.0535714285713" y="2737.0" />
+                  <point x="39.625" y="136.5" />
+                </edge>
+                <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.IdentityController">
+                  <point x="-31.25" y="-59.0" />
+                  <point x="2226.178607315346" y="3401.0" />
+                  <point x="928.9005209703619" y="3401.0" />
+                  <point x="928.9005209703619" y="2737.0" />
+                  <point x="880.8035714285713" y="2737.0" />
+                  <point x="-39.625" y="136.5" />
+                </edge>
+                <edge source="com.sjsu.architects.CashPaymentStrategy" target="com.sjsu.architects.PaymentStrategy">
+                  <point x="0.0" y="-26.0" />
+                  <point x="4535.458546883729" y="2737.0" />
+                  <point x="4243.81397829432" y="2737.0" />
+                  <point x="55.59999999999991" y="26.0" />
+                </edge>
+                <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.SpaService">
+                  <point x="-31.5" y="-70.5" />
+                  <point x="2558.41147152327" y="1835.0" />
+                  <point x="2624.022357315346" y="1835.0" />
+                  <point x="2624.022357315346" y="1379.0" />
+                  <point x="2262.00522152327" y="1379.0" />
+                  <point x="45.9375" y="81.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.SpaService">
+                  <point x="37.89473684210532" y="-92.0" />
+                  <point x="1780.6294683387828" y="2667.0" />
+                  <point x="1943.7098573153457" y="2667.0" />
+                  <point x="1943.7098573153457" y="1519.0" />
+                  <point x="2200.75522152327" y="1519.0" />
+                  <point x="-15.3125" y="81.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.PromotionController">
+                  <point x="-18.9473684210526" y="-92.0" />
+                  <point x="1723.7873630756249" y="2637.0" />
+                  <point x="1779.2827739820125" y="2637.0" />
+                  <point x="1779.2827739820125" y="752.0" />
+                  <point x="3187.8732770788256" y="752.0" />
+                  <point x="-70.44444444444434" y="103.5" />
+                </edge>
+                <edge source="com.sjsu.architects.SpaBooking" target="com.sjsu.architects.Booking">
+                  <point x="141.33333333333326" y="-92.0" />
+                  <point x="3171.6510548566034" y="1519.0" />
+                  <point x="3206.010630217062" y="1519.0" />
+                  <point x="-34.375" y="169.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Booking" target="com.sjsu.architects.Member">
+                  <point x="68.75" y="-169.0" />
+                  <point x="3309.135630217062" y="971.0" />
+                  <point x="3275.276054856603" y="971.0" />
+                  <point x="16.958333333333258" y="59.5" />
+                </edge>
+                <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.FoodBooking">
+                  <point x="-97.03125" y="-81.0" />
+                  <point x="3653.818488267727" y="3056.0" />
+                  <point x="3570.9796032943195" y="3056.0" />
+                  <point x="3570.9796032943195" y="1775.0" />
+                  <point x="2462.428607315346" y="1775.0" />
+                  <point x="180.0" y="92.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Bill" target="com.sjsu.architects.Booking">
+                  <point x="-43.71428571428555" y="-114.5" />
+                  <point x="3732.7442611694432" y="2737.0" />
+                  <point x="3711.1806390977445" y="2737.0" />
+                  <point x="3711.1806390977445" y="1479.0" />
+                  <point x="3366.427296883729" y="1479.0" />
+                  <point x="126.04166666666686" y="169.0" />
+                </edge>
+                <edge source="com.sjsu.architects.RoomController" target="com.sjsu.architects.Hotel">
+                  <point x="0.0" y="-59.0" />
+                  <point x="131.0" y="3156.0" />
+                  <point x="124.1827739820128" y="3156.0" />
+                  <point x="124.1827739820128" y="1895.0" />
+                  <point x="1259.1399168391554" y="1895.0" />
+                  <point x="-95.14285714285711" y="103.0" />
+                </edge>
+                <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.Bootstrap">
+                  <point x="-108.0" y="70.5" />
+                  <point x="2481.91147152327" y="2116.0" />
+                  <point x="1976.7098573153457" y="2116.0" />
+                  <point x="1976.7098573153457" y="2697.0" />
+                  <point x="1837.4715736019407" y="2697.0" />
+                  <point x="94.73684210526312" y="-92.0" />
+                </edge>
+                <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.RoomBooking">
+                  <point x="76.61538461538453" y="-92.5" />
+                  <point x="2334.0439919307305" y="3136.0" />
+                  <point x="2804.8598116276526" y="3136.0" />
+                  <point x="2804.8598116276526" y="2737.0" />
+                  <point x="2832.5473116276526" y="2737.0" />
+                  <point x="-33.1875" y="114.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Staff" target="com.sjsu.architects.Person">
+                  <point x="0.0" y="-37.0" />
+                  <point x="636.9285714285716" y="762.0" />
+                  <point x="534.1855943302878" y="762.0" />
+                  <point x="15.8125" y="191.0" />
+                </edge>
+                <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.RoomBooking">
+                  <point x="36.0" y="70.5" />
+                  <point x="2625.91147152327" y="2116.0" />
+                  <point x="2741.81772152327" y="2116.0" />
+                  <point x="2741.81772152327" y="2294.0" />
+                  <point x="2832.5473116276526" y="2294.0" />
+                  <point x="-33.1875" y="-114.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Member" target="com.sjsu.architects.Person">
+                  <point x="-162.79999999999995" y="-59.5" />
+                  <point x="3095.5177215232698" y="722.0" />
+                  <point x="629.0605943302878" y="722.0" />
+                  <point x="110.6875" y="191.0" />
+                </edge>
+                <edge source="com.sjsu.architects.RoomController" target="com.sjsu.architects.Room">
+                  <point x="-103.28571428571422" y="-59.0" />
+                  <point x="27.71428571428578" y="3146.0" />
+                  <point x="68.7225349789669" y="3146.0" />
+                  <point x="68.7225349789669" y="1865.0" />
+                  <point x="312.7225349789669" y="1865.0" />
+                  <point x="312.7225349789669" y="1509.0" />
+                  <point x="1113.7785714285715" y="1509.0" />
+                  <point x="-124.64999999999986" y="147.0" />
+                </edge>
+                <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.Member">
+                  <point x="-10.5" y="-70.5" />
+                  <point x="2579.41147152327" y="1845.0" />
+                  <point x="2673.053607315346" y="1845.0" />
+                  <point x="2673.053607315346" y="951.0" />
+                  <point x="3173.526054856603" y="951.0" />
+                  <point x="-84.79166666666674" y="59.5" />
+                </edge>
+                <edge source="com.sjsu.architects.Hotel" target="com.sjsu.architects.Food">
+                  <point x="27.75" y="-103.0" />
+                  <point x="1382.0327739820125" y="1479.0" />
+                  <point x="1584.3452739820125" y="1479.0" />
+                  <point x="-70.9375" y="81.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.MemberController">
+                  <point x="-6.25" y="-59.0" />
+                  <point x="2251.178607315346" y="3381.0" />
+                  <point x="2195.178607315346" y="3381.0" />
+                  <point x="-62.25" y="92.5" />
+                </edge>
+                <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.SpaService">
+                  <point x="0.0" y="-92.5" />
+                  <point x="2257.428607315346" y="3096.0" />
+                  <point x="2324.761597341939" y="3096.0" />
+                  <point x="2324.761597341939" y="1815.0" />
+                  <point x="2602.022357315346" y="1815.0" />
+                  <point x="2602.022357315346" y="1399.0" />
+                  <point x="2231.38022152327" y="1399.0" />
+                  <point x="15.3125" y="81.0" />
+                </edge>
+                <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.PromotionController">
+                  <point x="140.15625" y="-81.0" />
+                  <point x="3891.005988267727" y="3146.0" />
+                  <point x="4982.958546883729" y="3146.0" />
+                  <point x="4982.958546883729" y="732.0" />
+                  <point x="3399.2066104121586" y="732.0" />
+                  <point x="140.8888888888889" y="103.5" />
+                </edge>
+                <edge source="com.sjsu.architects.Hotel" target="com.sjsu.architects.SpaService">
+                  <point x="138.75" y="-103.0" />
+                  <point x="1493.0327739820125" y="1499.0" />
+                  <point x="2139.50522152327" y="1499.0" />
+                  <point x="-76.5625" y="81.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Manager" target="com.sjsu.architects.Person">
+                  <point x="-98.33333333333326" y="-59.0" />
+                  <point x="247.0952380952383" y="2106.0" />
+                  <point x="342.5558683123004" y="2106.0" />
+                  <point x="342.5558683123004" y="742.0" />
+                  <point x="439.3105943302878" y="742.0" />
+                  <point x="-79.0625" y="191.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.RoomController">
+                  <point x="-106.25" y="-59.0" />
+                  <point x="2151.178607315346" y="3461.0" />
+                  <point x="70.75" y="3461.0" />
+                  <point x="-60.25" y="59.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.Promotion">
+                  <point x="-75.78947368421052" y="-92.0" />
+                  <point x="1666.945257812467" y="2687.0" />
+                  <point x="1531.2827739820125" y="2687.0" />
+                  <point x="1531.2827739820125" y="280.0" />
+                  <point x="3221.4635548566034" y="280.0" />
+                  <point x="-89.6875" y="125.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.Food">
+                  <point x="-56.84210526315792" y="-92.0" />
+                  <point x="1685.8926262335196" y="2677.0" />
+                  <point x="1621.4077739820125" y="2677.0" />
+                  <point x="1621.4077739820125" y="1479.0" />
+                  <point x="1612.7202739820125" y="1479.0" />
+                  <point x="-42.5625" y="81.0" />
+                </edge>
+                <edge source="com.sjsu.architects.FoodBooking" target="com.sjsu.architects.Booking">
+                  <point x="144.0" y="-92.0" />
+                  <point x="2426.428607315346" y="1479.0" />
+                  <point x="3114.3439635503955" y="1479.0" />
+                  <point x="-126.04166666666674" y="169.0" />
+                </edge>
+                <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.RoomBooking">
+                  <point x="-118.59375" y="-81.0" />
+                  <point x="3632.255988267727" y="3066.0" />
+                  <point x="3559.9796032943195" y="3066.0" />
+                  <point x="3559.9796032943195" y="2707.0" />
+                  <point x="3098.0473116276526" y="2707.0" />
+                  <point x="232.3125" y="114.0" />
+                </edge>
+                <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.SpaBooking">
+                  <point x="-75.46875" y="-81.0" />
+                  <point x="3675.380988267727" y="3046.0" />
+                  <point x="3581.9796032943195" y="3046.0" />
+                  <point x="3581.9796032943195" y="1765.0" />
+                  <point x="3189.31772152327" y="1765.0" />
+                  <point x="159.0" y="92.0" />
+                </edge>
+                <edge source="com.sjsu.architects.IdentityController" target="com.sjsu.architects.Staff">
+                  <point x="-47.549999999999955" y="-136.5" />
+                  <point x="872.8785714285714" y="2274.0" />
+                  <point x="714.9285714285716" y="2274.0" />
+                  <point x="78.0" y="37.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.PromotionController">
+                  <point x="93.75" y="-59.0" />
+                  <point x="2351.178607315346" y="3451.0" />
+                  <point x="3547.0734962406013" y="3451.0" />
+                  <point x="3547.0734962406013" y="742.0" />
+                  <point x="3363.984388189937" y="742.0" />
+                  <point x="105.66666666666674" y="103.5" />
+                </edge>
+                <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.MemberBookingProxy">
+                  <point x="19.15384615384619" y="-92.5" />
+                  <point x="2276.582453469192" y="3106.0" />
+                  <point x="2468.41147152327" y="3106.0" />
+                  <point x="2468.41147152327" y="2324.0" />
+                  <point x="2494.232900094699" y="2324.0" />
+                  <point x="-27.42857142857133" y="37.0" />
+                </edge>
+                <edge source="com.sjsu.architects.RoomBooking" target="com.sjsu.architects.MemberBookingProxy">
+                  <point x="-232.3125" y="-114.0" />
+                  <point x="2633.4223116276526" y="2324.0" />
+                  <point x="2549.0900429518415" y="2324.0" />
+                  <point x="27.42857142857156" y="37.0" />
+                </edge>
+                <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.Promotion">
+                  <point x="161.71875" y="-81.0" />
+                  <point x="3912.568488267727" y="3156.0" />
+                  <point x="4993.958546883729" y="3156.0" />
+                  <point x="4993.958546883729" y="270.0" />
+                  <point x="3436.7135548566034" y="270.0" />
+                  <point x="125.5625" y="125.0" />
+                </edge>
+                <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.Bootstrap">
+                  <point x="-140.15625" y="-81.0" />
+                  <point x="3610.693488267727" y="3076.0" />
+                  <point x="1886.7347314966776" y="3076.0" />
+                  <point x="144.0" y="92.0" />
+                </edge>
+                <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.MemberBookingProxy">
+                  <point x="0.0" y="70.5" />
+                  <point x="2589.91147152327" y="2116.0" />
+                  <point x="2593.66147152327" y="2116.0" />
+                  <point x="72.0" y="-37.0" />
+                </edge>
+                <edge source="com.sjsu.architects.PromotionController" target="com.sjsu.architects.Member">
+                  <point x="35.22222222222217" y="103.5" />
+                  <point x="3293.539943745492" y="762.0" />
+                  <point x="3339.71772152327" y="762.0" />
+                  <point x="81.40000000000009" y="-59.5" />
+                </edge>
+                <edge source="com.sjsu.architects.MemberBookingProxy" target="com.sjsu.architects.Booking">
+                  <point x="-72.0" y="-37.0" />
+                  <point x="2449.66147152327" y="2106.0" />
+                  <point x="2453.41147152327" y="2106.0" />
+                  <point x="2453.41147152327" y="1865.0" />
+                  <point x="2711.991107315346" y="1865.0" />
+                  <point x="2711.991107315346" y="1489.0" />
+                  <point x="3137.260630217062" y="1489.0" />
+                  <point x="-103.125" y="169.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.RoomBooking">
+                  <point x="151.57894736842104" y="-92.0" />
+                  <point x="1894.3136788650986" y="2727.0" />
+                  <point x="2633.4223116276526" y="2727.0" />
+                  <point x="-232.3125" y="114.0" />
+                </edge>
+                <edge source="com.sjsu.architects.IdentityController" target="com.sjsu.architects.Person">
+                  <point x="15.850000000000136" y="-136.5" />
+                  <point x="936.2785714285715" y="2294.0" />
+                  <point x="972.8285714285714" y="2294.0" />
+                  <point x="972.8285714285714" y="742.0" />
+                  <point x="597.4355943302878" y="742.0" />
+                  <point x="79.0625" y="191.0" />
+                </edge>
+                <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.Room">
+                  <point x="-57.46153846153857" y="-92.5" />
+                  <point x="2199.967068853807" y="3126.0" />
+                  <point x="2044.928607315346" y="3126.0" />
+                  <point x="2044.928607315346" y="1449.0" />
+                  <point x="1307.678571428571" y="1449.0" />
+                  <point x="69.24999999999989" y="147.0" />
+                </edge>
+                <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.Booking">
+                  <point x="-53.90625" y="-81.0" />
+                  <point x="3696.943488267727" y="3036.0" />
+                  <point x="3592.9796032943195" y="3036.0" />
+                  <point x="3592.9796032943195" y="1509.0" />
+                  <point x="3297.677296883729" y="1509.0" />
+                  <point x="57.291666666666856" y="169.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.Hotel">
+                  <point x="-43.75" y="-59.0" />
+                  <point x="2213.678607315346" y="3411.0" />
+                  <point x="751.4285714285716" y="3411.0" />
+                  <point x="751.4285714285716" y="1915.0" />
+                  <point x="1354.2827739820125" y="1915.0" />
+                  <point x="0.0" y="103.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.StandardBookingController">
+                  <point x="56.25" y="-59.0" />
+                  <point x="2313.678607315346" y="3421.0" />
+                  <point x="3470.7135548566034" y="3421.0" />
+                  <point x="3470.7135548566034" y="2106.0" />
+                  <point x="2661.91147152327" y="2106.0" />
+                  <point x="72.0" y="70.5" />
+                </edge>
+                <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.Bootstrap">
+                  <point x="-114.9230769230769" y="-92.5" />
+                  <point x="2142.505530392269" y="3156.0" />
+                  <point x="1814.7347314966776" y="3156.0" />
+                  <point x="72.0" y="92.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Bill" target="com.sjsu.architects.PaymentStrategy">
+                  <point x="87.42857142857156" y="-114.5" />
+                  <point x="3863.8871183123" y="2727.0" />
+                  <point x="4077.0139782943197" y="2727.0" />
+                  <point x="-111.19999999999982" y="26.0" />
+                </edge>
+                <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.Booking">
+                  <point x="31.5" y="-70.5" />
+                  <point x="2621.41147152327" y="1875.0" />
+                  <point x="2742.2034814966773" y="1875.0" />
+                  <point x="2742.2034814966773" y="1499.0" />
+                  <point x="3160.177296883729" y="1499.0" />
+                  <point x="-80.20833333333326" y="169.0" />
+                </edge>
+                <edge source="com.sjsu.architects.RoomController" target="com.sjsu.architects.Manager">
+                  <point x="34.42857142857156" y="-59.0" />
+                  <point x="165.42857142857156" y="3156.0" />
+                  <point x="142.36134541058436" y="3156.0" />
+                  <point x="142.36134541058436" y="2314.0" />
+                  <point x="261.14285714285734" y="2314.0" />
+                  <point x="-84.28571428571422" y="59.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.MemberBookingProxy">
+                  <point x="113.68421052631584" y="-92.0" />
+                  <point x="1856.4189420229934" y="2707.0" />
+                  <point x="1987.7098573153457" y="2707.0" />
+                  <point x="1987.7098573153457" y="2304.0" />
+                  <point x="2439.375757237556" y="2304.0" />
+                  <point x="-82.28571428571422" y="37.0" />
+                </edge>
+                <edge source="com.sjsu.architects.RoomBooking" target="com.sjsu.architects.Booking">
+                  <point x="232.3125" y="-114.0" />
+                  <point x="3098.0473116276526" y="2324.0" />
+                  <point x="3326.102176651475" y="2324.0" />
+                  <point x="3326.102176651475" y="1519.0" />
+                  <point x="3274.760630217062" y="1519.0" />
+                  <point x="34.375" y="169.0" />
+                </edge>
+                <edge source="com.sjsu.architects.RoomBooking" target="com.sjsu.architects.Room">
+                  <point x="33.1875" y="-114.0" />
+                  <point x="2898.9223116276526" y="2284.0" />
+                  <point x="2752.81772152327" y="2284.0" />
+                  <point x="2752.81772152327" y="1805.0" />
+                  <point x="2591.022357315346" y="1805.0" />
+                  <point x="2591.022357315346" y="1409.0" />
+                  <point x="1335.3785714285714" y="1409.0" />
+                  <point x="96.94999999999993" y="147.0" />
+                </edge>
+                <edge source="com.sjsu.architects.MemberBookingProxy" target="com.sjsu.architects.StandardBookingController">
+                  <point x="-24.0" y="-37.0" />
+                  <point x="2497.66147152327" y="2116.0" />
+                  <point x="2517.91147152327" y="2116.0" />
+                  <point x="-72.0" y="70.5" />
+                </edge>
+                <edge source="com.sjsu.architects.StaffController" target="com.sjsu.architects.Person">
+                  <point x="-101.14285714285711" y="-70.0" />
+                  <point x="292.78571428571445" y="3136.0" />
+                  <point x="187.42857142857156" y="3136.0" />
+                  <point x="187.42857142857156" y="732.0" />
+                  <point x="407.6855943302878" y="732.0" />
+                  <point x="-110.6875" y="191.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.IdentityController">
+                  <point x="-170.52631578947353" y="-92.0" />
+                  <point x="1572.208415707204" y="2737.0" />
+                  <point x="1039.3035714285713" y="2737.0" />
+                  <point x="118.875" y="136.5" />
+                </edge>
+                <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.Member">
+                  <point x="81.25" y="-59.0" />
+                  <point x="2338.678607315346" y="3441.0" />
+                  <point x="3492.7135548566034" y="3441.0" />
+                  <point x="3492.7135548566034" y="951.0" />
+                  <point x="3343.109388189937" y="951.0" />
+                  <point x="84.79166666666674" y="59.5" />
+                </edge>
+                <edge source="com.sjsu.architects.Bill" target="com.sjsu.architects.Promotion">
+                  <point x="43.71428571428578" y="-114.5" />
+                  <point x="3820.172832598015" y="2737.0" />
+                  <point x="3827.1650140977445" y="2737.0" />
+                  <point x="3827.1650140977445" y="280.0" />
+                  <point x="3400.8385548566034" y="280.0" />
+                  <point x="89.6875" y="125.0" />
+                </edge>
+                <edge source="com.sjsu.architects.MemberBillControllerProxy" target="com.sjsu.architects.BillController">
+                  <point x="-111.0" y="-48.5" />
+                  <point x="4313.464121240601" y="3471.0" />
+                  <point x="3793.974738267727" y="3471.0" />
+                  <point x="43.125" y="81.0" />
+                </edge>
+                <edge source="com.sjsu.architects.CreditCardPaymentStrategy" target="com.sjsu.architects.PaymentStrategy">
+                  <point x="0.0" y="-37.5" />
+                  <point x="4162.958546883729" y="2737.0" />
+                  <point x="4188.2139782943195" y="2737.0" />
+                  <point x="0.0" y="26.0" />
+                </edge>
+                <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.CashPaymentStrategy">
+                  <point x="97.03125" y="-81.0" />
+                  <point x="3847.880988267727" y="3126.0" />
+                  <point x="4535.458546883729" y="3126.0" />
+                  <point x="0.0" y="26.0" />
+                </edge>
+                <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.Food">
+                  <point x="-52.5" y="-70.5" />
+                  <point x="2537.41147152327" y="1825.0" />
+                  <point x="2613.022357315346" y="1825.0" />
+                  <point x="2613.022357315346" y="1389.0" />
+                  <point x="1754.5952739820125" y="1389.0" />
+                  <point x="99.3125" y="81.0" />
+                </edge>
+                <edge source="com.sjsu.architects.IdentityController" target="com.sjsu.architects.Manager">
+                  <point x="-142.64999999999992" y="-136.5" />
+                  <point x="777.7785714285715" y="2304.0" />
+                  <point x="429.7142857142858" y="2304.0" />
+                  <point x="84.28571428571428" y="59.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.Bootstrap">
+                  <point x="-18.75" y="-59.0" />
+                  <point x="2238.678607315346" y="3391.0" />
+                  <point x="1742.7347314966776" y="3391.0" />
+                  <point x="0.0" y="92.0" />
+                </edge>
+                <edge source="com.sjsu.architects.CheckPaymentStrategy" target="com.sjsu.architects.PaymentStrategy">
+                  <point x="0.0" y="-26.0" />
+                  <point x="4833.458546883729" y="2727.0" />
+                  <point x="4299.413978294319" y="2727.0" />
+                  <point x="111.19999999999982" y="26.0" />
+                </edge>
+                <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.CreditCardPaymentStrategy">
+                  <point x="75.46875" y="-81.0" />
+                  <point x="3826.318488267727" y="3116.0" />
+                  <point x="4162.958546883729" y="3116.0" />
+                  <point x="0.0" y="37.5" />
+                </edge>
+                <edge source="com.sjsu.architects.Hotel" target="com.sjsu.architects.Room">
+                  <point x="-83.25" y="-103.0" />
+                  <point x="1271.0327739820125" y="1519.0" />
+                  <point x="1252.2785714285715" y="1519.0" />
+                  <point x="13.850000000000023" y="147.0" />
+                </edge>
+                <edge source="com.sjsu.architects.MemberBillControllerProxy" target="com.sjsu.architects.Member">
+                  <point x="37.0" y="-48.5" />
+                  <point x="4461.464121240601" y="3461.0" />
+                  <point x="5032.25556483001" y="3461.0" />
+                  <point x="5032.25556483001" y="931.0" />
+                  <point x="3410.94272152327" y="931.0" />
+                  <point x="152.62499999999977" y="59.5" />
+                </edge>
+                <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.SpaBooking">
+                  <point x="94.5" y="-70.5" />
+                  <point x="2684.41147152327" y="1905.0" />
+                  <point x="2977.31772152327" y="1905.0" />
+                  <point x="-53.0" y="92.0" />
+                </edge>
+                <edge source="com.sjsu.architects.StaffController" target="com.sjsu.architects.Bootstrap">
+                  <point x="101.14285714285711" y="-70.0" />
+                  <point x="495.07142857142867" y="3156.0" />
+                  <point x="1670.7347314966776" y="3156.0" />
+                  <point x="-72.0" y="92.0" />
+                </edge>
+                <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.Bill">
+                  <point x="-10.78125" y="-81.0" />
+                  <point x="3740.068488267727" y="3016.0" />
+                  <point x="3661.7085468837286" y="3016.0" />
+                  <point x="-114.75" y="114.5" />
+                </edge>
+                <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.Manager">
+                  <point x="-118.75" y="-59.0" />
+                  <point x="2138.678607315346" y="3471.0" />
+                  <point x="0.0" y="3471.0" />
+                  <point x="0.0" y="2304.0" />
+                  <point x="219.0" y="2304.0" />
+                  <point x="-126.42857142857156" y="59.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.RoomBooking">
+                  <point x="18.75" y="-59.0" />
+                  <point x="2276.178607315346" y="3391.0" />
+                  <point x="3437.7135548566034" y="3391.0" />
+                  <point x="3437.7135548566034" y="2737.0" />
+                  <point x="2898.9223116276526" y="2737.0" />
+                  <point x="33.1875" y="114.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.Member">
+                  <point x="0.0" y="-92.0" />
+                  <point x="1742.7347314966776" y="2647.0" />
+                  <point x="1832.4286073153457" y="2647.0" />
+                  <point x="1832.4286073153457" y="941.0" />
+                  <point x="3139.609388189937" y="941.0" />
+                  <point x="-118.70833333333326" y="59.5" />
+                </edge>
+                <edge source="com.sjsu.architects.IdentityController" target="com.sjsu.architects.Member">
+                  <point x="142.64999999999986" y="-136.5" />
+                  <point x="1063.0785714285712" y="2324.0" />
+                  <point x="1050.600520970362" y="2324.0" />
+                  <point x="1050.600520970362" y="931.0" />
+                  <point x="3105.69272152327" y="931.0" />
+                  <point x="-152.625" y="59.5" />
+                </edge>
+                <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.Hotel">
+                  <point x="-94.73684210526312" y="-92.0" />
+                  <point x="1647.9978893914144" y="2697.0" />
+                  <point x="1401.8542025534412" y="2697.0" />
+                  <point x="47.57142857142867" y="103.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.StaffController">
+                  <point x="-81.25" y="-59.0" />
+                  <point x="2176.178607315346" y="3441.0" />
+                  <point x="334.92857142857156" y="3441.0" />
+                  <point x="-59.0" y="70.0" />
+                </edge>
+                <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.Room">
+                  <point x="-132.63157894736833" y="-92.0" />
+                  <point x="1610.1031525493092" y="2717.0" />
+                  <point x="1166.2827739820125" y="2717.0" />
+                  <point x="1166.2827739820125" y="1519.0" />
+                  <point x="1169.1785714285713" y="1519.0" />
+                  <point x="-69.25" y="147.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.5" x="654.0" y="1299.0" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IdentityController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/IdentityController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="562">
+              <caret line="48" column="36" lean-forward="true" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,44 +835,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BillController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/BillController.java">
+      <file leaf-file-name="PaymentStrategy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/PaymentStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="165" column="39" lean-forward="false" selection-start-line="165" selection-start-column="39" selection-end-line="165" selection-end-column="39" />
+            <state relative-caret-position="105">
+              <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bootstrap.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Bootstrap.java">
+      <file leaf-file-name="RoomBooking.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/RoomBooking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-73">
-              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+            <state relative-caret-position="270">
+              <caret line="116" column="19" lean-forward="false" selection-start-line="116" selection-start-column="19" selection-end-line="116" selection-end-column="19" />
               <folding>
-                <element signature="e#2715#2721#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CheckPaymentStrategy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/CheckPaymentStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CashPaymentStrategy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/CashPaymentStrategy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -90,41 +860,19 @@
       <file leaf-file-name="CreditCardPaymentStrategy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/CreditCardPaymentStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state relative-caret-position="375">
+              <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FoodBooking.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/FoodBooking.java">
+      <file leaf-file-name="Room.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Room.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#636#637#0" expanded="true" />
-                <element signature="e#687#688#0" expanded="true" />
-                <element signature="e#1387#1388#0" expanded="true" />
-                <element signature="e#1445#1446#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PromotionController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/PromotionController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="99" column="67" lean-forward="false" selection-start-line="99" selection-start-column="67" selection-end-line="99" selection-end-column="67" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2668#2669#0" expanded="true" />
-                <element signature="e#2742#2743#0" expanded="true" />
-                <element signature="e#3384#3385#0" expanded="true" />
-                <element signature="e#3442#3443#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,14 +880,9 @@
       <file leaf-file-name="Bill.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Bill.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-              <folding>
-                <element signature="e#2184#2185#0" expanded="true" />
-                <element signature="e#2216#2217#0" expanded="true" />
-                <element signature="e#2269#2270#0" expanded="true" />
-                <element signature="e#2311#2312#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1017">
+              <caret line="74" column="28" lean-forward="false" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -165,6 +908,8 @@
       <find>signup</find>
       <find>Booking</find>
       <find>CustomerMenu</find>
+      <find>spaBooking</find>
+      <find>StaffMenuCheck</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -204,31 +949,31 @@
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/Person.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/RoomController.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/Promotion.java" />
-        <option value="$PROJECT_DIR$/src/com/sjsu/architects/Hotel.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/Member.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/Staff.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/Manager.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/BookingList.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/StaffController.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/IdentityController.java" />
-        <option value="$PROJECT_DIR$/src/com/sjsu/architects/SpaServiceController.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/FoodController.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/MemberController.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/Booking.java" />
-        <option value="$PROJECT_DIR$/src/com/sjsu/architects/RoomBooking.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/SpaBooking.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/FoodBooking.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/MemberBookingProxy.java" />
-        <option value="$PROJECT_DIR$/src/com/sjsu/architects/StandardBookingController.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/PromotionController.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/BillController.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/Bootstrap.java" />
-        <option value="$PROJECT_DIR$/src/com/sjsu/architects/Bill.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/CheckPaymentStrategy.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/CashPaymentStrategy.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/CreditCardPaymentStrategy.java" />
+        <option value="$PROJECT_DIR$/src/com/sjsu/architects/Hotel.java" />
+        <option value="$PROJECT_DIR$/src/com/sjsu/architects/RoomBooking.java" />
+        <option value="$PROJECT_DIR$/src/com/sjsu/architects/SpaServiceController.java" />
+        <option value="$PROJECT_DIR$/src/com/sjsu/architects/StandardBookingController.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/sjsu/architects/Bill.java" />
       </list>
     </option>
   </component>
@@ -259,56 +1004,32 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="architects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".idea" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="architects" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -335,64 +1056,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="com.sjsu.architects.Main" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="project" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="StaffController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.sjsu.architects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.sjsu.architects.StaffController" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="SpaServiceController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.sjsu.architects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.sjsu.architects.SpaServiceController" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="FoodController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="FoodController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.sjsu.architects.*" />
@@ -410,9 +1074,24 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="project" />
       <envs />
-      <method />
     </configuration>
-    <configuration default="false" name="RoomController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="com.sjsu.architects.Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="project" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration name="RoomController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.sjsu.architects.*" />
@@ -430,7 +1109,60 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="project" />
       <envs />
-      <method />
+    </configuration>
+    <configuration name="SpaServiceController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.sjsu.architects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.sjsu.architects.SpaServiceController" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="project" />
+      <envs />
+    </configuration>
+    <configuration name="StaffController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.sjsu.architects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.sjsu.architects.StaffController" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="project" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
@@ -648,15 +1380,6 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="passParentEnv" value="true" />
-      <setting name="launchBrowser" value="true" />
-      <setting name="launchBrowserUrl" value="" />
-      <setting name="depsClasspath" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -777,15 +1500,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -850,32 +1564,31 @@
       <workItem from="1501718074791" duration="5000" />
       <workItem from="1501718150229" duration="10228000" />
       <workItem from="1501882204591" duration="6307000" />
+      <workItem from="1501904493927" duration="9930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106511000" />
+    <option name="totallyTimeSpent" value="116441000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="699" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="699" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32454696" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32352942" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36573312" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36682615" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0049423394" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23424879" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26015624" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -885,8 +1598,10 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="combo" />
       <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -924,7 +1639,7 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -939,19 +1654,13 @@
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/sjsu/architects/SpaServiceController.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/sjsu/architects/IdentityController.java</url>
           <line>87</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="46" />
+      <option name="time" value="47" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -960,7 +1669,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/FoodItemscontroller.java" />
     <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Suite.java" />
     <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/SingleRoom.java" />
     <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/DoubleRoom.java" />
@@ -973,83 +1681,8 @@
     <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/CashPayment.java" />
     <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/CreditcardPayment.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/ArrayList.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Manager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="21" column="2" lean-forward="false" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Hotel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="47" column="34" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Payment.java" />
     <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/BookingList.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Food.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Room.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/com.sjsu.architects">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.sjsu.architects</OriginalElement>
-          <nodes>
-            <node x="" y="">com.sjsu.architects.Staff</node>
-            <node x="" y="">com.sjsu.architects.Promotion</node>
-            <node x="" y="">com.sjsu.architects.Bill</node>
-            <node x="" y="">com.sjsu.architects.FoodBooking</node>
-            <node x="" y="">com.sjsu.architects.RoomBooking</node>
-            <node x="" y="">com.sjsu.architects.MemberBookingProxy</node>
-            <node x="" y="">com.sjsu.architects.Main</node>
-            <node x="" y="">com.sjsu.architects.StandardBookingController</node>
-            <node x="" y="">com.sjsu.architects.Hotel</node>
-            <node x="" y="">com.sjsu.architects.Booking</node>
-            <node x="" y="">com.sjsu.architects.DebitCardPayment</node>
-            <node x="" y="">com.sjsu.architects.CheckPayment</node>
-            <node x="" y="">com.sjsu.architects.Manager</node>
-            <node x="" y="">com.sjsu.architects.RoomController</node>
-            <node x="" y="">com.sjsu.architects.PromotionController</node>
-            <node x="" y="">com.sjsu.architects.StaffController</node>
-            <node x="" y="">com.sjsu.architects.SpaServiceController</node>
-            <node x="" y="">com.sjsu.architects.IdentityController</node>
-            <node x="" y="">com.sjsu.architects.SpaService</node>
-            <node x="" y="">com.sjsu.architects.Person</node>
-            <node x="" y="">com.sjsu.architects.SpaBooking</node>
-            <node x="" y="">com.sjsu.architects.Room</node>
-            <node x="" y="">com.sjsu.architects.Food</node>
-            <node x="" y="">com.sjsu.architects.CreditcardPayment</node>
-            <node x="" y="">com.sjsu.architects.CashPayment</node>
-            <node x="" y="">com.sjsu.architects.Member</node>
-            <node x="" y="">com.sjsu.architects.FoodController</node>
-            <node x="" y="">com.sjsu.architects.Payment</node>
-            <node x="" y="">com.sjsu.architects.MemberController</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.6337837837837837" x="398.0" y="540.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Staff.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1057,96 +1690,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/SpaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Member.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="37" lean-forward="false" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/CheckPayment.java" />
     <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/DebitCardPayment.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/PaymentStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/RoomBooking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/SpaBooking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="46" column="51" lean-forward="false" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1331#1332#0" expanded="true" />
-            <element signature="e#1389#1390#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/RoomController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/MemberBookingProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/StaffController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="97" column="37" lean-forward="false" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/StandardBookingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1162,33 +1711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-          <folding>
-            <marker date="1501902331000" expanded="true" signature="77840:77857" ph="..." />
-            <marker date="1501902331000" expanded="true" signature="77840:77875" ph="..." />
-            <marker date="1501902331000" expanded="true" signature="77840:77888" ph="..." />
-            <marker date="1501902331000" expanded="true" signature="77840:77903" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/IdentityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Promotion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-          <folding>
-            <element signature="e#913#914#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1202,18 +1724,154 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Bootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="50" column="5" lean-forward="false" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <element signature="e#2715#2721#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/CheckPaymentStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/CashPaymentStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="39" />
+          <folding>
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/StaffController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="97" column="37" lean-forward="false" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Hotel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/FoodBooking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="32" column="65" lean-forward="false" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Promotion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding>
+            <element signature="e#913#914#0" expanded="true" />
+            <element signature="e#953#954#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/MemberBookingProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/SpaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/SpaServiceController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="57" column="56" lean-forward="false" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="56" />
+        <state relative-caret-position="45">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/SpaBooking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/FoodController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="55" column="58" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="55" selection-end-column="58" />
+        <state relative-caret-position="408">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/StandardBookingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="88" column="25" lean-forward="false" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
+            <element signature="e#4508#4509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="242" column="33" lean-forward="false" selection-start-line="242" selection-start-column="33" selection-end-line="242" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1222,105 +1880,865 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/PromotionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="99" column="67" lean-forward="false" selection-start-line="99" selection-start-column="67" selection-end-line="99" selection-end-column="67" />
+        <state relative-caret-position="-15">
+          <caret line="81" column="25" lean-forward="false" selection-start-line="81" selection-start-column="16" selection-end-line="81" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2668#2669#0" expanded="true" />
             <element signature="e#2742#2743#0" expanded="true" />
-            <element signature="e#3384#3385#0" expanded="true" />
-            <element signature="e#3442#3443#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/BillController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
+        <state relative-caret-position="2460">
           <caret line="165" column="39" lean-forward="false" selection-start-line="165" selection-start-column="39" selection-end-line="165" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Booking.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/RoomController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/FoodBooking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#1387#1388#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Bootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-73">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-          <folding>
-            <element signature="e#2715#2721#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Bill.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding>
-            <element signature="e#2184#2185#0" expanded="true" />
-            <element signature="e#2216#2217#0" expanded="true" />
-            <element signature="e#2269#2270#0" expanded="true" />
-            <element signature="e#2311#2312#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/CheckPaymentStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="1005">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/CashPaymentStrategy.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/PaymentStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state relative-caret-position="105">
+          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/CreditCardPaymentStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state relative-caret-position="375">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Room.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="99" column="21" lean-forward="true" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
+        <state relative-caret-position="105">
+          <caret line="7" column="33" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/RoomBooking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="116" column="19" lean-forward="false" selection-start-line="116" selection-start-column="19" selection-end-line="116" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/IdentityController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="48" column="36" lean-forward="true" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Bill.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1017">
+          <caret line="74" column="28" lean-forward="false" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Booking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="e#1411#1412#0" expanded="true" />
+            <element signature="e#1438#1439#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//Users/nisha/Desktop/202 updated/CMPE202/Project/project/src/com/sjsu/architects">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/com/sjsu/architects</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="240.0" y="240.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.sjsu.architects">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.sjsu.architects</OriginalElement>
+          <nodes>
+            <node x="532.9285714285716" y="2158.0">com.sjsu.architects.Staff</node>
+            <node x="3167.6510548566034" y="0.0">com.sjsu.architects.Promotion</node>
+            <node x="4396.458546883729" y="2845.5">com.sjsu.architects.CashPaymentStrategy</node>
+            <node x="1562.7347314966776" y="2779.5">com.sjsu.architects.Bootstrap</node>
+            <node x="3623.4585468837286" y="2757.0">com.sjsu.architects.Bill</node>
+            <node x="2600.2348116276526" y="2366.5">com.sjsu.architects.RoomBooking</node>
+            <node x="2066.428607315346" y="1550.0">com.sjsu.architects.FoodBooking</node>
+            <node x="2425.66147152327" y="2158.0">com.sjsu.architects.MemberBookingProxy</node>
+            <node x="2132.428607315346" y="3491.0">com.sjsu.architects.Main</node>
+            <node x="2463.91147152327" y="1935.0">com.sjsu.architects.StandardBookingController</node>
+            <node x="1187.7827739820125" y="1539.0">com.sjsu.architects.Hotel</node>
+            <node x="3102.885630217062" y="991.0">com.sjsu.architects.Booking</node>
+            <node x="197.92857142857156" y="2136.0">com.sjsu.architects.Manager</node>
+            <node x="10.5" y="3209.5">com.sjsu.architects.RoomController</node>
+            <node x="3099.81772152327" y="407.5">com.sjsu.architects.PromotionController</node>
+            <node x="275.92857142857156" y="3198.5">com.sjsu.architects.StaffController</node>
+            <node x="761.9285714285713" y="2344.0">com.sjsu.architects.IdentityController</node>
+            <node x="4276.464121240601" y="3501.5">com.sjsu.architects.MemberBillControllerProxy</node>
+            <node x="2093.56772152327" y="1079.0">com.sjsu.architects.SpaService</node>
+            <node x="3578.349738267727" y="3187.5">com.sjsu.architects.BillController</node>
+            <node x="391.8730943302878" y="320.0">com.sjsu.architects.Person</node>
+            <node x="2818.31772152327" y="1550.0">com.sjsu.architects.SpaBooking</node>
+            <node x="1099.9285714285713" y="1013.0">com.sjsu.architects.Room</node>
+            <node x="1541.7827739820125" y="1079.0">com.sjsu.architects.Food</node>
+            <node x="3054.81772152327" y="782.0">com.sjsu.architects.Member</node>
+            <node x="3949.4585468837286" y="2834.0">com.sjsu.architects.CreditCardPaymentStrategy</node>
+            <node x="4694.458546883729" y="2845.5">com.sjsu.architects.CheckPaymentStrategy</node>
+            <node x="2132.928607315346" y="3176.0">com.sjsu.architects.MemberController</node>
+            <node x="4049.2139782943195" y="2454.5">com.sjsu.architects.PaymentStrategy</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.FoodBooking">
+              <point x="-19.15384615384619" y="-92.5" />
+              <point x="2238.2747611614996" y="3156.0" />
+              <point x="2246.428607315346" y="3156.0" />
+              <point x="-36.0" y="92.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Member" target="com.sjsu.architects.PromotionController">
+              <point x="-81.39999999999986" y="-59.5" />
+              <point x="3176.9177215232703" y="762.0" />
+              <point x="3223.0954993010478" y="762.0" />
+              <point x="-35.22222222222217" y="103.5" />
+            </edge>
+            <edge source="com.sjsu.architects.StaffController" target="com.sjsu.architects.IdentityController">
+              <point x="67.42857142857156" y="-70.0" />
+              <point x="461.3571428571431" y="3136.0" />
+              <point x="466.2398066846479" y="3136.0" />
+              <point x="466.2398066846479" y="2737.0" />
+              <point x="801.5535714285713" y="2737.0" />
+              <point x="-118.875" y="136.5" />
+            </edge>
+            <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.CheckPaymentStrategy">
+              <point x="118.59375" y="-81.0" />
+              <point x="3869.443488267727" y="3136.0" />
+              <point x="4833.458546883729" y="3136.0" />
+              <point x="0.0" y="26.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.BillController">
+              <point x="106.25" y="-59.0" />
+              <point x="2363.678607315346" y="3461.0" />
+              <point x="3621.474738267727" y="3461.0" />
+              <point x="-129.375" y="81.0" />
+            </edge>
+            <edge source="com.sjsu.architects.SpaBooking" target="com.sjsu.architects.SpaService">
+              <point x="-141.33333333333348" y="-92.0" />
+              <point x="2888.9843881899365" y="1359.0" />
+              <point x="2292.63022152327" y="1359.0" />
+              <point x="76.5625" y="81.0" />
+            </edge>
+            <edge source="com.sjsu.architects.StaffController" target="com.sjsu.architects.Manager">
+              <point x="-67.42857142857156" y="-70.0" />
+              <point x="326.5" y="3136.0" />
+              <point x="348.0255209703621" y="3136.0" />
+              <point x="348.0255209703621" y="2324.0" />
+              <point x="345.42857142857156" y="2324.0" />
+              <point x="0.0" y="59.0" />
+            </edge>
+            <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.FoodBooking">
+              <point x="-94.5" y="-70.5" />
+              <point x="2495.41147152327" y="1795.0" />
+              <point x="2318.428607315346" y="1795.0" />
+              <point x="36.0" y="92.0" />
+            </edge>
+            <edge source="com.sjsu.architects.PromotionController" target="com.sjsu.architects.Promotion">
+              <point x="0.0" y="-103.5" />
+              <point x="3258.31772152327" y="300.0" />
+              <point x="3293.2135548566034" y="300.0" />
+              <point x="-17.9375" y="125.0" />
+            </edge>
+            <edge source="com.sjsu.architects.IdentityController" target="com.sjsu.architects.PromotionController">
+              <point x="47.549999999999955" y="-136.5" />
+              <point x="967.9785714285713" y="2304.0" />
+              <point x="1017.6005209703619" y="2304.0" />
+              <point x="1017.6005209703619" y="732.0" />
+              <point x="3117.4288326343813" y="732.0" />
+              <point x="-140.8888888888889" y="103.5" />
+            </edge>
+            <edge source="com.sjsu.architects.FoodBooking" target="com.sjsu.architects.Food">
+              <point x="0.0" y="-92.0" />
+              <point x="2282.428607315346" y="1419.0" />
+              <point x="1726.2202739820125" y="1419.0" />
+              <point x="70.9375" y="81.0" />
+            </edge>
+            <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.Hotel">
+              <point x="-95.76923076923072" y="-92.5" />
+              <point x="2161.6593765461153" y="3146.0" />
+              <point x="2022.928607315346" y="3146.0" />
+              <point x="2022.928607315346" y="1895.0" />
+              <point x="1449.4256311248696" y="1895.0" />
+              <point x="95.14285714285711" y="103.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.FoodBooking">
+              <point x="56.84210526315792" y="-92.0" />
+              <point x="1799.5768367598355" y="2677.0" />
+              <point x="1954.7098573153457" y="2677.0" />
+              <point x="1954.7098573153457" y="1905.0" />
+              <point x="2102.428607315346" y="1905.0" />
+              <point x="-180.0" y="92.0" />
+            </edge>
+            <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.Hotel">
+              <point x="-115.5" y="-70.5" />
+              <point x="2474.41147152327" y="1805.0" />
+              <point x="1496.9970596962983" y="1805.0" />
+              <point x="142.71428571428578" y="103.0" />
+            </edge>
+            <edge source="com.sjsu.architects.RoomController" target="com.sjsu.architects.Bootstrap">
+              <point x="103.28571428571428" y="-59.0" />
+              <point x="234.28571428571422" y="3146.0" />
+              <point x="1598.7347314966776" y="3146.0" />
+              <point x="-144.0" y="92.0" />
+            </edge>
+            <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.Member">
+              <point x="114.9230769230769" y="-92.5" />
+              <point x="2372.351684238423" y="3156.0" />
+              <point x="3422.175093318142" y="3156.0" />
+              <point x="3422.175093318142" y="961.0" />
+              <point x="3309.19272152327" y="961.0" />
+              <point x="50.875" y="59.5" />
+            </edge>
+            <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.Food">
+              <point x="-38.30769230769238" y="-92.5" />
+              <point x="2219.120915007654" y="3116.0" />
+              <point x="2055.928607315346" y="3116.0" />
+              <point x="2055.928607315346" y="1439.0" />
+              <point x="1669.4702739820125" y="1439.0" />
+              <point x="14.1875" y="81.0" />
+            </edge>
+            <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.Member">
+              <point x="-32.34375" y="-81.0" />
+              <point x="3718.505988267727" y="3026.0" />
+              <point x="3603.9796032943195" y="3026.0" />
+              <point x="3603.9796032943195" y="941.0" />
+              <point x="3377.026054856603" y="941.0" />
+              <point x="118.70833333333326" y="59.5" />
+            </edge>
+            <edge source="com.sjsu.architects.StaffController" target="com.sjsu.architects.Staff">
+              <point x="33.71428571428578" y="-70.0" />
+              <point x="427.64285714285734" y="3136.0" />
+              <point x="455.2398066846479" y="3136.0" />
+              <point x="455.2398066846479" y="2324.0" />
+              <point x="610.9285714285716" y="2324.0" />
+              <point x="-26.0" y="37.0" />
+            </edge>
+            <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.SpaBooking">
+              <point x="95.76923076923072" y="-92.5" />
+              <point x="2353.1978380845767" y="3146.0" />
+              <point x="3397.6441866248824" y="3146.0" />
+              <point x="3397.6441866248824" y="1905.0" />
+              <point x="3083.31772152327" y="1905.0" />
+              <point x="53.0" y="92.0" />
+            </edge>
+            <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.IdentityController">
+              <point x="-161.71875" y="-81.0" />
+              <point x="3589.130988267727" y="3086.0" />
+              <point x="939.9005209703619" y="3086.0" />
+              <point x="939.9005209703619" y="2737.0" />
+              <point x="960.0535714285713" y="2737.0" />
+              <point x="39.625" y="136.5" />
+            </edge>
+            <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.IdentityController">
+              <point x="-31.25" y="-59.0" />
+              <point x="2226.178607315346" y="3401.0" />
+              <point x="928.9005209703619" y="3401.0" />
+              <point x="928.9005209703619" y="2737.0" />
+              <point x="880.8035714285713" y="2737.0" />
+              <point x="-39.625" y="136.5" />
+            </edge>
+            <edge source="com.sjsu.architects.CashPaymentStrategy" target="com.sjsu.architects.PaymentStrategy">
+              <point x="0.0" y="-26.0" />
+              <point x="4535.458546883729" y="2737.0" />
+              <point x="4243.81397829432" y="2737.0" />
+              <point x="55.59999999999991" y="26.0" />
+            </edge>
+            <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.SpaService">
+              <point x="-31.5" y="-70.5" />
+              <point x="2558.41147152327" y="1835.0" />
+              <point x="2624.022357315346" y="1835.0" />
+              <point x="2624.022357315346" y="1379.0" />
+              <point x="2262.00522152327" y="1379.0" />
+              <point x="45.9375" y="81.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.SpaService">
+              <point x="37.89473684210532" y="-92.0" />
+              <point x="1780.6294683387828" y="2667.0" />
+              <point x="1943.7098573153457" y="2667.0" />
+              <point x="1943.7098573153457" y="1519.0" />
+              <point x="2200.75522152327" y="1519.0" />
+              <point x="-15.3125" y="81.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.PromotionController">
+              <point x="-18.9473684210526" y="-92.0" />
+              <point x="1723.7873630756249" y="2637.0" />
+              <point x="1779.2827739820125" y="2637.0" />
+              <point x="1779.2827739820125" y="752.0" />
+              <point x="3187.8732770788256" y="752.0" />
+              <point x="-70.44444444444434" y="103.5" />
+            </edge>
+            <edge source="com.sjsu.architects.SpaBooking" target="com.sjsu.architects.Booking">
+              <point x="141.33333333333326" y="-92.0" />
+              <point x="3171.6510548566034" y="1519.0" />
+              <point x="3206.010630217062" y="1519.0" />
+              <point x="-34.375" y="169.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Booking" target="com.sjsu.architects.Member">
+              <point x="68.75" y="-169.0" />
+              <point x="3309.135630217062" y="971.0" />
+              <point x="3275.276054856603" y="971.0" />
+              <point x="16.958333333333258" y="59.5" />
+            </edge>
+            <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.FoodBooking">
+              <point x="-97.03125" y="-81.0" />
+              <point x="3653.818488267727" y="3056.0" />
+              <point x="3570.9796032943195" y="3056.0" />
+              <point x="3570.9796032943195" y="1775.0" />
+              <point x="2462.428607315346" y="1775.0" />
+              <point x="180.0" y="92.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Bill" target="com.sjsu.architects.Booking">
+              <point x="-43.71428571428555" y="-114.5" />
+              <point x="3732.7442611694432" y="2737.0" />
+              <point x="3711.1806390977445" y="2737.0" />
+              <point x="3711.1806390977445" y="1479.0" />
+              <point x="3366.427296883729" y="1479.0" />
+              <point x="126.04166666666686" y="169.0" />
+            </edge>
+            <edge source="com.sjsu.architects.RoomController" target="com.sjsu.architects.Hotel">
+              <point x="0.0" y="-59.0" />
+              <point x="131.0" y="3156.0" />
+              <point x="124.1827739820128" y="3156.0" />
+              <point x="124.1827739820128" y="1895.0" />
+              <point x="1259.1399168391554" y="1895.0" />
+              <point x="-95.14285714285711" y="103.0" />
+            </edge>
+            <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.Bootstrap">
+              <point x="-108.0" y="70.5" />
+              <point x="2481.91147152327" y="2116.0" />
+              <point x="1976.7098573153457" y="2116.0" />
+              <point x="1976.7098573153457" y="2697.0" />
+              <point x="1837.4715736019407" y="2697.0" />
+              <point x="94.73684210526312" y="-92.0" />
+            </edge>
+            <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.RoomBooking">
+              <point x="76.61538461538453" y="-92.5" />
+              <point x="2334.0439919307305" y="3136.0" />
+              <point x="2804.8598116276526" y="3136.0" />
+              <point x="2804.8598116276526" y="2737.0" />
+              <point x="2832.5473116276526" y="2737.0" />
+              <point x="-33.1875" y="114.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Staff" target="com.sjsu.architects.Person">
+              <point x="0.0" y="-37.0" />
+              <point x="636.9285714285716" y="762.0" />
+              <point x="534.1855943302878" y="762.0" />
+              <point x="15.8125" y="191.0" />
+            </edge>
+            <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.RoomBooking">
+              <point x="36.0" y="70.5" />
+              <point x="2625.91147152327" y="2116.0" />
+              <point x="2741.81772152327" y="2116.0" />
+              <point x="2741.81772152327" y="2294.0" />
+              <point x="2832.5473116276526" y="2294.0" />
+              <point x="-33.1875" y="-114.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Member" target="com.sjsu.architects.Person">
+              <point x="-162.79999999999995" y="-59.5" />
+              <point x="3095.5177215232698" y="722.0" />
+              <point x="629.0605943302878" y="722.0" />
+              <point x="110.6875" y="191.0" />
+            </edge>
+            <edge source="com.sjsu.architects.RoomController" target="com.sjsu.architects.Room">
+              <point x="-103.28571428571422" y="-59.0" />
+              <point x="27.71428571428578" y="3146.0" />
+              <point x="68.7225349789669" y="3146.0" />
+              <point x="68.7225349789669" y="1865.0" />
+              <point x="312.7225349789669" y="1865.0" />
+              <point x="312.7225349789669" y="1509.0" />
+              <point x="1113.7785714285715" y="1509.0" />
+              <point x="-124.64999999999986" y="147.0" />
+            </edge>
+            <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.Member">
+              <point x="-10.5" y="-70.5" />
+              <point x="2579.41147152327" y="1845.0" />
+              <point x="2673.053607315346" y="1845.0" />
+              <point x="2673.053607315346" y="951.0" />
+              <point x="3173.526054856603" y="951.0" />
+              <point x="-84.79166666666674" y="59.5" />
+            </edge>
+            <edge source="com.sjsu.architects.Hotel" target="com.sjsu.architects.Food">
+              <point x="27.75" y="-103.0" />
+              <point x="1382.0327739820125" y="1479.0" />
+              <point x="1584.3452739820125" y="1479.0" />
+              <point x="-70.9375" y="81.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.MemberController">
+              <point x="-6.25" y="-59.0" />
+              <point x="2251.178607315346" y="3381.0" />
+              <point x="2195.178607315346" y="3381.0" />
+              <point x="-62.25" y="92.5" />
+            </edge>
+            <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.SpaService">
+              <point x="0.0" y="-92.5" />
+              <point x="2257.428607315346" y="3096.0" />
+              <point x="2324.761597341939" y="3096.0" />
+              <point x="2324.761597341939" y="1815.0" />
+              <point x="2602.022357315346" y="1815.0" />
+              <point x="2602.022357315346" y="1399.0" />
+              <point x="2231.38022152327" y="1399.0" />
+              <point x="15.3125" y="81.0" />
+            </edge>
+            <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.PromotionController">
+              <point x="140.15625" y="-81.0" />
+              <point x="3891.005988267727" y="3146.0" />
+              <point x="4982.958546883729" y="3146.0" />
+              <point x="4982.958546883729" y="732.0" />
+              <point x="3399.2066104121586" y="732.0" />
+              <point x="140.8888888888889" y="103.5" />
+            </edge>
+            <edge source="com.sjsu.architects.Hotel" target="com.sjsu.architects.SpaService">
+              <point x="138.75" y="-103.0" />
+              <point x="1493.0327739820125" y="1499.0" />
+              <point x="2139.50522152327" y="1499.0" />
+              <point x="-76.5625" y="81.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Manager" target="com.sjsu.architects.Person">
+              <point x="-98.33333333333326" y="-59.0" />
+              <point x="247.0952380952383" y="2106.0" />
+              <point x="342.5558683123004" y="2106.0" />
+              <point x="342.5558683123004" y="742.0" />
+              <point x="439.3105943302878" y="742.0" />
+              <point x="-79.0625" y="191.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.RoomController">
+              <point x="-106.25" y="-59.0" />
+              <point x="2151.178607315346" y="3461.0" />
+              <point x="70.75" y="3461.0" />
+              <point x="-60.25" y="59.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.Promotion">
+              <point x="-75.78947368421052" y="-92.0" />
+              <point x="1666.945257812467" y="2687.0" />
+              <point x="1531.2827739820125" y="2687.0" />
+              <point x="1531.2827739820125" y="280.0" />
+              <point x="3221.4635548566034" y="280.0" />
+              <point x="-89.6875" y="125.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.Food">
+              <point x="-56.84210526315792" y="-92.0" />
+              <point x="1685.8926262335196" y="2677.0" />
+              <point x="1621.4077739820125" y="2677.0" />
+              <point x="1621.4077739820125" y="1479.0" />
+              <point x="1612.7202739820125" y="1479.0" />
+              <point x="-42.5625" y="81.0" />
+            </edge>
+            <edge source="com.sjsu.architects.FoodBooking" target="com.sjsu.architects.Booking">
+              <point x="144.0" y="-92.0" />
+              <point x="2426.428607315346" y="1479.0" />
+              <point x="3114.3439635503955" y="1479.0" />
+              <point x="-126.04166666666674" y="169.0" />
+            </edge>
+            <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.RoomBooking">
+              <point x="-118.59375" y="-81.0" />
+              <point x="3632.255988267727" y="3066.0" />
+              <point x="3559.9796032943195" y="3066.0" />
+              <point x="3559.9796032943195" y="2707.0" />
+              <point x="3098.0473116276526" y="2707.0" />
+              <point x="232.3125" y="114.0" />
+            </edge>
+            <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.SpaBooking">
+              <point x="-75.46875" y="-81.0" />
+              <point x="3675.380988267727" y="3046.0" />
+              <point x="3581.9796032943195" y="3046.0" />
+              <point x="3581.9796032943195" y="1765.0" />
+              <point x="3189.31772152327" y="1765.0" />
+              <point x="159.0" y="92.0" />
+            </edge>
+            <edge source="com.sjsu.architects.IdentityController" target="com.sjsu.architects.Staff">
+              <point x="-47.549999999999955" y="-136.5" />
+              <point x="872.8785714285714" y="2274.0" />
+              <point x="714.9285714285716" y="2274.0" />
+              <point x="78.0" y="37.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.PromotionController">
+              <point x="93.75" y="-59.0" />
+              <point x="2351.178607315346" y="3451.0" />
+              <point x="3547.0734962406013" y="3451.0" />
+              <point x="3547.0734962406013" y="742.0" />
+              <point x="3363.984388189937" y="742.0" />
+              <point x="105.66666666666674" y="103.5" />
+            </edge>
+            <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.MemberBookingProxy">
+              <point x="19.15384615384619" y="-92.5" />
+              <point x="2276.582453469192" y="3106.0" />
+              <point x="2468.41147152327" y="3106.0" />
+              <point x="2468.41147152327" y="2324.0" />
+              <point x="2494.232900094699" y="2324.0" />
+              <point x="-27.42857142857133" y="37.0" />
+            </edge>
+            <edge source="com.sjsu.architects.RoomBooking" target="com.sjsu.architects.MemberBookingProxy">
+              <point x="-232.3125" y="-114.0" />
+              <point x="2633.4223116276526" y="2324.0" />
+              <point x="2549.0900429518415" y="2324.0" />
+              <point x="27.42857142857156" y="37.0" />
+            </edge>
+            <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.Promotion">
+              <point x="161.71875" y="-81.0" />
+              <point x="3912.568488267727" y="3156.0" />
+              <point x="4993.958546883729" y="3156.0" />
+              <point x="4993.958546883729" y="270.0" />
+              <point x="3436.7135548566034" y="270.0" />
+              <point x="125.5625" y="125.0" />
+            </edge>
+            <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.Bootstrap">
+              <point x="-140.15625" y="-81.0" />
+              <point x="3610.693488267727" y="3076.0" />
+              <point x="1886.7347314966776" y="3076.0" />
+              <point x="144.0" y="92.0" />
+            </edge>
+            <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.MemberBookingProxy">
+              <point x="0.0" y="70.5" />
+              <point x="2589.91147152327" y="2116.0" />
+              <point x="2593.66147152327" y="2116.0" />
+              <point x="72.0" y="-37.0" />
+            </edge>
+            <edge source="com.sjsu.architects.PromotionController" target="com.sjsu.architects.Member">
+              <point x="35.22222222222217" y="103.5" />
+              <point x="3293.539943745492" y="762.0" />
+              <point x="3339.71772152327" y="762.0" />
+              <point x="81.40000000000009" y="-59.5" />
+            </edge>
+            <edge source="com.sjsu.architects.MemberBookingProxy" target="com.sjsu.architects.Booking">
+              <point x="-72.0" y="-37.0" />
+              <point x="2449.66147152327" y="2106.0" />
+              <point x="2453.41147152327" y="2106.0" />
+              <point x="2453.41147152327" y="1865.0" />
+              <point x="2711.991107315346" y="1865.0" />
+              <point x="2711.991107315346" y="1489.0" />
+              <point x="3137.260630217062" y="1489.0" />
+              <point x="-103.125" y="169.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.RoomBooking">
+              <point x="151.57894736842104" y="-92.0" />
+              <point x="1894.3136788650986" y="2727.0" />
+              <point x="2633.4223116276526" y="2727.0" />
+              <point x="-232.3125" y="114.0" />
+            </edge>
+            <edge source="com.sjsu.architects.IdentityController" target="com.sjsu.architects.Person">
+              <point x="15.850000000000136" y="-136.5" />
+              <point x="936.2785714285715" y="2294.0" />
+              <point x="972.8285714285714" y="2294.0" />
+              <point x="972.8285714285714" y="742.0" />
+              <point x="597.4355943302878" y="742.0" />
+              <point x="79.0625" y="191.0" />
+            </edge>
+            <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.Room">
+              <point x="-57.46153846153857" y="-92.5" />
+              <point x="2199.967068853807" y="3126.0" />
+              <point x="2044.928607315346" y="3126.0" />
+              <point x="2044.928607315346" y="1449.0" />
+              <point x="1307.678571428571" y="1449.0" />
+              <point x="69.24999999999989" y="147.0" />
+            </edge>
+            <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.Booking">
+              <point x="-53.90625" y="-81.0" />
+              <point x="3696.943488267727" y="3036.0" />
+              <point x="3592.9796032943195" y="3036.0" />
+              <point x="3592.9796032943195" y="1509.0" />
+              <point x="3297.677296883729" y="1509.0" />
+              <point x="57.291666666666856" y="169.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.Hotel">
+              <point x="-43.75" y="-59.0" />
+              <point x="2213.678607315346" y="3411.0" />
+              <point x="751.4285714285716" y="3411.0" />
+              <point x="751.4285714285716" y="1915.0" />
+              <point x="1354.2827739820125" y="1915.0" />
+              <point x="0.0" y="103.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.StandardBookingController">
+              <point x="56.25" y="-59.0" />
+              <point x="2313.678607315346" y="3421.0" />
+              <point x="3470.7135548566034" y="3421.0" />
+              <point x="3470.7135548566034" y="2106.0" />
+              <point x="2661.91147152327" y="2106.0" />
+              <point x="72.0" y="70.5" />
+            </edge>
+            <edge source="com.sjsu.architects.MemberController" target="com.sjsu.architects.Bootstrap">
+              <point x="-114.9230769230769" y="-92.5" />
+              <point x="2142.505530392269" y="3156.0" />
+              <point x="1814.7347314966776" y="3156.0" />
+              <point x="72.0" y="92.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Bill" target="com.sjsu.architects.PaymentStrategy">
+              <point x="87.42857142857156" y="-114.5" />
+              <point x="3863.8871183123" y="2727.0" />
+              <point x="4077.0139782943197" y="2727.0" />
+              <point x="-111.19999999999982" y="26.0" />
+            </edge>
+            <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.Booking">
+              <point x="31.5" y="-70.5" />
+              <point x="2621.41147152327" y="1875.0" />
+              <point x="2742.2034814966773" y="1875.0" />
+              <point x="2742.2034814966773" y="1499.0" />
+              <point x="3160.177296883729" y="1499.0" />
+              <point x="-80.20833333333326" y="169.0" />
+            </edge>
+            <edge source="com.sjsu.architects.RoomController" target="com.sjsu.architects.Manager">
+              <point x="34.42857142857156" y="-59.0" />
+              <point x="165.42857142857156" y="3156.0" />
+              <point x="142.36134541058436" y="3156.0" />
+              <point x="142.36134541058436" y="2314.0" />
+              <point x="261.14285714285734" y="2314.0" />
+              <point x="-84.28571428571422" y="59.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.MemberBookingProxy">
+              <point x="113.68421052631584" y="-92.0" />
+              <point x="1856.4189420229934" y="2707.0" />
+              <point x="1987.7098573153457" y="2707.0" />
+              <point x="1987.7098573153457" y="2304.0" />
+              <point x="2439.375757237556" y="2304.0" />
+              <point x="-82.28571428571422" y="37.0" />
+            </edge>
+            <edge source="com.sjsu.architects.RoomBooking" target="com.sjsu.architects.Booking">
+              <point x="232.3125" y="-114.0" />
+              <point x="3098.0473116276526" y="2324.0" />
+              <point x="3326.102176651475" y="2324.0" />
+              <point x="3326.102176651475" y="1519.0" />
+              <point x="3274.760630217062" y="1519.0" />
+              <point x="34.375" y="169.0" />
+            </edge>
+            <edge source="com.sjsu.architects.RoomBooking" target="com.sjsu.architects.Room">
+              <point x="33.1875" y="-114.0" />
+              <point x="2898.9223116276526" y="2284.0" />
+              <point x="2752.81772152327" y="2284.0" />
+              <point x="2752.81772152327" y="1805.0" />
+              <point x="2591.022357315346" y="1805.0" />
+              <point x="2591.022357315346" y="1409.0" />
+              <point x="1335.3785714285714" y="1409.0" />
+              <point x="96.94999999999993" y="147.0" />
+            </edge>
+            <edge source="com.sjsu.architects.MemberBookingProxy" target="com.sjsu.architects.StandardBookingController">
+              <point x="-24.0" y="-37.0" />
+              <point x="2497.66147152327" y="2116.0" />
+              <point x="2517.91147152327" y="2116.0" />
+              <point x="-72.0" y="70.5" />
+            </edge>
+            <edge source="com.sjsu.architects.StaffController" target="com.sjsu.architects.Person">
+              <point x="-101.14285714285711" y="-70.0" />
+              <point x="292.78571428571445" y="3136.0" />
+              <point x="187.42857142857156" y="3136.0" />
+              <point x="187.42857142857156" y="732.0" />
+              <point x="407.6855943302878" y="732.0" />
+              <point x="-110.6875" y="191.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.IdentityController">
+              <point x="-170.52631578947353" y="-92.0" />
+              <point x="1572.208415707204" y="2737.0" />
+              <point x="1039.3035714285713" y="2737.0" />
+              <point x="118.875" y="136.5" />
+            </edge>
+            <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.Member">
+              <point x="81.25" y="-59.0" />
+              <point x="2338.678607315346" y="3441.0" />
+              <point x="3492.7135548566034" y="3441.0" />
+              <point x="3492.7135548566034" y="951.0" />
+              <point x="3343.109388189937" y="951.0" />
+              <point x="84.79166666666674" y="59.5" />
+            </edge>
+            <edge source="com.sjsu.architects.Bill" target="com.sjsu.architects.Promotion">
+              <point x="43.71428571428578" y="-114.5" />
+              <point x="3820.172832598015" y="2737.0" />
+              <point x="3827.1650140977445" y="2737.0" />
+              <point x="3827.1650140977445" y="280.0" />
+              <point x="3400.8385548566034" y="280.0" />
+              <point x="89.6875" y="125.0" />
+            </edge>
+            <edge source="com.sjsu.architects.MemberBillControllerProxy" target="com.sjsu.architects.BillController">
+              <point x="-111.0" y="-48.5" />
+              <point x="4313.464121240601" y="3471.0" />
+              <point x="3793.974738267727" y="3471.0" />
+              <point x="43.125" y="81.0" />
+            </edge>
+            <edge source="com.sjsu.architects.CreditCardPaymentStrategy" target="com.sjsu.architects.PaymentStrategy">
+              <point x="0.0" y="-37.5" />
+              <point x="4162.958546883729" y="2737.0" />
+              <point x="4188.2139782943195" y="2737.0" />
+              <point x="0.0" y="26.0" />
+            </edge>
+            <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.CashPaymentStrategy">
+              <point x="97.03125" y="-81.0" />
+              <point x="3847.880988267727" y="3126.0" />
+              <point x="4535.458546883729" y="3126.0" />
+              <point x="0.0" y="26.0" />
+            </edge>
+            <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.Food">
+              <point x="-52.5" y="-70.5" />
+              <point x="2537.41147152327" y="1825.0" />
+              <point x="2613.022357315346" y="1825.0" />
+              <point x="2613.022357315346" y="1389.0" />
+              <point x="1754.5952739820125" y="1389.0" />
+              <point x="99.3125" y="81.0" />
+            </edge>
+            <edge source="com.sjsu.architects.IdentityController" target="com.sjsu.architects.Manager">
+              <point x="-142.64999999999992" y="-136.5" />
+              <point x="777.7785714285715" y="2304.0" />
+              <point x="429.7142857142858" y="2304.0" />
+              <point x="84.28571428571428" y="59.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.Bootstrap">
+              <point x="-18.75" y="-59.0" />
+              <point x="2238.678607315346" y="3391.0" />
+              <point x="1742.7347314966776" y="3391.0" />
+              <point x="0.0" y="92.0" />
+            </edge>
+            <edge source="com.sjsu.architects.CheckPaymentStrategy" target="com.sjsu.architects.PaymentStrategy">
+              <point x="0.0" y="-26.0" />
+              <point x="4833.458546883729" y="2727.0" />
+              <point x="4299.413978294319" y="2727.0" />
+              <point x="111.19999999999982" y="26.0" />
+            </edge>
+            <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.CreditCardPaymentStrategy">
+              <point x="75.46875" y="-81.0" />
+              <point x="3826.318488267727" y="3116.0" />
+              <point x="4162.958546883729" y="3116.0" />
+              <point x="0.0" y="37.5" />
+            </edge>
+            <edge source="com.sjsu.architects.Hotel" target="com.sjsu.architects.Room">
+              <point x="-83.25" y="-103.0" />
+              <point x="1271.0327739820125" y="1519.0" />
+              <point x="1252.2785714285715" y="1519.0" />
+              <point x="13.850000000000023" y="147.0" />
+            </edge>
+            <edge source="com.sjsu.architects.MemberBillControllerProxy" target="com.sjsu.architects.Member">
+              <point x="37.0" y="-48.5" />
+              <point x="4461.464121240601" y="3461.0" />
+              <point x="5032.25556483001" y="3461.0" />
+              <point x="5032.25556483001" y="931.0" />
+              <point x="3410.94272152327" y="931.0" />
+              <point x="152.62499999999977" y="59.5" />
+            </edge>
+            <edge source="com.sjsu.architects.StandardBookingController" target="com.sjsu.architects.SpaBooking">
+              <point x="94.5" y="-70.5" />
+              <point x="2684.41147152327" y="1905.0" />
+              <point x="2977.31772152327" y="1905.0" />
+              <point x="-53.0" y="92.0" />
+            </edge>
+            <edge source="com.sjsu.architects.StaffController" target="com.sjsu.architects.Bootstrap">
+              <point x="101.14285714285711" y="-70.0" />
+              <point x="495.07142857142867" y="3156.0" />
+              <point x="1670.7347314966776" y="3156.0" />
+              <point x="-72.0" y="92.0" />
+            </edge>
+            <edge source="com.sjsu.architects.BillController" target="com.sjsu.architects.Bill">
+              <point x="-10.78125" y="-81.0" />
+              <point x="3740.068488267727" y="3016.0" />
+              <point x="3661.7085468837286" y="3016.0" />
+              <point x="-114.75" y="114.5" />
+            </edge>
+            <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.Manager">
+              <point x="-118.75" y="-59.0" />
+              <point x="2138.678607315346" y="3471.0" />
+              <point x="0.0" y="3471.0" />
+              <point x="0.0" y="2304.0" />
+              <point x="219.0" y="2304.0" />
+              <point x="-126.42857142857156" y="59.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.RoomBooking">
+              <point x="18.75" y="-59.0" />
+              <point x="2276.178607315346" y="3391.0" />
+              <point x="3437.7135548566034" y="3391.0" />
+              <point x="3437.7135548566034" y="2737.0" />
+              <point x="2898.9223116276526" y="2737.0" />
+              <point x="33.1875" y="114.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.Member">
+              <point x="0.0" y="-92.0" />
+              <point x="1742.7347314966776" y="2647.0" />
+              <point x="1832.4286073153457" y="2647.0" />
+              <point x="1832.4286073153457" y="941.0" />
+              <point x="3139.609388189937" y="941.0" />
+              <point x="-118.70833333333326" y="59.5" />
+            </edge>
+            <edge source="com.sjsu.architects.IdentityController" target="com.sjsu.architects.Member">
+              <point x="142.64999999999986" y="-136.5" />
+              <point x="1063.0785714285712" y="2324.0" />
+              <point x="1050.600520970362" y="2324.0" />
+              <point x="1050.600520970362" y="931.0" />
+              <point x="3105.69272152327" y="931.0" />
+              <point x="-152.625" y="59.5" />
+            </edge>
+            <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.Hotel">
+              <point x="-94.73684210526312" y="-92.0" />
+              <point x="1647.9978893914144" y="2697.0" />
+              <point x="1401.8542025534412" y="2697.0" />
+              <point x="47.57142857142867" y="103.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Main" target="com.sjsu.architects.StaffController">
+              <point x="-81.25" y="-59.0" />
+              <point x="2176.178607315346" y="3441.0" />
+              <point x="334.92857142857156" y="3441.0" />
+              <point x="-59.0" y="70.0" />
+            </edge>
+            <edge source="com.sjsu.architects.Bootstrap" target="com.sjsu.architects.Room">
+              <point x="-132.63157894736833" y="-92.0" />
+              <point x="1610.1031525493092" y="2717.0" />
+              <point x="1166.2827739820125" y="2717.0" />
+              <point x="1166.2827739820125" y="1519.0" />
+              <point x="1169.1785714285713" y="1519.0" />
+              <point x="-69.25" y="147.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.5" x="654.0" y="1299.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>

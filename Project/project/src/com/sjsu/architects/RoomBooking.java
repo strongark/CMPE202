@@ -97,21 +97,21 @@ public class RoomBooking extends Booking  {
         return memberRoomBookingList;
     }
 
-    /**
-     * Get unpaid romm booking details
-     * @param roomNumber
-     * @return
-     */
-    public static RoomBooking getUnpaidRoomBooking(int roomNumber){
-
-        for (MemberBookingProxy booking:memberRoomBookings.values()){
-            RoomBooking roomBooking = (RoomBooking)booking.bookings();
-            for(Room room:roomBooking.getBookedRooms())
-                if (room.getRoomNumber()==roomNumber)
-                    return roomBooking;
-        }
-        return null;
-    }
+//    /**
+//     * Get unpaid romm booking details
+//     * @param roomNumber
+//     * @return
+//     */
+////    public static RoomBooking getUnpaidRoomBooking(int roomNumber){
+////
+////        for (MemberBookingProxy booking:memberRoomBookings.values()){
+////            RoomBooking roomBooking = (RoomBooking)booking.bookings();
+////            for(Room room:roomBooking.getBookedRooms())
+////                if (room.getRoomNumber()==roomNumber)
+////                    return roomBooking;
+////        }
+////        return null;
+////    }
 
     @Override
     public void paid() {

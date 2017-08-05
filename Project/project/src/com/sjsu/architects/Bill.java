@@ -49,7 +49,12 @@ public class Bill {
         System.out.println("====================================================");
         for (Booking booking:bookingArrayList){
             double bookingCost=booking.cost();
-            System.out.printf("%-40s%2f%n",booking.getDescription(),bookingCost);
+            String desc=booking.getDescription();
+            String formatter="%-40s%2f%n";
+            if(desc.length()>40){
+                formatter="%-"+(desc.length()+7)+"s%2f%n";
+            }
+            System.out.printf(formatter,booking.getDescription(),bookingCost);
             result+=bookingCost;
         }
         System.out.println("====================================================");

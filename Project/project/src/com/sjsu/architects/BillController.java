@@ -47,7 +47,12 @@ public class BillController {
 
         for(Booking booking:RoomBooking.getUnpaidBookingOfMember(member.getId())){
             double bookingCost=booking.cost();
-            System.out.printf("%-40s%2f%n",booking.getDescription(),bookingCost);
+            String desc=booking.getDescription();
+            String formatter="%-40s%2f%n";
+            if(desc.length()>40){
+                formatter="%-"+(desc.length()+7)+"s%2f%n";
+            }
+            System.out.printf(formatter,booking.getDescription(),bookingCost);
             totalCost+=bookingCost;
         }
 

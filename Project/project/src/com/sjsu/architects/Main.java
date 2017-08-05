@@ -266,7 +266,7 @@ public class Main {
             System.out.println("\n Welcome Carton Hotel Member " + member.getName());
             System.out.println(" -----------------------------------------------------------------------");
             System.out.println(" 1. Check Room Availability | 2. Book Room  | 3. Cancel Booking  " +
-                    "\n 4. View Booking  | 0. Exit ");
+                    "\n 4. View Booking  | 5. Bill & Payment | 0. Exit ");
 
             int iOperation = Bootstrap.handleUserInput();
 
@@ -284,6 +284,9 @@ public class Main {
                 System.out.println("\n Enter Booking ID: ");
                 int id = Bootstrap.handleUserInput();
                 memberOperations.viewRoomBookings(id);
+            } else if (iOperation == 5){
+                BillController controller = new BillController();
+                controller.run();
             } else if (iOperation == 0){
                 break;
             }
@@ -291,7 +294,5 @@ public class Main {
                 break;
             }
         } while (1 != 0);
-
     }
-
 }

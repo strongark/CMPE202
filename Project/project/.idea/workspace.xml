@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ecb706b-3292-4bc2-bf5e-ea17da70679f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sjsu/architects/Bill.java" afterPath="$PROJECT_DIR$/src/com/sjsu/architects/Bill.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sjsu/architects/BillController.java" afterPath="$PROJECT_DIR$/src/com/sjsu/architects/BillController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sjsu/architects/Bootstrap.java" afterPath="$PROJECT_DIR$/src/com/sjsu/architects/Bootstrap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sjsu/architects/CashPaymentStrategy.java" afterPath="$PROJECT_DIR$/src/com/sjsu/architects/CashPaymentStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sjsu/architects/CheckPaymentStrategy.java" afterPath="$PROJECT_DIR$/src/com/sjsu/architects/CheckPaymentStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sjsu/architects/CreditCardPaymentStrategy.java" afterPath="$PROJECT_DIR$/src/com/sjsu/architects/CreditCardPaymentStrategy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sjsu/architects/PromotionController.java" afterPath="$PROJECT_DIR$/src/com/sjsu/architects/PromotionController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/sjsu/architects/Main.java" afterPath="$PROJECT_DIR$/src/com/sjsu/architects/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FoodController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/FoodController.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="55" column="58" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="55" selection-end-column="58" />
+            <state relative-caret-position="216">
+              <caret line="99" column="21" lean-forward="true" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreditCardPaymentStrategy.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CreditCardPaymentStrategy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/CreditCardPaymentStrategy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+            <state relative-caret-position="435">
+              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -221,7 +213,6 @@
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/IdentityController.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/SpaServiceController.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/FoodController.java" />
-        <option value="$PROJECT_DIR$/src/com/sjsu/architects/Main.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/MemberController.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/Booking.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/RoomBooking.java" />
@@ -237,6 +228,7 @@
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/CheckPaymentStrategy.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/CashPaymentStrategy.java" />
         <option value="$PROJECT_DIR$/src/com/sjsu/architects/CreditCardPaymentStrategy.java" />
+        <option value="$PROJECT_DIR$/src/com/sjsu/architects/Main.java" />
       </list>
     </option>
   </component>
@@ -857,12 +849,12 @@
       <workItem from="1501689203165" duration="4980000" />
       <workItem from="1501718074791" duration="5000" />
       <workItem from="1501718150229" duration="10228000" />
-      <workItem from="1501882204591" duration="5402000" />
+      <workItem from="1501882204591" duration="6307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105606000" />
+    <option name="totallyTimeSpent" value="106511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="699" extended-state="6" />
@@ -1171,10 +1163,10 @@
         <state relative-caret-position="75">
           <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
           <folding>
-            <marker date="1501895195000" expanded="true" signature="79254:79271" ph="..." />
-            <marker date="1501895195000" expanded="true" signature="79254:79289" ph="..." />
-            <marker date="1501895195000" expanded="true" signature="79254:79302" ph="..." />
-            <marker date="1501895195000" expanded="true" signature="79254:79317" ph="..." />
+            <marker date="1501902331000" expanded="true" signature="77840:77857" ph="..." />
+            <marker date="1501902331000" expanded="true" signature="77840:77875" ph="..." />
+            <marker date="1501902331000" expanded="true" signature="77840:77888" ph="..." />
+            <marker date="1501902331000" expanded="true" signature="77840:77903" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1196,16 +1188,6 @@
           <folding>
             <element signature="e#913#914#0" expanded="true" />
             <element signature="e#953#954#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="27" column="20" lean-forward="false" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1326,9 +1308,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/CreditCardPaymentStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+        <state relative-caret-position="435">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sjsu/architects/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="99" column="21" lean-forward="true" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -10,7 +10,7 @@ public class PromotionController {
 
     private static PromotionController instance = null;
 
-    ArrayList<Member> observers = new ArrayList<Member>();
+    ArrayList<IPromotionObserver> observers = new ArrayList<IPromotionObserver>();
     HashMap<String,Promotion> promotionHashMap = new HashMap<>();
 
     int internalState;
@@ -90,7 +90,7 @@ public class PromotionController {
      */
     public void notifyAllObservers(){
 
-        for(Member observer: observers)
+        for(IPromotionObserver observer: observers)
         {
             observer.update();
         }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Scanner;
 
-public class Member extends Person {
+public class Member extends Person implements IPromotionObserver {
 
     public Member(){
 
@@ -22,10 +22,12 @@ public class Member extends Person {
         promotion.subscribe(this);
     }
 
-    public void update(){
-        System.out.println("Members received promotion code!!");
-    }
-    //*end observer pattern
 
+    @Override
+    public void update() {
+        System.out.println("Members "+super.getName()+ " received promotion code!!");
+    }
+
+    //*end observer pattern
 
 }

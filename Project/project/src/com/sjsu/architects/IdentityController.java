@@ -153,7 +153,7 @@ public class IdentityController {
         staff.setSalary(450);
         accountList.add(staff);
 
-        Member member = new Member();
+        Member member = new Member(PromotionController.getInstance());
         member.setId(++identity);
         member.username = "member";
         member.password = "member";

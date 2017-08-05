@@ -73,6 +73,7 @@ public class Bootstrap {
     }
 
     private static RoomBooking createSampleRoomBooking() {
+
         RoomBooking roomBooking = new RoomBooking();
         ArrayList<Room> roomlist= new ArrayList<Room>();
         roomlist.add(Hotel.getRoomList().get(0));
@@ -86,6 +87,21 @@ public class Bootstrap {
         HashMap<Integer, MemberBookingProxy> list = new HashMap<>();
         list.put(roomBooking.getBookingID(), bookingProxy);
         RoomBooking.setMemberRoomBookings(list);
+
+        RoomBooking roomBooking2 = new RoomBooking();
+        ArrayList<Room> roomlist2= new ArrayList<Room>();
+        roomlist2.add(Hotel.getRoomList().get(1));
+        roomBooking2.setBookRoom(roomlist2);
+        roomBooking2.appendDescription("Room "+Hotel.getRoomList().get(0).getRoomNumber());
+        roomBooking2.setBookingID();
+        roomBooking2.setMember((Member) IdentityController.getInstance().getAccountById(4));
+
+        MemberBookingProxy bookingProxy2 = new MemberBookingProxy();
+        bookingProxy2.book(roomBooking2);
+        HashMap<Integer, MemberBookingProxy> list2 = new HashMap<>();
+        list2.put(roomBooking2.getBookingID(), bookingProxy2);
+        RoomBooking.setMemberRoomBookings(list2);
+
         return roomBooking;
     }
 

@@ -159,6 +159,13 @@ public class IdentityController {
         member.password = "member";
         member.name = "The Member";
         accountList.add(member);
+
+        Member member2 = new Member(PromotionController.getInstance());
+        member2.setId(++identity);
+        member2.username = "member2";
+        member2.password = "member2";
+        member2.name = "The Member 2";
+        accountList.add(member2);
     }
 
     public void setAccountList(ArrayList<Person> staffList){

@@ -5,7 +5,7 @@ public class Room {
     private int roomNumber;
     private double roomPrice = 0.0;
     private boolean roomAvailable = true;
-    private boolean checkedinRoom = true;
+    private boolean checkedinRoom = false;
     private String roomType = null;
     private String bedType = null;
 

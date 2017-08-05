@@ -104,7 +104,7 @@ public class StandardBookingController {
 
                 if (UserType != 0) {
                     Food service = foodItems.get((UserType - 1));
-                    selectedFood.add(foodItems.get(UserType));
+                    selectedFood.add(foodItems.get(UserType-1));
                     selectedFood.add(service);
                     System.out.println("Customer " + member.bookings().getMember().getName() + " requested " + service.getItemName());
 

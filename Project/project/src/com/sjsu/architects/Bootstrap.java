@@ -79,7 +79,7 @@ public class Bootstrap {
         roomlist.add(Hotel.getRoomList().get(0));
         roomBooking.setBookRoom(roomlist);
         roomBooking.appendDescription("Room "+Hotel.getRoomList().get(0).getRoomNumber());
-        roomBooking.setBookingID();
+        roomBooking.setBookingID(999);
         roomBooking.setMember((Member) IdentityController.getInstance().getAccountById(3));
 
         MemberBookingProxy bookingProxy = new MemberBookingProxy();

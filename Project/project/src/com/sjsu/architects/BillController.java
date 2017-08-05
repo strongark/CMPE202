@@ -105,7 +105,7 @@ public class BillController {
                     if(member!=null){
                         viewUnpaidBookingOfMember(member);
                     } else {
-                        System.out.println("Memeber not found");
+                        System.out.println("Member not found");
                     }
                     break;
                 case 2:
@@ -115,18 +115,33 @@ public class BillController {
                     member = (Member) IdentityController.getInstance().getAccountById(userID);
                     if(member!=null){
                         Bill bill=createBill(member);
+
+                        System.out.println("Enter Promotion Code or Enter to skip: ");
+                        Scanner scan = new Scanner(System.in);
+                        String promotionCode = scan.nextLine();
+
+                        double discountRate=0.0;
+                        Promotion promotion =PromotionController.getInstance().getPromotionByCode(promotionCode);
+                        if(promotion!=null&&promotion.getPromotionValidity()){
+                            discountRate=promotion.getDiscountRatio();
+                            System.out.println("Promotion code accepted! Total amount will be discounted by "+discountRate);
+                            bill.setPromotion(promotion);
+                        }
+                        else
+                            System.out.println("Invalid Promotion Code!");
+
                         bill.printBillDetail();
                     } else {
-                        System.out.println("Memeber not found");
+                        System.out.println("Member not found");
                     }
                     break;
 
                 case 3:
                     System.out.println("Enter Bill No: ");
-
                     int billId = Bootstrap.handleUserInput();
                     Bill bill = getBillById(billId);
                     if(bill!=null){
+
                         bill.printBillDetail();
                         System.out.println("Enter Payment Option: ");
                         System.out.println("1. Cash | 2. Check | 3. Credit Card | 0. Exit");
@@ -140,16 +155,21 @@ public class BillController {
                                 bill.pay(new CheckPaymentStrategy());
                                 break;
                             case 3:
-                                String name="";
-                                String cardNumber="";
-                                String cvv="";
-                                String dateOfExpiry="";
+                                Scanner scan = new Scanner(System.in);
+                                System.out.println("Enter Name on Credit Card: ");
+                                String name=scan.nextLine();
+                                System.out.println("Enter Name Card Number: ");
+                                String cardNumber=scan.nextLine();
+                                System.out.println("Enter CVV: ");
+                                String cvv=scan.nextLine();
+                                String dateOfExpiry="2019/12/31";
                                 bill.pay(new CreditCardPaymentStrategy(name,cardNumber,cvv,dateOfExpiry));
                                 break;
                         }
                     }
                     break;
                 case 0:
+                    exit=true;
                     break;
                 default:
                     break;

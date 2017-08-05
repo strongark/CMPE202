@@ -25,6 +25,6 @@ public class CreditCardPaymentStrategy implements PaymentStrategy {
     }
     @Override
     public void processPayment(double amount, int billId) {
-        System.out.println("  Please swipe your credit card for " + amount+ "$ at the card reader");
+        System.out.println("Please swipe your credit card for " + amount+ "$ at the card reader");
     }
 }

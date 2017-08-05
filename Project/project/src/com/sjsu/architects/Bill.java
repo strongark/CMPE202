@@ -12,6 +12,7 @@ public class Bill {
     ArrayList<Booking> bookingArrayList = new ArrayList<Booking>();
     PaymentStrategy payment;
     boolean isPaid=false;
+    private Promotion promotion=null;
 
     public Bill(){
         billID=identity++;
@@ -30,6 +31,12 @@ public class Bill {
         for (Booking booking:bookingArrayList){
             result+=booking.cost();
         }
+
+        if(promotion!=null){
+            double discount=promotion.getDiscountRatio();
+            result=result*(1-discount);
+        }
+
         return result;
     }
 
@@ -46,7 +53,13 @@ public class Bill {
             result+=bookingCost;
         }
         System.out.println("====================================================");
-        System.out.printf("%-40s%2f%n","Total",result);
+        double discount=0.0;
+        if(promotion!=null){
+            discount=promotion.getDiscountRatio();
+            System.out.printf("%-40s%2f%n","Discount",discount);
+        }
+
+        System.out.printf("%-40s%2f%n","Total",result*(1-discount));
     }
 
     /**
@@ -59,6 +72,7 @@ public class Bill {
         for (Booking booking:bookingArrayList){
             booking.paid();
         }
+        paymentStrategy.processPayment(getTotalCost(),billID);
     }
 
     public void addBooking(Booking booking){
@@ -66,5 +80,13 @@ public class Bill {
     }
     public void addBooking(ArrayList<Booking> booking){
         bookingArrayList.addAll(booking);
+    }
+
+    public Promotion getPromotion() {
+        return promotion;
+    }
+
+    public void setPromotion(Promotion promotion) {
+        this.promotion = promotion;
     }
 }

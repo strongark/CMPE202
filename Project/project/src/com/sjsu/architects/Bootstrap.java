@@ -1,6 +1,7 @@
 package com.sjsu.architects;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class Bootstrap {
@@ -31,9 +32,61 @@ public class Bootstrap {
             initializeHotelServiceList();
             // Creating Food Items
             initializeFoodItems();
+
+            RoomBooking roomBooking = createSampleRoomBooking();
+
+
+            createSampleFoodBooking(roomBooking);
+
+            //create sample promotion
+            Promotion promotion= new Promotion();
+            promotion.setDiscountRatio(0.3);
+            promotion.setPromotionID("PRO");
+            promotion.setPromotionValidity(true);
+            PromotionController.getInstance().addPromotion(promotion);
+
         } catch (Exception ex){
             System.out.println("Oops! Something went wrong! " + ex.getMessage());
         }
+    }
+
+    private static void createSampleFoodBooking(RoomBooking roomBooking) {
+        HashMap<Integer, MemberBookingProxy> memberBooking = RoomBooking.getMemberRoomBookings();
+        MemberBookingProxy member = memberBooking.get(roomBooking.getBookingID());
+
+        if(member !=null) {
+            ArrayList<Food> foodItems = Hotel.getFoodItems();
+            ArrayList<Food> selectedFood = new ArrayList<>();
+            selectedFood.add(foodItems.get(0));
+            FoodBooking booking = new FoodBooking();
+            booking.setBookingID(roomBooking.getBookingID());
+            booking.foodList(selectedFood);
+            booking.setMember(member.bookings().getMember());
+
+            for (Food foodsrv : selectedFood)
+                booking.appendDescription(foodsrv.getItemName());
+
+            HashMap<Integer, FoodBooking> foodBookingHashMap = new HashMap<>();
+            foodBookingHashMap.put(roomBooking.getBookingID(), booking);
+            FoodBooking.setFoodOrders(foodBookingHashMap);
+        }
+    }
+
+    private static RoomBooking createSampleRoomBooking() {
+        RoomBooking roomBooking = new RoomBooking();
+        ArrayList<Room> roomlist= new ArrayList<Room>();
+        roomlist.add(Hotel.getRoomList().get(0));
+        roomBooking.setBookRoom(roomlist);
+        roomBooking.appendDescription("Room "+Hotel.getRoomList().get(0).getRoomNumber());
+        roomBooking.setBookingID();
+        roomBooking.setMember((Member) IdentityController.getInstance().getAccountById(3));
+
+        MemberBookingProxy bookingProxy = new MemberBookingProxy();
+        bookingProxy.book(roomBooking);
+        HashMap<Integer, MemberBookingProxy> list = new HashMap<>();
+        list.put(roomBooking.getBookingID(), bookingProxy);
+        RoomBooking.setMemberRoomBookings(list);
+        return roomBooking;
     }
 
     /**

@@ -11,6 +11,8 @@ public class PromotionController {
     private static PromotionController instance = null;
 
     ArrayList<Member> observers = new ArrayList<Member>();
+    HashMap<String,Promotion> promotionHashMap = new HashMap<>();
+
     int internalState;
 
     protected PromotionController (){
@@ -69,6 +71,8 @@ public class PromotionController {
         promotion.setDiscountRatio(scan.nextInt());
         System.out.println("Sending promotion code to members.. ");
         notifyAllObservers();
+
+        promotionHashMap.put(promotion.getPromotionID(),promotion);
     }
 
     /**
@@ -92,6 +96,9 @@ public class PromotionController {
         }
     }
 
+    public void addPromotion(Promotion promotion){
+        promotionHashMap.put(promotion.getPromotionID(),promotion);
+    }
     public static void main(String args[]) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter Promotion End Date in MM/dd/yyyy format: ");
@@ -105,5 +112,9 @@ public class PromotionController {
         }
         catch(ParseException e) {
             System.out.println("Unable to parse(Incorrect date entered) " + endPromotion);}
+    }
+
+    public Promotion getPromotionByCode(String promotionCode){
+        return promotionHashMap.get(promotionCode);
     }
 }

@@ -8,6 +8,6 @@ public class CheckPaymentStrategy implements PaymentStrategy {
     @Override
     public void processPayment(double amount, int billId) {
 
-        System.out.println("  Please deposit check for  " + amount+ "$ at the Hotel dropbox ");
+        System.out.println("Please deposit check for  " + amount+ "$ at the Hotel dropbox ");
     }
 }
